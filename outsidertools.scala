@@ -1,4 +1,5 @@
 import scala.util.matching.Regex
+import scala.xml._
 import scala.collection.mutable.HashMap
 
 case class Equipment(var name:String, var kind:String, var count:Int, var ecount:Int)
@@ -154,15 +155,16 @@ case class CharacterXmlImporter(val character:Elem) {
     val char = Character(stats)
     char.name = filterText("Name")(0)
     char.player = player;
-    char.race = filterTally("Race")(0)
+    char.race = firstTallyOrEmpty("Race")
 
     char.equipment = equipment.toList
     char.rituals = rituals.toList
-    char.clazz = filterTally("Class")(0)
+    char.clazz = firstTallyOrEmpty("Class")
     char.level = filterTally("Level").toList.last.toString
-    char.alignment = filterTally("Alignment")(0)
-//    char.xp = filterText("Experience Points").head
+    char.alignment =  firstTallyOrEmpty("Alignment") 
+    char.xp = firstOrEmpty( filterText("Experience Points"))
     char.hp = characterStats("Hit Points")
+
     char.surges = characterStats("Healing Surges")
     char.init = characterStats("Initiative")
     char.speed = characterStats("Speed")
@@ -255,6 +257,20 @@ case class CharacterXmlImporter(val character:Elem) {
   lazy val tally = for(tally <- character \ "RulesElementTally" \ "RulesElement"; tt <- tally.attribute("type").get; tn <- tally.attribute("name").get) yield (tt.text, tn.text)
 
   val texts = for(ts <- character \ "textstring"; name <- ts.attribute("name").get) yield (name.text, ts.text.trim)
+
+  def firstTallyOrEmpty(t:String) = {
+    filterTally(t) match {
+      case head :: Nil => head
+      case _ => ""
+    }
+  }
+
+  def firstOrEmpty(seq:Seq[String]) : String = {
+    seq match {
+      case head :: Nil => head
+      case _ => ""
+    }
+  }
 
   def filterTally(t:String) = {
     for( element <- tally.filter(x => x._1 == t)) yield (element._2)
@@ -394,8 +410,8 @@ object RpolTextRenderer {
   }
 }
 
-//var charName = "Ox.dnd4e"
-var charName = args(0)
+var charName = "Jax.dnd4e"
+//var charName = args(0)
 val importer = CharacterXmlImporter(XML.load(charName))
 val char = importer.generate("Bjartek")
 
