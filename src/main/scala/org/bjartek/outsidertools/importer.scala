@@ -1,5 +1,6 @@
 package org.bjartek.outsidertools.importer
 
+import org.bjartek.outsidertools.domain._
 import scala.xml._
 import scala.collection.mutable.HashMap
 

@@ -1,5 +1,7 @@
 package org.bjartek.outsidertools.render
 
+import org.bjartek.outsidertools.domain._
+
 object HtmlRenderer {
 
   def apply(character:Character) = {
