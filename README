@@ -1,0 +1,15 @@
+OutsiderTools
+--
+A set of tools to assist in playing DnD4 online. 
+
+Why?
+--
+I deciced to create the project because I want to combine two hobbies. Roleplaying in Dnd4 and Hacking Scala. 
+
+This project is at the moment mainly for storing my scala hacking related to dnd4 in one place. 
+
+Character Visualizer
+--
+The first tool. Convert a dnd4e xml file into a textual representation. 
+
+
