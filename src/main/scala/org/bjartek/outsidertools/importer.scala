@@ -19,18 +19,20 @@ case class CharacterXmlImporter(val character:Elem) {
       stat("Charisma" , ("Bluff":: "Diplomacy":: "Intimidate":: "Streetwise" :: Nil)) :: Nil
 
     val char = Character(stats)
-    char.name = filterText("Name")(0)
+    char.name = findText("Name")
     char.player = player;
-    char.race = firstTallyOrEmpty("Race")
 
     char.equipment = equipment.toList
     char.rituals = rituals.toList
-    char.clazz = firstTallyOrEmpty("Class")
-    char.level = filterTally("Level").toList.last.toString
-    char.alignment =  firstTallyOrEmpty("Alignment") 
-    char.xp = firstOrEmpty( filterText("Experience Points"))
-    char.hp = characterStats("Hit Points")
 
+    char.race = findTally("Race")
+    char.clazz = findTally("Class")
+    char.level = findTally("Level")
+    char.alignment =  findTally("Alignment")
+
+    char.xp = findText("Experience Points")
+
+    char.hp = characterStats("Hit Points")
     char.surges = characterStats("Healing Surges")
     char.init = characterStats("Initiative")
     char.speed = characterStats("Speed")
@@ -39,10 +41,10 @@ case class CharacterXmlImporter(val character:Elem) {
     char.ref = characterStats("Reflex Defense");
     char.will = characterStats("Will Defense");
 
-    char.languages = filterTally("Language").toList
-    char.feats = filterTally("Feat").toList
-    char.raceFeatures = filterTally("Racial Trait").toList
-    char.classFeatures = filterTally("Class Feature").toList
+    char.languages = filterTally("Language")
+    char.feats = filterTally("Feat")
+    char.raceFeatures = filterTally("Racial Trait")
+    char.classFeatures = filterTally("Class Feature")
     char.powers = powerMap
     char
   }
@@ -152,26 +154,22 @@ case class CharacterXmlImporter(val character:Elem) {
     name <- ts \ "@name"
   } yield  (name.text, ts.text.trim)
 
-  def firstTallyOrEmpty(t:String) = {
-    filterTally(t) match {
-      case head :: Nil => head
-      case _ => ""
-    }
-  }
-
-  def firstOrEmpty(seq:Seq[String]) : String = {
-    seq match {
-      case head :: Nil => head
-      case _ => ""
-    }
-  }
-
   def filterTally(t:String) = {
-    for( element <- tally.filter(x => x._1 == t)) yield (element._2)
+    (for( element <- tally.filter(x => x._1 == t)) yield (element._2)).toList
   }
 
-  def filterText(t:String) = {
-    for( element <- texts.filter(x => x._1 == t)) yield (element._2)
+  def findTally(t:String) = {
+      tally.find(_._1 == t) match {
+        case Some(tally) => tally._2
+        case None => ""
+      }
+   }
+
+  def findText(t:String) = {
+    texts.find(_._1 == t) match {
+        case Some(txt) => txt._2
+        case None => ""
+      }
   }
 
   def searchRules(name:String, kind:String, field:String)  = {
