@@ -3,6 +3,7 @@ package org.bjartek.outsidertools.importer
 import org.bjartek.outsidertools.domain._
 import scala.xml._
 import scala.collection.mutable.HashMap
+import scala.collection.immutable.Map
 
 case class CharacterXmlImporter(val character:Elem) {
 
@@ -68,11 +69,13 @@ case class CharacterXmlImporter(val character:Elem) {
   }
   
   val characterStats = {
-    var stats = new HashMap[String, Int];
-    for(stat <- character \\ "Stat"; value <- stat.attribute("value").get; alias <- stat \ "alias") yield { 
-      stats +=  alias(0).attribute("name").get.text -> value.text.toInt
-    }
-    stats
+    Map() ++ (for{
+      stat <- character \\ "Stat" 
+      value <- stat \ "@value"
+      alias <- stat \ "alias"
+     } yield { 
+      alias(0).attribute("name").get.text -> value.text.toInt
+    })
   }
 
   val level = characterStats("Level");
@@ -93,19 +96,33 @@ case class CharacterXmlImporter(val character:Elem) {
     le <- loot \ "@equip-count";        
     lc <- loot \ "@count"              
   } yield {
-    var name = loot \\ "@name"
-    var typ = loot \\  "@type"
-    var lt = typ.toList.head
-    var ln = name.toList.head
+    val name = loot \\ "@name"
+    val typ = loot \\  "@type"
+    val lt = typ.toList.head
+    val ln = name.toList.head
     lt.text match {
       case "Weapon" => {
-        val wpn = Weapon(ln.text, searchRules(ln.text, "Weapon", "Item Slot"),  searchRules(ln.text, "Weapon", "Damage"), searchRules(ln.text, "Weapon", "Weapon Category"), searchRules(ln.text, "Weapon", "Proficiency Bonus").toInt, searchRules(ln.text, "Weapon", "Group"), lc.text.toInt, le.text.toInt)
-          if(typ.contains("Magic Item")) wpn.magic = name(1).text
+        val wpn = Weapon(
+          ln.text, 
+          searchRules(ln.text, "Weapon", "Item Slot"),  
+          searchRules(ln.text, "Weapon", "Damage"), 
+          searchRules(ln.text, "Weapon", "Weapon Category"), 
+          searchRules(ln.text, "Weapon", "Proficiency Bonus").toInt, 
+          searchRules(ln.text, "Weapon", "Group"), 
+          lc.text.toInt, 
+          le.text.toInt)
+        if(typ.contains("Magic Item")) 
+          wpn.magic = name(1).text
         wpn
       }
       case "Armor" => { 
-        val armor = Armor(ln.text, searchRules(ln.text, "Armor", "Item Slot"), lc.text.toInt, le.text.toInt)
-          if(typ.contains("Magic Item")) armor.magic = name(1).text
+        val armor = Armor(
+          ln.text, 
+          searchRules(ln.text, "Armor", "Item Slot"), 
+          lc.text.toInt, 
+          le.text.toInt)
+        if(typ.contains("Magic Item")) 
+          armor.magic = name(1).text
         armor
       }
       case "Ritual" => Ritual(ln.text, lc.text.toInt, le.text.toInt)
@@ -117,11 +134,23 @@ case class CharacterXmlImporter(val character:Elem) {
 
   val rituals = loot.filter(_.kind == "Ritual").map(_.name)
 
-  lazy val rules =  for(field <- character \ "RulesElementField"; ft <- field.attribute("type").get; fn <- field.attribute("name").get; ff <- field.attribute("field").get) yield (Rules(fn.text, ft.text, ff.text, field.text.trim))
+  lazy val rules =  for{
+    field <- character \ "RulesElementField"
+    ft <- field \ "@type"
+    fn <- field \ "@name"
+    ff <- field \ "@field"
+  } yield (Rules(fn.text, ft.text, ff.text, field.text.trim))
 
-  lazy val tally = for(tally <- character \ "RulesElementTally" \ "RulesElement"; tt <- tally.attribute("type").get; tn <- tally.attribute("name").get) yield (tt.text, tn.text)
+  lazy val tally = for{
+    tally <- character \ "RulesElementTally" \ "RulesElement"; 
+    tt <- tally \ "@type" 
+    tn <- tally \ "@name"
+  } yield (tt.text, tn.text)
 
-  val texts = for(ts <- character \ "textstring"; name <- ts.attribute("name").get) yield (name.text, ts.text.trim)
+  val texts = for{
+    ts <- character \ "textstring"
+    name <- ts \ "@name"
+  } yield  (name.text, ts.text.trim)
 
   def firstTallyOrEmpty(t:String) = {
     filterTally(t) match {
