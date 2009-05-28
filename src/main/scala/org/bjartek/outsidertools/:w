@@ -3,25 +3,32 @@ package org.bjartek.outsidertools.domain
 import scala.collection.immutable.Map
 
 case class Equipment(var name:String, var kind:String, var count:Int, var ecount:Int, var url:String) {
+
   lazy val htmlName = {
-    "<a href=" + url + ">" + name + "</a>"
-  }
+    url match {
+      case Some(x) => "<a href=\"" + x + "\">" + name + "</a>"
+      case None => name
+    }
+
 }
 case class Armor(n:String, c:Int, ec:Int, u:String) extends Equipment(n, "Armour", c, ec, u)
 case class MagicArmour(var magic: String, var magicUrl: String, n:String, c:Int, ec:Int, u:String) extends Equipment(n, "MagicArmour", c, ec, u)
 case class Weapon(n:String, c:Int, ec:Int, u:String) extends Equipment(n, "Weapon", c, ec, u)
 case class MagicWeapon(n:String, c:Int, ec:Int, u:String, var magic:String, var magicUrl:String) extends Equipment(n, "MagicWeapon", c, ec, u) {
-  
-  override lazy val htmlName = {
-    "<a href=" + url + ">" + name + "</a>" + "<a href=" + magicUrl + ">(" + magic + ")</a>"
-  }
 
+  lazy val htmlName = {
+    parent.htmlName + magicUrl match {
+      case Some(x) => "<a href=\"" + x + "\">(effect)</a>"
+      case None => ""
+    }
+  }
 }
+
 case class Ritual(n:String, c:Int, ec:Int, u:String)  extends Equipment(n, "Ritual", c, ec, u)
 
 case class Rules(val typ: String, val value:String, val url: Option[String])
 
-case class PowerWeapon(val name:String, val hit: String, val dmg: String, val stat:String, val defense: String, val hitSummary: String, val dmgSummary: String, val cond: String);
+case class PowerWeapon(val name:String, val hit: String, val dmg: String, val stat:String, val defense: String, val hitSummary: String, val dmgSummary: String, val cond: String, val weapon: Equipment);
 
 case class Power(val name: String, val url: Option[String], val usage: String, val action: String, val weapons:Map[String, PowerWeapon]) {
 
@@ -31,19 +38,9 @@ case class Power(val name: String, val url: Option[String], val usage: String, v
       case None => name
     }
   }
-
 }
 
-case class Skill(var name:String, var score:Int, var url: Option[String]) {
-  lazy val htmlName = {
-    url match {
-      case Some(x) => "<a href=\"" + x + "\">" + name + "</a>: " + score
-      case None => name + ":" +score
-    }
-  }
-
-
-}
+case class Skill(var name:String, var score:Int, var url: Option[String]);                                        
 
 case class Stat(var name: String, var score:Int, var mod:Int)
 

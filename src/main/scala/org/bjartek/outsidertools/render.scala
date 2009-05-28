@@ -2,6 +2,7 @@ package org.bjartek.outsidertools.render
 
 import org.bjartek.outsidertools.domain._
 
+/*
 object HtmlRenderer {
 
   def apply(character:Character) = {
@@ -25,103 +26,134 @@ object HtmlRenderer {
   }
 
 }
+*/
 
-object RpolTextRenderer {
-  def apply(character:Character) = {
-    println("<b>Name:</b> "  + character.name);
-    println("<b>Player: </b>" + character.player);
-    println("<b>Race: </b>" + character.race);
-    println("<b>Class and Level:</b> " + character.clazz + " " + character.level)
-    println("<b>Alignement: </b>" + character.alignment)
-    println("<b>Deity: </b>" + character.deity);
-    println("<b>XP: </b>" + character.xp);
-    println("<b>Laug:</b>")
-    println("<b>Tittel:</b>")
-    println("<b>Tjenestepoeng:</b>")
-    println("")
-    println("<b>Age:</b>")
-    println("<b>Gender:</b>")
-    println("<b>Size:</b>")
-    println("<b>Height:</b>")
-    println("<b>Weight:</b>")
-    println("<b>Eyes:</b>")
-    println("<b>Hair:</b>")
-    println("")
 
-    for(stat <- character.stats) {
-      println(stat.printName + ": " + stat.value.toString);
+class  RpolTextRenderer(val character:Character) {
+
+
+    var lines:List[String] = Nil;
+    
+    def generate() = {
+      lines += "<b>Name:</b> "  + character.name
+      lines += "<b>Player: </b>" + character.player
+    lines += "<b>Race: </b>" + character.race
+    lines += "<b>Class and Level:</b> " + character.clazz + " " + character.level
+    lines += "<b>Alignement: </b>" + character.alignment
+    lines += "<b>Deity: </b>" + character.deity
+    lines += "<b>XP: </b>" + character.xp
+    lines += "<b>Laug:</b>"
+    lines += "<b>Tittel:</b>"
+    lines += "<b>Tjenestepoeng:</b>"
+    lines += ""
+    lines += "<b>Age:</b> " + character.age
+    lines += "<b>Gender:</b> " + character.gender
+    lines += "<b>Size:</b> " + character.size
+    lines += "<b>Height:</b> " + character.age
+    lines += "<b>Weight:</b> " + character.weight
+    lines += ""
+
+    for(kv <- character.stat) {
+      lines += kv._1 + ": " + kv._2.score.toString
     }
     
-    println("")
-    println("<b>HP: </b>" + character.hp)
-    println("<b>Bloodied:</b> " + character.bloddy)
-    println("<b>Surge Value:</b> " + character.sv)
-    println("<b>Surges/Day:</b> " + character.surges )
-    println("<b>Init:</b> " + character.init)
-    println("<b>Speed:</b> " + character.speed)
-    println("")
+    lines += ""
 
-    println("<b>Passive Perception: </b>" + character.passivePerception)
-    println("<b>Passive Insight: </b>" + character.passiveInsight)
+    lines +="<b>HP: </b>" + character.hp
+    lines +="<b>Bloodied:</b> " + character.bloddy
+    lines +="<b>Surge Value:</b> " + character.sv
+    lines +="<b>Surges/Day:</b> " + character.surges
+    lines +="<b>Init:</b> " + character.init
+    lines +="<b>Speed:</b> " + character.speed
+    lines +=""
+
+    lines +="<b>Passive Perception: </b>" + character.passivePerception
+    lines +="<b>Passive Insight: </b>" + character.passiveInsight
 
 
-    println("")
-    println("<b>AC: </b>" + character.ac)
-    println("<b>Fortitude: </b>" + character.fort)
-    println("<b>Reflex: </b>" + character.ref)
-    println("<b>Will:</b> " + character.will)
+    lines +=""
+    lines +="<b>AC: </b>" + character.ac
+    lines +="<b>Fortitude: </b>" + character.fort
+    lines +="<b>Reflex: </b>" + character.ref
+    lines +="<b>Will:</b> " + character.will
 
-    println("")
-    println("<b>Basic attacks</b>")
-    character.basicAttacks.foreach(attack => println(attack._1 + " + " + attack._2 + " vs AC. " + attack._3 + "+" + attack._4 + " dmg"))
+    lines +=""
+    lines +="<b>Basic attacks</b>"
+    renderPowers(_.name.contains("Basic"))
 
-    println("")
-    println("<b>Skills</b>")
-    for(stat <- character.stats; skill <- stat.skills) {
-      println(skill.name + ": " + skill.value);
+    lines += ""
+    lines += "<b>Skills</b>"
+    for(skill <- character.skill) {
+      lines += skill._2.htmlName
     }
+    
+    lines += ""
+    lines += "<b>Languages</b>"
+    lines += character.languages.mkString(", ")
 
-    println("")
-    println("<b>Languages</b>")
-    println(character.languages.mkString(", "));
-
-    println("")
-    println("<b>Feats</b>")
-    println(character.feats.mkString(", "));
+    lines += ""
+    lines += "<b>Feats</b>"
+    lines += character.feats.map(feat => feat._2 match { case Some(x) => "<a href=\"" + x + "\">" + feat._1 + "</a>"; case _ => feat._1 }).mkString(", ")
 
 
-    println("")
-    println("<b>Race Featues</b>")
-    println(character.raceFeatures.mkString(", "));
+    lines += ""
+    lines += "<b>Race Featues</b>"
+    lines += character.racialTrait.mkString(", ")
 
-    println("")
-    println("<b>Class Featues</b>")
-    println(character.classFeatures.mkString(", "));
+    lines += ""
+    lines += "<b>Class Featues</b>"
+    lines += character.classFeature.mkString(", ")
 
-    println("")
-    println("<b>Equipment</b>");
-    println(character.equipment.map(_.name).mkString(", "))
+    lines += ""
+    lines += "<b>Equipment</b>"
+    lines += character.equipment.filter(kv => kv._2.kind != "Ritual").map(kv => kv._2.htmlName).mkString(", ")
 
-    println("")
-    println("<b>At-Will powers</b>")
-    println(character.powernames("At-Will").mkString(", "));
+    lines += ""
+    lines += "<b>At-Will powers</b>"
+    renderPowers(_.usage == "At-Will")
 
-    println("")
-    println("<b>Encounter powers</b>")
-    println(character.powernames("Encounter").mkString(", "));
+    lines += ""
+    lines += "<b>Encounter powers</b>"
+    renderPowers(_.usage == "Encounter")
 
-    println("")
-    println("<b>Daily powers</b>")
-    println(character.powernames("Daily").mkString(", "));
+    lines += ""
+    lines += "<b>Daily powers</b>"
+    renderPowers(_.usage == "Daily")
 
-    println("")
-    println("<b>Rituals</b>")
-    println(character.rituals.mkString(", "))
+    lines += ""
+    lines += "<b>Rituals</b>"
+    lines += character.equipment.filter(kv => kv._2.kind == "Ritual").map(kv => kv._2.htmlName).mkString(", ")
 
-    println("")
-    println("<b>Backround/History</b>")
+    lines += ""
+    lines += "<b>Følgesvenner</b>"
+    lines += character.companions
 
-    println("")
-    println("Genearted by OutsiderTools - Character Visualizer.")
+    lines += ""
+    lines += "<b>Utseende</b>"
+    lines += character.appearance
+
+    lines += ""
+    lines += "<b>Personlighets trekk</b>"
+    lines += character.traits
+
+
+    lines += ""
+    lines += "Genearted by OutsiderTools - Rpol Character Visualizer."
+
+ lines
+  }
+
+  def renderPowers(f: Power => Boolean) {
+    for{
+      attack <- character.power if f(attack._2)
+     } yield {
+      if(attack._2.weapons.toList.isEmpty) {
+        lines += attack._2.htmlName + " as " + attack._2.action
+      }else {
+        for(weapon <- attack._2.weapons) yield {
+         lines += attack._2.htmlName + " with " + weapon._2.name + " <blue>+" + weapon._2.hit + " vs " + weapon._2.defense + "</blue> <red>" + weapon._2.dmg + " dmg</red> as " + attack._2.action
+        }
+      }
+    }
   }
 }

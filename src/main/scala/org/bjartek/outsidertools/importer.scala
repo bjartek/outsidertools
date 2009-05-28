@@ -2,181 +2,163 @@ package org.bjartek.outsidertools.importer
 
 import org.bjartek.outsidertools.domain._
 import scala.xml._
-import scala.collection.mutable.HashMap
 import scala.collection.immutable.Map
 
-case class CharacterXmlImporter(val character:Elem) {
+case class CharacterXmlImporter(val char:Elem) {
 
-  def generate(player: String) : Character  = {
-    //here we provide some raw data that could be pulled from the XML. Ie what is
-    //the skills/stats
+  def findPower(name: String) = tally.filter(_.value == name).toList.head
 
-    val stats = stat("Strength", List("Athletics")) :: 
-      stat("Constitution", List("Endurance")) ::
-      stat("Dexterity" , ("Acrobatics":: "Stealth":: "Thievery" :: Nil)) ::
-      stat("Intelligence" , ("Arcana":: "History":: "Religion" :: Nil)) ::
-      stat("Wisdom" , ("Dungeoneering":: "Heal":: "Insight":: "Nature":: "Perception" :: Nil)) ::
-      stat("Charisma" , ("Bluff":: "Diplomacy":: "Intimidate":: "Streetwise" :: Nil)) :: Nil
-
-    val char = Character(stats)
-    char.name = findText("Name")
-    char.player = player;
-
-    char.equipment = equipment.toList
-    char.rituals = rituals.toList
-
-    char.race = findTally("Race")
-    char.clazz = findTally("Class")
-    char.level = findTally("Level")
-    char.alignment =  findTally("Alignment")
-
-    char.xp = findText("Experience Points")
-
-    char.hp = characterStats("Hit Points")
-    char.surges = characterStats("Healing Surges")
-    char.init = characterStats("Initiative")
-    char.speed = characterStats("Speed")
-    char.ac = characterStats("AC")
-    char.fort = characterStats("Fortitude Defense");
-    char.ref = characterStats("Reflex Defense");
-    char.will = characterStats("Will Defense");
-
-    char.languages = filterTally("Language")
-    char.feats = filterTally("Feat")
-    char.raceFeatures = filterTally("Racial Trait")
-    char.classFeatures = filterTally("Class Feature")
-    char.powers = powerMap
-    char
-  }
-
-  
-  def powerMap = {
-     var powers = new HashMap[String, Power]
-     for(rule <- rules.filter(_.kind=="Power")) {                    
-      if( ! powers.contains(rule.name))  {
-        powers += rule.name -> Power(rule.name)
-      }
-       val power = powers(rule.name)
-       rule.field match {
-         case "Power Usage" => power.usage = rule.value 
-         case "Keywords" => power.keywords = rule.value 
-         case "Level" => power.level = rule.value.toInt
-         case "Attack" => power.attack = rule.value
-         case "Hit" => power.hit = rule.value
-         case "Attack Type" => power.attackType = rule.value
-         case _ => println(rule.field)
-       }
-    }
-    powers
-  }
-  
-  val characterStats = {
+  lazy val stats  = {
     Map() ++ (for{
-      stat <- character \\ "Stat" 
-      value <- stat \ "@value"
-      alias <- stat \ "alias"
-     } yield { 
-      alias(0).attribute("name").get.text -> value.text.toInt
-    })
+        stat <- sheet \\ "Stat" 
+        value <- stat \ "@value"
+        name <- stat \ "@name"
+      } yield { 
+        name.text.toLowerCase -> value.text.toInt
+      })
   }
 
-  val level = characterStats("Level");
-  val mod = level / 2;
 
-  def stat(name: String, skills: List[String]) : Stat = {
-    Stat(name, characterStats(name), (characterStats(name) - 10) / 2,  (characterStats(name) - 10) / 2 + mod, generateSkills(skills))
-  }
-
-  def generateSkills(skills: List[String]) : List[Skill] = {
-    for(skillName <- skills) yield {
-      Skill(skillName, characterStats(skillName))
-    }
-  }
-
-  val loot = for {                               
-    loot <- character \ "loot";
-    le <- loot \ "@equip-count";        
-    lc <- loot \ "@count"              
-  } yield {
-    val name = loot \\ "@name"
-    val typ = loot \\  "@type"
-    val lt = typ.toList.head
-    val ln = name.toList.head
-    lt.text match {
-      case "Weapon" => {
-        val wpn = Weapon(
-          ln.text, 
-          searchRules(ln.text, "Weapon", "Item Slot"),  
-          searchRules(ln.text, "Weapon", "Damage"), 
-          searchRules(ln.text, "Weapon", "Weapon Category"), 
-          searchRules(ln.text, "Weapon", "Proficiency Bonus").toInt, 
-          searchRules(ln.text, "Weapon", "Group"), 
-          lc.text.toInt, 
-          le.text.toInt)
-        if(typ.contains("Magic Item")) 
-          wpn.magic = name(1).text
-        wpn
-      }
-      case "Armor" => { 
-        val armor = Armor(
-          ln.text, 
-          searchRules(ln.text, "Armor", "Item Slot"), 
-          lc.text.toInt, 
-          le.text.toInt)
-        if(typ.contains("Magic Item")) 
-          armor.magic = name(1).text
-        armor
-      }
-      case "Ritual" => Ritual(ln.text, lc.text.toInt, le.text.toInt)
-      case _ => Equipment(ln.text, lt.text, lc.text.toInt, le.text.toInt)
-    }
-  }
-
-  val equipment = loot.filter(_.kind != "Ritual")
-
-  val rituals = loot.filter(_.kind == "Ritual").map(_.name)
-
-  lazy val rules =  for{
-    field <- character \ "RulesElementField"
-    ft <- field \ "@type"
-    fn <- field \ "@name"
-    ff <- field \ "@field"
-  } yield (Rules(fn.text, ft.text, ff.text, field.text.trim))
 
   lazy val tally = for{
-    tally <- character \ "RulesElementTally" \ "RulesElement"; 
+    tally <- sheet \ "RulesElementTally" \ "RulesElement" 
     tt <- tally \ "@type" 
     tn <- tally \ "@name"
-  } yield (tt.text, tn.text)
-
-  val texts = for{
-    ts <- character \ "textstring"
-    name <- ts \ "@name"
-  } yield  (name.text, ts.text.trim)
-
-  def filterTally(t:String) = {
-    (for( element <- tally.filter(x => x._1 == t)) yield (element._2)).toList
+  } yield {
+    val url =  tally.attribute("url") match { case Some(node:Node) => Some(node.text) case None => None}
+    Rules(tt.text, tn.text, url);
   }
 
-  def findTally(t:String) = {
-      tally.find(_._1 == t) match {
-        case Some(tally) => tally._2
-        case None => ""
-      }
-   }
 
-  def findText(t:String) = {
-    texts.find(_._1 == t) match {
-        case Some(txt) => txt._2
-        case None => ""
-      }
-  }
+  def filterTally(typ:String) = tally.filter(_.typ == typ).map(_.value)
 
-  def searchRules(name:String, kind:String, field:String)  = {
-     rules.filter(_.name == name).filter(_.kind == kind).filter(_.field == field).toList.head.value
+
+    val sheet = char \ "CharacterSheet";
+
+
+  lazy val details = sheet \ "Details"
+  def detail(key:String) = (details \ key).text.trim
+  lazy val race = tally.filter(_.typ=="Race").toList.head
+  lazy val claz = tally.filter(_.typ=="Class").toList.head
+
+
+  def generate() : Character  = {
+
+    val c = Character();
+    c.name = detail("name")
+    c.level = detail("Level").toInt
+    c.player = detail("Player")
+    c.deity = detail("Deity")
+    c.alignment = filterTally("Alignment").toList match { case List(element) => element; case _ => "" }
+    c.size = filterTally("Size").toList.head
+    c.languages = filterTally("Language").toList
+    c.race = race.value
+    c.raceUrl = race.url
+    c.height = detail("Height")
+    c.weight = detail("Weight")
+    c.gender = detail("Gender")
+    c.age = detail("Age")
+    c.money = detail("CarriedMoney")
+    c.bank = detail("StoredMoney") 
+    c.traits = detail("Traits") 
+
+    if(detail("Companions") != "") {
+        c.companions = detail("Companions")
+      }
+
+    if(detail("Appearance") != "") {
+        c.appearance = detail("Appearance")
+      }
+
+
+    if(detail("Experience") != "")  {
+      c.xp = detail("Experience").toInt
+     }
+
+    c.hp = stats("hit points").toInt
+    c.surges = stats("healing surges").toInt
+    c.init = stats("initiative").toInt
+    c.speed = stats("speed").toInt
+    c.ac = stats("ac").toInt
+    c.fort = stats("fortitude defense").toInt
+    c.ref = stats("reflex defense").toInt
+    c.will = stats("will defense").toInt
+    c.clazz = claz.value
+    c.clazzUrl = claz.url
+    c.passivePerception = stats("passive perception")
+    c.passiveInsight = stats("passive insight")
+    c.feats = Map() ++ (tally.filter(_.typ == "Feat").map(kv => kv.value -> kv.url));
+    c.classFeature = filterTally("Class Feature").toList
+    c.racialTrait = filterTally("Racial Trait").toList
+    c.skill = Map() ++ (tally.filter(_.typ == "Skill").map(kv => kv.value -> Skill(kv.value, stats(kv.value.toLowerCase), kv.url)))
+    c.stat = Map() ++ (("Strength" :: "Constitution" :: "Dexterity" :: "Intelligence" :: "Wisdom" :: "Charisma" :: Nil).map(name => name -> Stat(name, stats(name.toLowerCase), stats(name.toLowerCase + " modifier"))))
+
+    c.equipment = Map() ++ (for {                               
+      loot <- sheet \\ "loot";
+      le <- loot \ "@equip-count";        
+      lc <- loot \ "@count" if lc.text.toInt != 0 
+    } yield {
+      val name = loot \\ "@name"
+      val typ = loot \\  "@type"
+      val url = loot \\ "@url"
+
+      val lu = url.toList.head
+      val lt = typ.toList.head
+      val ln = name.toList.head
+
+      lt.text match {
+        case "Weapon" => {
+          if(typ.contains("Magic Item")) {
+            ln.text -> MagicWeapon(ln.text, lc.text.toInt, le.text.toInt, lu.text, name(1).text, url(1).text)
+          } else {
+            ln.text -> Weapon(ln.text, lc.text.toInt, le.text.toInt, lu.text)
+          }
+        }
+        case "Armor" => { 
+          if(typ.contains("Magic Item")) {
+            ln.text -> MagicArmour(name(1).text, url(1).text, ln.text, lc.text.toInt, le.text.toInt, lu.text);
+          }else {
+            ln.text -> Armor(ln.text, 
+              lc.text.toInt, 
+              le.text.toInt, 
+              lu.text)
+          }
+        }
+        case "Ritual" => ln.text -> Ritual(ln.text, lc.text.toInt, le.text.toInt, lu.text)
+        case _ => ln.text -> Equipment(ln.text, lt.text, lc.text.toInt, le.text.toInt, lu.text)
+      }
+    })
+
+
+    c.power =  Map() ++ (for{
+      power <- sheet \\ "Power"
+      name <- power \ "@name"
+    } yield {
+      val specifics = Map() ++ (for{
+          specific <- power \ "specific"
+          sn <- specific \ "@name"
+        }  yield { 
+          sn.text.trim -> specific.text.trim
+        });
+
+           val weapons = Map() ++ (for{
+          weapon <- power \ "Weapon"
+          wn <- weapon \ "@name"
+          hit <- weapon \ "AttackBonus"
+          dmg <- weapon \ "Damage"
+          stat <- weapon \ "AttackStat"
+          defense <- weapon \ "Defense"
+          hitSummary <- weapon \ "HitComponents"
+          dmgSummary <- weapon \ "DamageComponents"
+        } yield {
+
+          val cond = weapon \ "Conditions"
+          wn.text -> PowerWeapon(wn.text.trim, hit.text.trim, dmg.text.trim, stat.text.trim, defense.text.trim, hitSummary.text.trim, dmgSummary.text.trim, cond.text.trim);
+        }) ;
+      
+      name.text -> Power(name.text, findPower(name.text).url, specifics("Power Usage"), specifics("Action Type"),  weapons)
+      
+    })
+    c
   }
 }
-
-
-
-
