@@ -2,31 +2,31 @@ package org.bjartek.outsidertools.render
 
 import org.bjartek.outsidertools.domain._
 
-/*
-object HtmlRenderer {
+class HtmlCardRenderer(val character:Character) {
 
-  def apply(character:Character) = {
-    val stats = for(stat <- character.stats) yield {
-      renderStat(stat) :: renderSkills(stat.skills.tail)
+  def generate =  {
+    val stats = for(stat <- character.statSkills) yield {
+      renderStat(stat) :: renderSkills(stat._2.tail)
     }
     <table> { stats } </table>
   }
 
 
-   def renderSkills(skills: List[Skill]) = {
-     for(skill <- skills) yield {
-      <tr><td class="small skill">{skill.name.toString}</td><td class="small">{ skill.value.toString }</td></tr>
+   def renderSkills(skills: List[String]) = {
+     for(s <- skills) yield { 
+      val  skill =  character.skill(s)
+      <tr><td class="small skill">{skill.name.toString}</td><td class="small">{ skill.score.toString }</td></tr>
    }
   }
 
-  def renderStat(stat:Stat) = {
-    val firstSkill = stat.skills.head
+  def renderStat(pair:Pair[String, List[String]]) = {
+    val firstSkill = character.skill(pair._2.head)
+    val stat = character.stat(pair._1)
+    val numSkills = pair._2.length.toString
 
-    <tr class="stat"><td rowspan={ stat.numberOfSkills }>{ stat.printName }</td><td rowspan={ stat.numberOfSkills }>{ stat.check.toString } </td><td rowspan={ stat.numberOfSkills } class="small">{ stat.value.toString  }</td><td class="small skill">{ firstSkill.name }</td><td class="small">{firstSkill.value.toString }</td></tr>
+    <tr class="stat"><td rowspan={ numSkills }>{ stat.shortName }</td><td rowspan={ numSkills }>{ stat.check(character.level).toString } </td><td rowspan={ numSkills } class="small">{ stat.score.toString  }</td><td class="small skill">{ firstSkill.name }</td><td class="small">{firstSkill.score.toString }</td></tr>
   }
-
 }
-*/
 
 
 class  RpolTextRenderer(val character:Character) {
@@ -53,9 +53,8 @@ class  RpolTextRenderer(val character:Character) {
     lines += "<b>Weight:</b> " + character.weight
     lines += ""
 
-    for(kv <- character.stat) {
-      lines += kv._1 + ": " + kv._2.score.toString
-    }
+    
+    character.statOrder.foreach(s => lines += s + ": " + character.stat(s).score);
     
     lines += ""
 
@@ -83,10 +82,9 @@ class  RpolTextRenderer(val character:Character) {
 
     lines += ""
     lines += "<b>Skills</b>"
-    for(skill <- character.skill) {
-      lines += skill._2.htmlName
-    }
-    
+    character.skillOrder.foreach(s => lines += character.skill(s).htmlName)
+
+   
     lines += ""
     lines += "<b>Languages</b>"
     lines += character.languages.mkString(", ")

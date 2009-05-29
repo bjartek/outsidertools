@@ -91,7 +91,7 @@ case class CharacterXmlImporter(val char:Elem) {
     c.classFeature = filterTally("Class Feature").toList
     c.racialTrait = filterTally("Racial Trait").toList
     c.skill = Map() ++ (tally.filter(_.typ == "Skill").map(kv => kv.value -> Skill(kv.value, stats(kv.value.toLowerCase), kv.url)))
-    c.stat = Map() ++ (("Strength" :: "Constitution" :: "Dexterity" :: "Intelligence" :: "Wisdom" :: "Charisma" :: Nil).map(name => name -> Stat(name, stats(name.toLowerCase), stats(name.toLowerCase + " modifier"))))
+    c.stat = Map() ++ (c.statOrder.map(name => name -> Stat(name, stats(name.toLowerCase), stats(name.toLowerCase + " modifier"))))
 
     c.equipment = Map() ++ (for {                               
       loot <- sheet \\ "loot";

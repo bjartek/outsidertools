@@ -12,4 +12,8 @@ Character Visualizer
 --
 The first tool. Convert a dnd4e xml file into a textual representation. 
 
+Example on how to run:
+mvn scala:run "-DaddArgs<file>.dnd4e" -> print out the character in the mvn output
+mvn scala:run "-DaddArgs<file>.dnd4e|file.txt" -> print out the character in the file.txt file
 
+This visualizer feature will be part of the web site when it is created. 

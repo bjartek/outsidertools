@@ -45,9 +45,20 @@ case class Skill(var name:String, var score:Int, var url: Option[String]) {
 
 }
 
-case class Stat(var name: String, var score:Int, var mod:Int)
+case class Stat(var name: String, var score:Int, var mod:Int) {
+
+  lazy val shortName = name.slice(0,3).toUpperCase
+
+  def check(level:Int) = ((score - 10)/2) + Math.floor(level / 2).toInt
+
+}
 
 case class Character() {
+
+  var statOrder = "Strength" :: "Constitution" :: "Dexterity" :: "Intelligence" :: "Wisdom" :: "Charisma" :: Nil
+  var skillOrder = "Athletics" :: "Endurance" :: "Acrobatics" :: "Stealth" :: "Thievery" :: "Arcana" :: "History" :: "Religion" :: "Dungeoneering" :: "Heal" :: "Insight" :: "Nature" :: "Perception" :: "Bluff" :: "Diplomacy" :: "Intimidate" :: "Streetwise" :: Nil
+
+  var statSkills = ("Strength" ->List("Athletics")) :: ("Constitution" ->  List("Endurance")) :: ("Dexterity" -> List("Acrobatics", "Stealth", "Thievery")) :: ("Intelligence" -> List("Arcana", "History", "Religion"))  :: ("Wisdom" ->  List("Dungeoneering", "Heal", "Insight", "Nature", "Perception")):: ("Charisma" -> List("Bluff", "Diplomacy", "Intimidate", "Streetwise")) :: Nil
 
   var passiveInsight = 0
   var passivePerception = 0
