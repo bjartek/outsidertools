@@ -10,8 +10,8 @@ object CharacterVisualizer{
       var charName = args(0)
       val importer = CharacterXmlImporter(XML.load(charName))
       val char = importer.generate()
-      //val renderer = new RpolTextRenderer(char);
-      val renderer = new HtmlCardRenderer(char);
+      val renderer = new RpolTextRenderer(char);
+     // val renderer = new HtmlCardRenderer(char);
 
      if(args.length == 2) {
       val out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(args(1))),"UTF8"));

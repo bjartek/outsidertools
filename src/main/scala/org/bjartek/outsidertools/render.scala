@@ -35,8 +35,9 @@ class  RpolTextRenderer(val character:Character) {
     var lines:List[String] = Nil;
     
     def generate() = {
-      lines += "<b>Name:</b> "  + character.name
-      lines += "<b>Player: </b>" + character.player
+    lines += "<html> <head> <meta content=\"text/html; charset=UTF-8\" http-equiv=\"content-type\" /> </head> <body> <pre>"
+    lines += "<b>Name:</b> "  + character.name
+     lines += "<b>Player: </b>" + character.player
     lines += "<b>Race: </b>" + character.race
     lines += "<b>Class and Level:</b> " + character.clazz + " " + character.level
     lines += "<b>Alignement: </b>" + character.alignment
@@ -136,7 +137,7 @@ class  RpolTextRenderer(val character:Character) {
 
 
     lines += ""
-    lines += "Genearted by OutsiderTools - Rpol Character Visualizer."
+    lines += "Genearted by OutsiderTools - Rpol Character Visualizer.</pre></body></html>"
 
  lines
   }
