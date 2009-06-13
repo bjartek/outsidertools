@@ -1,0 +1,178 @@
+.desc {
+	color: white;
+	float: left;
+	width: 32px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled { 
+	opacity: 1;
+}
+
+.ot_element {
+	width: 32px;
+	height: 32px;
+	font-size: 16px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#map {
+	width: 380px;
+	height: 350px;
+	float: left;
+	margin-right: 10px;
+}
+
+.first {
+	clear: both;
+}
+
+.drop {
+	background-color: white;
+}
+
+
+.cell {
+	font-size: small;
+	color: white;
+	float: left;
+	border: 1px solid white;
+	padding: 0px;
+	margin: 0px;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	}
+
+	#panel {
+		margin-left: 2px;
+		float: left;
+		width: 200;
+	}
+
+	#ot_char_inspector {
+		padding: 2px;
+		margin-bottom: 5px;
+	}
+
+	#ot_tile_inspector {
+		padding: 2px;
+		margin-bottom: 5px;
+	}
+
+	#ot_element {
+		padding: 2px;
+	}
+
+	div.accept {
+		opacity: .5;
+}
+
+
+
+#ot_element {
+	list-style-position: inside;
+	list-style: none;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+div.hover {
+	opacity: .7;
+}
+
+h3 {
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 2px solid black;
+	margin-bottom: 2px;
+}
+
+h4 {
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid black;
+	margin-bottom: 1px;
+
+}
+
+div.highlight {
+	border: 1px solid red;
+}
+
+li.highlight {
+	background-color: black;
+	color: white;
+}
+
+#ot_tile_preview {
+	margin-top: 2px;
+	float: left;
+	margin-bottom: 2px;
+}
+
+#ot_tile_inspector {
+	float: left;
+	width: 160px;
+	height: 50px;
+}
+
+.fg-button { outline: 0; margin:0 4px 0 0; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+
+a.fg-button { float:left; }
+
+/* remove extra button width in IE */
+button.fg-button { width:auto; overflow:visible; }
+
+.fg-button-icon-left { padding-left: 2.1em; }
+.fg-button-icon-right { padding-right: 2.1em; }
+.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+
+.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }     /* solo icon buttons must have block properties for the text-indent to work */    
+
+.fg-buttonset { float:left; }
+.fg-buttonset .fg-button { float: left; }
+.fg-buttonset-single .fg-button, 
+.fg-buttonset-multi .fg-button { margin-right: -1px;}
+
+.fg-toolbar { padding: .5em; margin: 0;  width: 400px;}
+.fg-toolbar .fg-buttonset { margin-right:1.5em; padding-left: 1px; }
+.fg-toolbar .fg-button { font-size: 1em;  }
+
+
+/* rows and columns */
+#ot_map_cols div {
+	float: left;
+	text-align: center;
+	font-size: x-small;
+	width: 34px;
+}
+
+#ot_map_rows {
+	float: left;
+	font-size: x-small;
+	width: 15px;
+}
+
+#ot_map_rows div {
+	height: 33px;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 2px;
+	padding-top: 1px;
+}
+
+#ot_map_rows div.ot_map_firstrow {
+	height: 19px;
+}
+
+
+#ot_map {
+	float: left;
+}

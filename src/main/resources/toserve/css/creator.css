@@ -1,0 +1,91 @@
+#dungeon {  background: transparent url(../tiles/ot_dungeon.png)        0    0 no-repeat;   height: 288px; width: 320px; }
+#forrest {  background: transparent url(../tiles/ot_forrest.png)        0    0 no-repeat; height: 352px; width: 320px; }
+#desert {  background: transparent url(../tiles/ot_desert.png)        0    0 no-repeat; height: 384px; width: 320px; }
+#water {  background: transparent url(../tiles/ot_water.png)        0    0 no-repeat; height: 384px; width: 320px; }
+#out {  background: transparent url(../tiles/hhout.png)        0    0 no-repeat; height: 408px; width: 408px; }
+#des {  background: transparent url(../tiles/hhdes.png)        0    0 no-repeat; height: 408px; width: 408px; }
+#div1 {  background: transparent url(../tiles/hhdiv1.png)        0    0 no-repeat; height: 256px; width: 256px; }
+#div2 {  background: transparent url(../tiles/hhdiv2.png)        0    0 no-repeat; height: 256px; width: 256px; }
+
+
+#tiles {
+    width: 600px;
+    height: 600px;
+    font-size: 10px;
+    padding: 5px;
+}
+
+body {
+    font-family:"Arial","Helvetica","Verdana","sans-serif";
+    font-size:10px;
+}
+
+
+#tabs {
+	width: 430px;
+	float: left;
+}
+
+#preview {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+    visibility: hidden;
+}
+
+
+div.ui-selected {
+    opacity: 0.5;
+}
+
+
+#selection {
+    display: none;
+		margin-bottom: 2px;
+}
+.fl {
+float: left;
+}
+
+.edit {
+  margin-left: 5px;
+ width: 75px;
+}
+
+.descr {
+  width: 200px;
+}
+
+.edit span {
+    font-size: x-small;
+}
+
+.help {
+    margin-left: 5px;
+    margin-right: 100px;
+}
+
+.fl span {
+	font-style: italic;
+}
+#selection .fg-buttonset {
+	height: 30px;
+
+}
+
+#menu {
+	margin-bottom: 2px;
+	font-size: small;
+}
+
+table {
+	font-size: small;
+}
+
+#help-window h2 {
+	font-size: 1.1em;
+}
+

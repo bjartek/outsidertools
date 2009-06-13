@@ -1,0 +1,1826 @@
+.dungeon1x1 {background: transparent url(../tiles/ot_dungeon.png)        0    0 no-repeat; }
+.dungeon1x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px    0 no-repeat; }
+.dungeon1x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px    0 no-repeat; }
+.dungeon1x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px    0 no-repeat; }
+.dungeon1x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px    0 no-repeat; }
+.dungeon1x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px    0 no-repeat; }
+.dungeon1x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px    0 no-repeat; }
+.dungeon1x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px    0 no-repeat; }
+.dungeon1x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px    0 no-repeat; }
+
+.dungeon2x1 {background: transparent url(../tiles/ot_dungeon.png)        0  -32px no-repeat; }
+.dungeon2x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px  -32px no-repeat; }
+.dungeon2x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px  -32px no-repeat; }
+.dungeon2x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px  -32px no-repeat; }
+.dungeon2x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px  -32px no-repeat; }
+.dungeon2x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px  -32px no-repeat; }
+.dungeon2x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px  -32px no-repeat; }
+.dungeon2x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px  -32px no-repeat; }
+.dungeon2x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px  -32px no-repeat; }
+
+.dungeon3x1 {background: transparent url(../tiles/ot_dungeon.png)        0  -64px no-repeat; }
+.dungeon3x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px  -64px no-repeat; }
+.dungeon3x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px  -64px no-repeat; }
+.dungeon3x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px  -64px no-repeat; }
+.dungeon3x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px  -64px no-repeat; }
+.dungeon3x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px  -64px no-repeat; }
+.dungeon3x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px  -64px no-repeat; }
+.dungeon3x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px  -64px no-repeat; }
+.dungeon3x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px  -64px no-repeat; }
+
+.dungeon4x1 {background: transparent url(../tiles/ot_dungeon.png)        0  -96px no-repeat; }
+.dungeon4x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px  -96px no-repeat; }
+.dungeon4x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px  -96px no-repeat; }
+.dungeon4x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px  -96px no-repeat; }
+.dungeon4x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px  -96px no-repeat; }
+.dungeon4x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px  -96px no-repeat; }
+.dungeon4x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px  -96px no-repeat; }
+.dungeon4x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px  -96px no-repeat; }
+.dungeon4x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px  -96px no-repeat; }
+
+.dungeon5x1 {background: transparent url(../tiles/ot_dungeon.png)        0 -128px no-repeat; }
+.dungeon5x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px -128px no-repeat; }
+.dungeon5x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px -128px no-repeat; }
+.dungeon5x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px -128px no-repeat; }
+.dungeon5x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px -128px no-repeat; }
+.dungeon5x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px -128px no-repeat; }
+.dungeon5x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px -128px no-repeat; }
+.dungeon5x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px -128px no-repeat; }
+.dungeon5x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px -128px no-repeat; }
+
+.dungeon6x1 {background: transparent url(../tiles/ot_dungeon.png)        0 -160px no-repeat; }
+.dungeon6x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px -160px no-repeat; }
+.dungeon6x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px -160px no-repeat; }
+.dungeon6x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px -160px no-repeat; }
+.dungeon6x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px -160px no-repeat; }
+.dungeon6x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px -160px no-repeat; }
+.dungeon6x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px -160px no-repeat; }
+.dungeon6x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px -160px no-repeat; }
+.dungeon6x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px -160px no-repeat; }
+
+.dungeon7x1 {background: transparent url(../tiles/ot_dungeon.png)        0 -192px no-repeat; }
+.dungeon7x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px -192px no-repeat; }
+.dungeon7x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px -192px no-repeat; }
+.dungeon7x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px -192px no-repeat; }
+.dungeon7x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px -192px no-repeat; }
+.dungeon7x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px -192px no-repeat; }
+.dungeon7x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px -192px no-repeat; }
+.dungeon7x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px -192px no-repeat; }
+.dungeon7x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px -192px no-repeat; }
+
+.dungeon8x1 {background: transparent url(../tiles/ot_dungeon.png)        0 -224px no-repeat; }
+.dungeon8x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px -224px no-repeat; }
+.dungeon8x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px -224px no-repeat; }
+.dungeon8x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px -224px no-repeat; }
+.dungeon8x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px -224px no-repeat; }
+.dungeon8x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px -224px no-repeat; }
+.dungeon8x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px -224px no-repeat; }
+.dungeon8x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px -224px no-repeat; }
+.dungeon8x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px -224px no-repeat; }
+
+.dungeon9x1 {background: transparent url(../tiles/ot_dungeon.png)        0 -256px no-repeat; }
+.dungeon9x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px -256px no-repeat; }
+.dungeon9x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px -256px no-repeat; }
+.dungeon9x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px -256px no-repeat; }
+.dungeon9x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px -256px no-repeat; }
+.dungeon9x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px -256px no-repeat; }
+.dungeon9x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px -256px no-repeat; }
+.dungeon9x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px -256px no-repeat; }
+.dungeon9x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px -256px no-repeat; }
+
+.dungeon10x1 {background: transparent url(../tiles/ot_dungeon.png)        0 -288px no-repeat; }
+.dungeon10x2 { background: transparent url(../tiles/ot_dungeon.png)   -32px -288px no-repeat; }
+.dungeon10x3 { background: transparent url(../tiles/ot_dungeon.png)   -64px -288px no-repeat; }
+.dungeon10x4 { background: transparent url(../tiles/ot_dungeon.png)   -96px -288px no-repeat; }
+.dungeon10x5 { background: transparent url(../tiles/ot_dungeon.png)  -128px -288px no-repeat; }
+.dungeon10x6 { background: transparent url(../tiles/ot_dungeon.png)  -160px -288px no-repeat; }
+.dungeon10x7 { background: transparent url(../tiles/ot_dungeon.png)  -192px -288px no-repeat; }
+.dungeon10x8 { background: transparent url(../tiles/ot_dungeon.png)  -224px -288px no-repeat; }
+.dungeon10x9 { background: transparent url(../tiles/ot_dungeon.png)  -256px -288px no-repeat; }
+
+.water1x1 {background: transparent url(../tiles/ot_water.png)        0    0 no-repeat; }
+.water1x2 { background: transparent url(../tiles/ot_water.png)   -32px    0 no-repeat; }
+.water1x3 { background: transparent url(../tiles/ot_water.png)   -64px    0 no-repeat; }
+.water1x4 { background: transparent url(../tiles/ot_water.png)   -96px    0 no-repeat; }
+.water1x5 { background: transparent url(../tiles/ot_water.png)  -128px    0 no-repeat; }
+.water1x6 { background: transparent url(../tiles/ot_water.png)  -160px    0 no-repeat; }
+.water1x7 { background: transparent url(../tiles/ot_water.png)  -192px    0 no-repeat; }
+.water1x8 { background: transparent url(../tiles/ot_water.png)  -224px    0 no-repeat; }
+
+.water2x1 {background: transparent url(../tiles/ot_water.png)        0  -32px no-repeat; }
+.water2x2 { background: transparent url(../tiles/ot_water.png)   -32px  -32px no-repeat; }
+.water2x3 { background: transparent url(../tiles/ot_water.png)   -64px  -32px no-repeat; }
+.water2x4 { background: transparent url(../tiles/ot_water.png)   -96px  -32px no-repeat; }
+.water2x5 { background: transparent url(../tiles/ot_water.png)  -128px  -32px no-repeat; }
+.water2x6 { background: transparent url(../tiles/ot_water.png)  -160px  -32px no-repeat; }
+.water2x7 { background: transparent url(../tiles/ot_water.png)  -192px  -32px no-repeat; }
+.water2x8 { background: transparent url(../tiles/ot_water.png)  -224px  -32px no-repeat; }
+
+.water3x1 {background: transparent url(../tiles/ot_water.png)        0  -64px no-repeat; }
+.water3x2 { background: transparent url(../tiles/ot_water.png)   -32px  -64px no-repeat; }
+.water3x3 { background: transparent url(../tiles/ot_water.png)   -64px  -64px no-repeat; }
+.water3x4 { background: transparent url(../tiles/ot_water.png)   -96px  -64px no-repeat; }
+.water3x5 { background: transparent url(../tiles/ot_water.png)  -128px  -64px no-repeat; }
+.water3x6 { background: transparent url(../tiles/ot_water.png)  -160px  -64px no-repeat; }
+.water3x7 { background: transparent url(../tiles/ot_water.png)  -192px  -64px no-repeat; }
+.water3x8 { background: transparent url(../tiles/ot_water.png)  -224px  -64px no-repeat; }
+
+.water4x1 {background: transparent url(../tiles/ot_water.png)        0  -96px no-repeat; }
+.water4x2 { background: transparent url(../tiles/ot_water.png)   -32px  -96px no-repeat; }
+.water4x3 { background: transparent url(../tiles/ot_water.png)   -64px  -96px no-repeat; }
+.water4x4 { background: transparent url(../tiles/ot_water.png)   -96px  -96px no-repeat; }
+.water4x5 { background: transparent url(../tiles/ot_water.png)  -128px  -96px no-repeat; }
+.water4x6 { background: transparent url(../tiles/ot_water.png)  -160px  -96px no-repeat; }
+.water4x7 { background: transparent url(../tiles/ot_water.png)  -192px  -96px no-repeat; }
+.water4x8 { background: transparent url(../tiles/ot_water.png)  -224px  -96px no-repeat; }
+
+.water5x1 {background: transparent url(../tiles/ot_water.png)        0 -128px no-repeat; }
+.water5x2 { background: transparent url(../tiles/ot_water.png)   -32px -128px no-repeat; }
+.water5x3 { background: transparent url(../tiles/ot_water.png)   -64px -128px no-repeat; }
+.water5x4 { background: transparent url(../tiles/ot_water.png)   -96px -128px no-repeat; }
+.water5x5 { background: transparent url(../tiles/ot_water.png)  -128px -128px no-repeat; }
+.water5x6 { background: transparent url(../tiles/ot_water.png)  -160px -128px no-repeat; }
+.water5x7 { background: transparent url(../tiles/ot_water.png)  -192px -128px no-repeat; }
+.water5x8 { background: transparent url(../tiles/ot_water.png)  -224px -128px no-repeat; }
+
+.water6x1 {background: transparent url(../tiles/ot_water.png)        0 -160px no-repeat; }
+.water6x2 { background: transparent url(../tiles/ot_water.png)   -32px -160px no-repeat; }
+.water6x3 { background: transparent url(../tiles/ot_water.png)   -64px -160px no-repeat; }
+.water6x4 { background: transparent url(../tiles/ot_water.png)   -96px -160px no-repeat; }
+.water6x5 { background: transparent url(../tiles/ot_water.png)  -128px -160px no-repeat; }
+.water6x6 { background: transparent url(../tiles/ot_water.png)  -160px -160px no-repeat; }
+.water6x7 { background: transparent url(../tiles/ot_water.png)  -192px -160px no-repeat; }
+.water6x8 { background: transparent url(../tiles/ot_water.png)  -224px -160px no-repeat; }
+
+.water7x1 {background: transparent url(../tiles/ot_water.png)        0 -192px no-repeat; }
+.water7x2 { background: transparent url(../tiles/ot_water.png)   -32px -192px no-repeat; }
+.water7x3 { background: transparent url(../tiles/ot_water.png)   -64px -192px no-repeat; }
+.water7x4 { background: transparent url(../tiles/ot_water.png)   -96px -192px no-repeat; }
+.water7x5 { background: transparent url(../tiles/ot_water.png)  -128px -192px no-repeat; }
+.water7x6 { background: transparent url(../tiles/ot_water.png)  -160px -192px no-repeat; }
+.water7x7 { background: transparent url(../tiles/ot_water.png)  -192px -192px no-repeat; }
+.water7x8 { background: transparent url(../tiles/ot_water.png)  -224px -192px no-repeat; }
+
+.water8x1 {background: transparent url(../tiles/ot_water.png)        0 -224px no-repeat; }
+.water8x2 { background: transparent url(../tiles/ot_water.png)   -32px -224px no-repeat; }
+.water8x3 { background: transparent url(../tiles/ot_water.png)   -64px -224px no-repeat; }
+.water8x4 { background: transparent url(../tiles/ot_water.png)   -96px -224px no-repeat; }
+.water8x5 { background: transparent url(../tiles/ot_water.png)  -128px -224px no-repeat; }
+.water8x6 { background: transparent url(../tiles/ot_water.png)  -160px -224px no-repeat; }
+.water8x7 { background: transparent url(../tiles/ot_water.png)  -192px -224px no-repeat; }
+.water8x8 { background: transparent url(../tiles/ot_water.png)  -224px -224px no-repeat; }
+
+.water9x1 {background: transparent url(../tiles/ot_water.png)        0 -256px no-repeat; }
+.water9x2 { background: transparent url(../tiles/ot_water.png)   -32px -256px no-repeat; }
+.water9x3 { background: transparent url(../tiles/ot_water.png)   -64px -256px no-repeat; }
+.water9x4 { background: transparent url(../tiles/ot_water.png)   -96px -256px no-repeat; }
+.water9x5 { background: transparent url(../tiles/ot_water.png)  -128px -256px no-repeat; }
+.water9x6 { background: transparent url(../tiles/ot_water.png)  -160px -256px no-repeat; }
+.water9x7 { background: transparent url(../tiles/ot_water.png)  -192px -256px no-repeat; }
+.water9x8 { background: transparent url(../tiles/ot_water.png)  -224px -256px no-repeat; }
+
+.water10x1 {background: transparent url(../tiles/ot_water.png)        0 -288px no-repeat; }
+.water10x2 { background: transparent url(../tiles/ot_water.png)   -32px -288px no-repeat; }
+.water10x3 { background: transparent url(../tiles/ot_water.png)   -64px -288px no-repeat; }
+.water10x4 { background: transparent url(../tiles/ot_water.png)   -96px -288px no-repeat; }
+.water10x5 { background: transparent url(../tiles/ot_water.png)  -128px -288px no-repeat; }
+.water10x6 { background: transparent url(../tiles/ot_water.png)  -160px -288px no-repeat; }
+.water10x7 { background: transparent url(../tiles/ot_water.png)  -192px -288px no-repeat; }
+.water10x8 { background: transparent url(../tiles/ot_water.png)  -224px -288px no-repeat; }
+
+.water11x1 {background: transparent url(../tiles/ot_water.png)        0 -320px no-repeat; }
+.water11x2 { background: transparent url(../tiles/ot_water.png)   -32px -320px no-repeat; }
+.water11x3 { background: transparent url(../tiles/ot_water.png)   -64px -320px no-repeat; }
+.water11x4 { background: transparent url(../tiles/ot_water.png)   -96px -320px no-repeat; }
+.water11x5 { background: transparent url(../tiles/ot_water.png)  -128px -320px no-repeat; }
+.water11x6 { background: transparent url(../tiles/ot_water.png)  -160px -320px no-repeat; }
+.water11x7 { background: transparent url(../tiles/ot_water.png)  -192px -320px no-repeat; }
+.water11x8 { background: transparent url(../tiles/ot_water.png)  -224px -320px no-repeat; }
+
+.water12x1 {background: transparent url(../tiles/ot_water.png)        0 -352px no-repeat; }
+.water12x2 { background: transparent url(../tiles/ot_water.png)   -32px -352px no-repeat; }
+.water12x3 { background: transparent url(../tiles/ot_water.png)   -64px -352px no-repeat; }
+.water12x4 { background: transparent url(../tiles/ot_water.png)   -96px -352px no-repeat; }
+.water12x5 { background: transparent url(../tiles/ot_water.png)  -128px -352px no-repeat; }
+.water12x6 { background: transparent url(../tiles/ot_water.png)  -160px -352px no-repeat; }
+.water12x7 { background: transparent url(../tiles/ot_water.png)  -192px -352px no-repeat; }
+.water12x8 { background: transparent url(../tiles/ot_water.png)  -224px -352px no-repeat; }
+
+.desert1x1 {background: transparent url(../tiles/ot_desert.png)        0    0 no-repeat; }
+.desert1x2 { background: transparent url(../tiles/ot_desert.png)   -32px    0 no-repeat; }
+.desert1x3 { background: transparent url(../tiles/ot_desert.png)   -64px    0 no-repeat; }
+.desert1x4 { background: transparent url(../tiles/ot_desert.png)   -96px    0 no-repeat; }
+.desert1x5 { background: transparent url(../tiles/ot_desert.png)  -128px    0 no-repeat; }
+.desert1x6 { background: transparent url(../tiles/ot_desert.png)  -160px    0 no-repeat; }
+.desert1x7 { background: transparent url(../tiles/ot_desert.png)  -192px    0 no-repeat; }
+.desert1x8 { background: transparent url(../tiles/ot_desert.png)  -224px    0 no-repeat; }
+.desert1x9 { background: transparent url(../tiles/ot_desert.png)  -256px    0 no-repeat; }
+.desert1x10 { background: transparent url(../tiles/ot_desert.png) -288px    0 no-repeat; }
+
+.desert2x1 {background: transparent url(../tiles/ot_desert.png)        0  -32px no-repeat; }
+.desert2x2 { background: transparent url(../tiles/ot_desert.png)   -32px  -32px no-repeat; }
+.desert2x3 { background: transparent url(../tiles/ot_desert.png)   -64px  -32px no-repeat; }
+.desert2x4 { background: transparent url(../tiles/ot_desert.png)   -96px  -32px no-repeat; }
+.desert2x5 { background: transparent url(../tiles/ot_desert.png)  -128px  -32px no-repeat; }
+.desert2x6 { background: transparent url(../tiles/ot_desert.png)  -160px  -32px no-repeat; }
+.desert2x7 { background: transparent url(../tiles/ot_desert.png)  -192px  -32px no-repeat; }
+.desert2x8 { background: transparent url(../tiles/ot_desert.png)  -224px  -32px no-repeat; }
+.desert2x9 { background: transparent url(../tiles/ot_desert.png)  -256px  -32px no-repeat; }
+.desert2x10 { background: transparent url(../tiles/ot_desert.png) -288px  -32px no-repeat; }
+
+.desert3x1 {background: transparent url(../tiles/ot_desert.png)        0  -64px no-repeat; }
+.desert3x2 { background: transparent url(../tiles/ot_desert.png)   -32px  -64px no-repeat; }
+.desert3x3 { background: transparent url(../tiles/ot_desert.png)   -64px  -64px no-repeat; }
+.desert3x4 { background: transparent url(../tiles/ot_desert.png)   -96px  -64px no-repeat; }
+.desert3x5 { background: transparent url(../tiles/ot_desert.png)  -128px  -64px no-repeat; }
+.desert3x6 { background: transparent url(../tiles/ot_desert.png)  -160px  -64px no-repeat; }
+.desert3x7 { background: transparent url(../tiles/ot_desert.png)  -192px  -64px no-repeat; }
+.desert3x8 { background: transparent url(../tiles/ot_desert.png)  -224px  -64px no-repeat; }
+.desert3x9 { background: transparent url(../tiles/ot_desert.png)  -256px  -64px no-repeat; }
+.desert3x10 { background: transparent url(../tiles/ot_desert.png) -288px  -64px no-repeat; }
+
+.desert4x1 {background: transparent url(../tiles/ot_desert.png)        0  -96px no-repeat; }
+.desert4x2 { background: transparent url(../tiles/ot_desert.png)   -32px  -96px no-repeat; }
+.desert4x3 { background: transparent url(../tiles/ot_desert.png)   -64px  -96px no-repeat; }
+.desert4x4 { background: transparent url(../tiles/ot_desert.png)   -96px  -96px no-repeat; }
+.desert4x5 { background: transparent url(../tiles/ot_desert.png)  -128px  -96px no-repeat; }
+.desert4x6 { background: transparent url(../tiles/ot_desert.png)  -160px  -96px no-repeat; }
+.desert4x7 { background: transparent url(../tiles/ot_desert.png)  -192px  -96px no-repeat; }
+.desert4x8 { background: transparent url(../tiles/ot_desert.png)  -224px  -96px no-repeat; }
+.desert4x9 { background: transparent url(../tiles/ot_desert.png)  -256px  -96px no-repeat; }
+.desert4x10 { background: transparent url(../tiles/ot_desert.png) -288px  -96px no-repeat; }
+
+.desert5x1 {background: transparent url(../tiles/ot_desert.png)        0 -128px no-repeat; }
+.desert5x2 { background: transparent url(../tiles/ot_desert.png)   -32px -128px no-repeat; }
+.desert5x3 { background: transparent url(../tiles/ot_desert.png)   -64px -128px no-repeat; }
+.desert5x4 { background: transparent url(../tiles/ot_desert.png)   -96px -128px no-repeat; }
+.desert5x5 { background: transparent url(../tiles/ot_desert.png)  -128px -128px no-repeat; }
+.desert5x6 { background: transparent url(../tiles/ot_desert.png)  -160px -128px no-repeat; }
+.desert5x7 { background: transparent url(../tiles/ot_desert.png)  -192px -128px no-repeat; }
+.desert5x8 { background: transparent url(../tiles/ot_desert.png)  -224px -128px no-repeat; }
+.desert5x9 { background: transparent url(../tiles/ot_desert.png)  -256px -128px no-repeat; }
+.desert5x10 { background: transparent url(../tiles/ot_desert.png) -288px -128px no-repeat; }
+
+.desert6x1 {background: transparent url(../tiles/ot_desert.png)        0 -160px no-repeat; }
+.desert6x2 { background: transparent url(../tiles/ot_desert.png)   -32px -160px no-repeat; }
+.desert6x3 { background: transparent url(../tiles/ot_desert.png)   -64px -160px no-repeat; }
+.desert6x4 { background: transparent url(../tiles/ot_desert.png)   -96px -160px no-repeat; }
+.desert6x5 { background: transparent url(../tiles/ot_desert.png)  -128px -160px no-repeat; }
+.desert6x6 { background: transparent url(../tiles/ot_desert.png)  -160px -160px no-repeat; }
+.desert6x7 { background: transparent url(../tiles/ot_desert.png)  -192px -160px no-repeat; }
+.desert6x8 { background: transparent url(../tiles/ot_desert.png)  -224px -160px no-repeat; }
+.desert6x9 { background: transparent url(../tiles/ot_desert.png)  -256px -160px no-repeat; }
+.desert6x10 { background: transparent url(../tiles/ot_desert.png) -288px -160px no-repeat; }
+
+.desert7x1 {background: transparent url(../tiles/ot_desert.png)        0 -192px no-repeat; }
+.desert7x2 { background: transparent url(../tiles/ot_desert.png)   -32px -192px no-repeat; }
+.desert7x3 { background: transparent url(../tiles/ot_desert.png)   -64px -192px no-repeat; }
+.desert7x4 { background: transparent url(../tiles/ot_desert.png)   -96px -192px no-repeat; }
+.desert7x5 { background: transparent url(../tiles/ot_desert.png)  -128px -192px no-repeat; }
+.desert7x6 { background: transparent url(../tiles/ot_desert.png)  -160px -192px no-repeat; }
+.desert7x7 { background: transparent url(../tiles/ot_desert.png)  -192px -192px no-repeat; }
+.desert7x8 { background: transparent url(../tiles/ot_desert.png)  -224px -192px no-repeat; }
+.desert7x9 { background: transparent url(../tiles/ot_desert.png)  -256px -192px no-repeat; }
+.desert7x10 { background: transparent url(../tiles/ot_desert.png) -288px -192px no-repeat; }
+
+.desert8x1 {background: transparent url(../tiles/ot_desert.png)        0 -224px no-repeat; }
+.desert8x2 { background: transparent url(../tiles/ot_desert.png)   -32px -224px no-repeat; }
+.desert8x3 { background: transparent url(../tiles/ot_desert.png)   -64px -224px no-repeat; }
+.desert8x4 { background: transparent url(../tiles/ot_desert.png)   -96px -224px no-repeat; }
+.desert8x5 { background: transparent url(../tiles/ot_desert.png)  -128px -224px no-repeat; }
+.desert8x6 { background: transparent url(../tiles/ot_desert.png)  -160px -224px no-repeat; }
+.desert8x7 { background: transparent url(../tiles/ot_desert.png)  -192px -224px no-repeat; }
+.desert8x8 { background: transparent url(../tiles/ot_desert.png)  -224px -224px no-repeat; }
+.desert8x9 { background: transparent url(../tiles/ot_desert.png)  -256px -224px no-repeat; }
+.desert8x10 { background: transparent url(../tiles/ot_desert.png) -288px -224px no-repeat; }
+
+.desert9x1 {background: transparent url(../tiles/ot_desert.png)        0 -256px no-repeat; }
+.desert9x2 { background: transparent url(../tiles/ot_desert.png)   -32px -256px no-repeat; }
+.desert9x3 { background: transparent url(../tiles/ot_desert.png)   -64px -256px no-repeat; }
+.desert9x4 { background: transparent url(../tiles/ot_desert.png)   -96px -256px no-repeat; }
+.desert9x5 { background: transparent url(../tiles/ot_desert.png)  -128px -256px no-repeat; }
+.desert9x6 { background: transparent url(../tiles/ot_desert.png)  -160px -256px no-repeat; }
+.desert9x7 { background: transparent url(../tiles/ot_desert.png)  -192px -256px no-repeat; }
+.desert9x8 { background: transparent url(../tiles/ot_desert.png)  -224px -256px no-repeat; }
+.desert9x9 { background: transparent url(../tiles/ot_desert.png)  -256px -256px no-repeat; }
+.desert9x10 { background: transparent url(../tiles/ot_desert.png) -288px -256px no-repeat; }
+
+.desert10x1 {background: transparent url(../tiles/ot_desert.png)        0 -288px no-repeat; }
+.desert10x2 { background: transparent url(../tiles/ot_desert.png)   -32px -288px no-repeat; }
+.desert10x3 { background: transparent url(../tiles/ot_desert.png)   -64px -288px no-repeat; }
+.desert10x4 { background: transparent url(../tiles/ot_desert.png)   -96px -288px no-repeat; }
+.desert10x5 { background: transparent url(../tiles/ot_desert.png)  -128px -288px no-repeat; }
+.desert10x6 { background: transparent url(../tiles/ot_desert.png)  -160px -288px no-repeat; }
+.desert10x7 { background: transparent url(../tiles/ot_desert.png)  -192px -288px no-repeat; }
+.desert10x8 { background: transparent url(../tiles/ot_desert.png)  -224px -288px no-repeat; }
+.desert10x9 { background: transparent url(../tiles/ot_desert.png)  -256px -288px no-repeat; }
+.desert10x10 { background: transparent url(../tiles/ot_desert.png) -288px -288px no-repeat; }
+
+.desert11x1 {background: transparent url(../tiles/ot_desert.png)        0 -320px no-repeat; }
+.desert11x2 { background: transparent url(../tiles/ot_desert.png)   -32px -320px no-repeat; }
+.desert11x3 { background: transparent url(../tiles/ot_desert.png)   -64px -320px no-repeat; }
+.desert11x4 { background: transparent url(../tiles/ot_desert.png)   -96px -320px no-repeat; }
+.desert11x5 { background: transparent url(../tiles/ot_desert.png)  -128px -320px no-repeat; }
+.desert11x6 { background: transparent url(../tiles/ot_desert.png)  -160px -320px no-repeat; }
+.desert11x7 { background: transparent url(../tiles/ot_desert.png)  -192px -320px no-repeat; }
+.desert11x8 { background: transparent url(../tiles/ot_desert.png)  -224px -320px no-repeat; }
+.desert11x9 { background: transparent url(../tiles/ot_desert.png)  -256px -320px no-repeat; }
+.desert11x10 { background: transparent url(../tiles/ot_desert.png) -288px -320px no-repeat; }
+
+
+.forrest1x1 {background: transparent url(../tiles/ot_forrest.png)        0    0 no-repeat; }
+.forrest1x2 { background: transparent url(../tiles/ot_forrest.png)   -32px    0 no-repeat; }
+.forrest1x3 { background: transparent url(../tiles/ot_forrest.png)   -64px    0 no-repeat; }
+.forrest1x4 { background: transparent url(../tiles/ot_forrest.png)   -96px    0 no-repeat; }
+.forrest1x5 { background: transparent url(../tiles/ot_forrest.png)  -128px    0 no-repeat; }
+.forrest1x6 { background: transparent url(../tiles/ot_forrest.png)  -160px    0 no-repeat; }
+.forrest1x7 { background: transparent url(../tiles/ot_forrest.png)  -192px    0 no-repeat; }
+.forrest1x8 { background: transparent url(../tiles/ot_forrest.png)  -224px    0 no-repeat; }
+.forrest1x9 { background: transparent url(../tiles/ot_forrest.png)  -256px    0 no-repeat; }
+.forrest1x10 { background: transparent url(../tiles/ot_forrest.png) -288px    0 no-repeat; }
+
+.forrest2x1 {background: transparent url(../tiles/ot_forrest.png)        0  -32px no-repeat; }
+.forrest2x2 { background: transparent url(../tiles/ot_forrest.png)   -32px  -32px no-repeat; }
+.forrest2x3 { background: transparent url(../tiles/ot_forrest.png)   -64px  -32px no-repeat; }
+.forrest2x4 { background: transparent url(../tiles/ot_forrest.png)   -96px  -32px no-repeat; }
+.forrest2x5 { background: transparent url(../tiles/ot_forrest.png)  -128px  -32px no-repeat; }
+.forrest2x6 { background: transparent url(../tiles/ot_forrest.png)  -160px  -32px no-repeat; }
+.forrest2x7 { background: transparent url(../tiles/ot_forrest.png)  -192px  -32px no-repeat; }
+.forrest2x8 { background: transparent url(../tiles/ot_forrest.png)  -224px  -32px no-repeat; }
+.forrest2x9 { background: transparent url(../tiles/ot_forrest.png)  -256px  -32px no-repeat; }
+.forrest2x10 { background: transparent url(../tiles/ot_forrest.png) -288px  -32px no-repeat; }
+
+.forrest3x1 {background: transparent url(../tiles/ot_forrest.png)        0  -64px no-repeat; }
+.forrest3x2 { background: transparent url(../tiles/ot_forrest.png)   -32px  -64px no-repeat; }
+.forrest3x3 { background: transparent url(../tiles/ot_forrest.png)   -64px  -64px no-repeat; }
+.forrest3x4 { background: transparent url(../tiles/ot_forrest.png)   -96px  -64px no-repeat; }
+.forrest3x5 { background: transparent url(../tiles/ot_forrest.png)  -128px  -64px no-repeat; }
+.forrest3x6 { background: transparent url(../tiles/ot_forrest.png)  -160px  -64px no-repeat; }
+.forrest3x7 { background: transparent url(../tiles/ot_forrest.png)  -192px  -64px no-repeat; }
+.forrest3x8 { background: transparent url(../tiles/ot_forrest.png)  -224px  -64px no-repeat; }
+.forrest3x9 { background: transparent url(../tiles/ot_forrest.png)  -256px  -64px no-repeat; }
+.forrest3x10 { background: transparent url(../tiles/ot_forrest.png) -288px  -64px no-repeat; }
+
+.forrest4x1 {background: transparent url(../tiles/ot_forrest.png)        0  -96px no-repeat; }
+.forrest4x2 { background: transparent url(../tiles/ot_forrest.png)   -32px  -96px no-repeat; }
+.forrest4x3 { background: transparent url(../tiles/ot_forrest.png)   -64px  -96px no-repeat; }
+.forrest4x4 { background: transparent url(../tiles/ot_forrest.png)   -96px  -96px no-repeat; }
+.forrest4x5 { background: transparent url(../tiles/ot_forrest.png)  -128px  -96px no-repeat; }
+.forrest4x6 { background: transparent url(../tiles/ot_forrest.png)  -160px  -96px no-repeat; }
+.forrest4x7 { background: transparent url(../tiles/ot_forrest.png)  -192px  -96px no-repeat; }
+.forrest4x8 { background: transparent url(../tiles/ot_forrest.png)  -224px  -96px no-repeat; }
+.forrest4x9 { background: transparent url(../tiles/ot_forrest.png)  -256px  -96px no-repeat; }
+.forrest4x10 { background: transparent url(../tiles/ot_forrest.png) -288px  -96px no-repeat; }
+
+.forrest5x1 {background: transparent url(../tiles/ot_forrest.png)        0 -128px no-repeat; }
+.forrest5x2 { background: transparent url(../tiles/ot_forrest.png)   -32px -128px no-repeat; }
+.forrest5x3 { background: transparent url(../tiles/ot_forrest.png)   -64px -128px no-repeat; }
+.forrest5x4 { background: transparent url(../tiles/ot_forrest.png)   -96px -128px no-repeat; }
+.forrest5x5 { background: transparent url(../tiles/ot_forrest.png)  -128px -128px no-repeat; }
+.forrest5x6 { background: transparent url(../tiles/ot_forrest.png)  -160px -128px no-repeat; }
+.forrest5x7 { background: transparent url(../tiles/ot_forrest.png)  -192px -128px no-repeat; }
+.forrest5x8 { background: transparent url(../tiles/ot_forrest.png)  -224px -128px no-repeat; }
+.forrest5x9 { background: transparent url(../tiles/ot_forrest.png)  -256px -128px no-repeat; }
+.forrest5x10 { background: transparent url(../tiles/ot_forrest.png) -288px -128px no-repeat; }
+
+.forrest6x1 {background: transparent url(../tiles/ot_forrest.png)        0 -160px no-repeat; }
+.forrest6x2 { background: transparent url(../tiles/ot_forrest.png)   -32px -160px no-repeat; }
+.forrest6x3 { background: transparent url(../tiles/ot_forrest.png)   -64px -160px no-repeat; }
+.forrest6x4 { background: transparent url(../tiles/ot_forrest.png)   -96px -160px no-repeat; }
+.forrest6x5 { background: transparent url(../tiles/ot_forrest.png)  -128px -160px no-repeat; }
+.forrest6x6 { background: transparent url(../tiles/ot_forrest.png)  -160px -160px no-repeat; }
+.forrest6x7 { background: transparent url(../tiles/ot_forrest.png)  -192px -160px no-repeat; }
+.forrest6x8 { background: transparent url(../tiles/ot_forrest.png)  -224px -160px no-repeat; }
+.forrest6x9 { background: transparent url(../tiles/ot_forrest.png)  -256px -160px no-repeat; }
+.forrest6x10 { background: transparent url(../tiles/ot_forrest.png) -288px -160px no-repeat; }
+
+.forrest7x1 {background: transparent url(../tiles/ot_forrest.png)        0 -192px no-repeat; }
+.forrest7x2 { background: transparent url(../tiles/ot_forrest.png)   -32px -192px no-repeat; }
+.forrest7x3 { background: transparent url(../tiles/ot_forrest.png)   -64px -192px no-repeat; }
+.forrest7x4 { background: transparent url(../tiles/ot_forrest.png)   -96px -192px no-repeat; }
+.forrest7x5 { background: transparent url(../tiles/ot_forrest.png)  -128px -192px no-repeat; }
+.forrest7x6 { background: transparent url(../tiles/ot_forrest.png)  -160px -192px no-repeat; }
+.forrest7x7 { background: transparent url(../tiles/ot_forrest.png)  -192px -192px no-repeat; }
+.forrest7x8 { background: transparent url(../tiles/ot_forrest.png)  -224px -192px no-repeat; }
+.forrest7x9 { background: transparent url(../tiles/ot_forrest.png)  -256px -192px no-repeat; }
+.forrest7x10 { background: transparent url(../tiles/ot_forrest.png) -288px -192px no-repeat; }
+
+.forrest8x1 {background: transparent url(../tiles/ot_forrest.png)        0 -224px no-repeat; }
+.forrest8x2 { background: transparent url(../tiles/ot_forrest.png)   -32px -224px no-repeat; }
+.forrest8x3 { background: transparent url(../tiles/ot_forrest.png)   -64px -224px no-repeat; }
+.forrest8x4 { background: transparent url(../tiles/ot_forrest.png)   -96px -224px no-repeat; }
+.forrest8x5 { background: transparent url(../tiles/ot_forrest.png)  -128px -224px no-repeat; }
+.forrest8x6 { background: transparent url(../tiles/ot_forrest.png)  -160px -224px no-repeat; }
+.forrest8x7 { background: transparent url(../tiles/ot_forrest.png)  -192px -224px no-repeat; }
+.forrest8x8 { background: transparent url(../tiles/ot_forrest.png)  -224px -224px no-repeat; }
+.forrest8x9 { background: transparent url(../tiles/ot_forrest.png)  -256px -224px no-repeat; }
+.forrest8x10 { background: transparent url(../tiles/ot_forrest.png) -288px -224px no-repeat; }
+
+.forrest9x1 {background: transparent url(../tiles/ot_forrest.png)        0 -256px no-repeat; }
+.forrest9x2 { background: transparent url(../tiles/ot_forrest.png)   -32px -256px no-repeat; }
+.forrest9x3 { background: transparent url(../tiles/ot_forrest.png)   -64px -256px no-repeat; }
+.forrest9x4 { background: transparent url(../tiles/ot_forrest.png)   -96px -256px no-repeat; }
+.forrest9x5 { background: transparent url(../tiles/ot_forrest.png)  -128px -256px no-repeat; }
+.forrest9x6 { background: transparent url(../tiles/ot_forrest.png)  -160px -256px no-repeat; }
+.forrest9x7 { background: transparent url(../tiles/ot_forrest.png)  -192px -256px no-repeat; }
+.forrest9x8 { background: transparent url(../tiles/ot_forrest.png)  -224px -256px no-repeat; }
+.forrest9x9 { background: transparent url(../tiles/ot_forrest.png)  -256px -256px no-repeat; }
+.forrest9x10 { background: transparent url(../tiles/ot_forrest.png) -288px -256px no-repeat; }
+
+.forrest10x1 {background: transparent url(../tiles/ot_forrest.png)        0 -288px no-repeat; }
+.forrest10x2 { background: transparent url(../tiles/ot_forrest.png)   -32px -288px no-repeat; }
+.forrest10x3 { background: transparent url(../tiles/ot_forrest.png)   -64px -288px no-repeat; }
+.forrest10x4 { background: transparent url(../tiles/ot_forrest.png)   -96px -288px no-repeat; }
+.forrest10x5 { background: transparent url(../tiles/ot_forrest.png)  -128px -288px no-repeat; }
+.forrest10x6 { background: transparent url(../tiles/ot_forrest.png)  -160px -288px no-repeat; }
+.forrest10x7 { background: transparent url(../tiles/ot_forrest.png)  -192px -288px no-repeat; }
+.forrest10x8 { background: transparent url(../tiles/ot_forrest.png)  -224px -288px no-repeat; }
+.forrest10x9 { background: transparent url(../tiles/ot_forrest.png)  -256px -288px no-repeat; }
+.forrest10x10 { background: transparent url(../tiles/ot_forrest.png) -288px -288px no-repeat; }
+
+.forrest11x1 {background: transparent url(../tiles/ot_forrest.png)        0 -320px no-repeat; }
+.forrest11x2 { background: transparent url(../tiles/ot_forrest.png)   -32px -320px no-repeat; }
+.forrest11x3 { background: transparent url(../tiles/ot_forrest.png)   -64px -320px no-repeat; }
+.forrest11x4 { background: transparent url(../tiles/ot_forrest.png)   -96px -320px no-repeat; }
+.forrest11x5 { background: transparent url(../tiles/ot_forrest.png)  -128px -320px no-repeat; }
+.forrest11x6 { background: transparent url(../tiles/ot_forrest.png)  -160px -320px no-repeat; }
+.forrest11x7 { background: transparent url(../tiles/ot_forrest.png)  -192px -320px no-repeat; }
+.forrest11x8 { background: transparent url(../tiles/ot_forrest.png)  -224px -320px no-repeat; }
+.forrest11x9 { background: transparent url(../tiles/ot_forrest.png)  -256px -320px no-repeat; }
+.forrest11x10 { background: transparent url(../tiles/ot_forrest.png) -288px -320px no-repeat; }
+
+
+.people1x1 {background: transparent url(../tiles/dg_people32.gif)        0    0 no-repeat; }
+.people1x2 { background: transparent url(../tiles/dg_people32.gif)   -32px    0 no-repeat; }
+.people1x3 { background: transparent url(../tiles/dg_people32.gif)   -64px    0 no-repeat; }
+.people1x4 { background: transparent url(../tiles/dg_people32.gif)   -96px    0 no-repeat; }
+
+.people2x1 {background: transparent url(../tiles/dg_people32.gif)        0  -32px no-repeat; }
+.people2x2 { background: transparent url(../tiles/dg_people32.gif)   -32px  -32px no-repeat; }
+.people2x3 { background: transparent url(../tiles/dg_people32.gif)   -64px  -32px no-repeat; }
+.people2x4 { background: transparent url(../tiles/dg_people32.gif)   -96px  -32px no-repeat; }
+
+.people3x1 {background: transparent url(../tiles/dg_people32.gif)        0  -64px no-repeat; }
+.people3x2 { background: transparent url(../tiles/dg_people32.gif)   -32px  -64px no-repeat; }
+.people3x3 { background: transparent url(../tiles/dg_people32.gif)   -64px  -64px no-repeat; }
+.people3x4 { background: transparent url(../tiles/dg_people32.gif)   -96px  -64px no-repeat; }
+
+.people4x1 {background: transparent url(../tiles/dg_people32.gif)        0  -96px no-repeat; }
+.people4x2 { background: transparent url(../tiles/dg_people32.gif)   -32px  -96px no-repeat; }
+.people4x3 { background: transparent url(../tiles/dg_people32.gif)   -64px  -96px no-repeat; }
+.people4x4 { background: transparent url(../tiles/dg_people32.gif)   -96px  -96px no-repeat; }
+
+.monster1_1x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0    0 no-repeat; }
+.monster1_1x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px    0 no-repeat; }
+.monster1_1x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px    0 no-repeat; }
+.monster1_1x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px    0 no-repeat; }
+.monster1_1x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px    0 no-repeat; }
+.monster1_1x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px    0 no-repeat; }
+
+.monster1_2x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0  -32px no-repeat; }
+.monster1_2x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px  -32px no-repeat; }
+.monster1_2x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px  -32px no-repeat; }
+.monster1_2x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px  -32px no-repeat; }
+.monster1_2x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px  -32px no-repeat; }
+.monster1_2x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px  -32px no-repeat; }
+
+.monster1_3x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0  -64px no-repeat; }
+.monster1_3x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px  -64px no-repeat; }
+.monster1_3x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px  -64px no-repeat; }
+.monster1_3x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px  -64px no-repeat; }
+.monster1_3x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px  -64px no-repeat; }
+.monster1_3x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px  -64px no-repeat; }
+
+.monster1_4x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0  -96px no-repeat; }
+.monster1_4x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px  -96px no-repeat; }
+.monster1_4x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px  -96px no-repeat; }
+.monster1_4x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px  -96px no-repeat; }
+.monster1_4x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px  -96px no-repeat; }
+.monster1_4x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px  -96px no-repeat; }
+
+.monster1_5x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -128px no-repeat; }
+.monster1_5x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -128px no-repeat; }
+.monster1_5x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -128px no-repeat; }
+.monster1_5x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -128px no-repeat; }
+.monster1_5x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -128px no-repeat; }
+.monster1_5x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -128px no-repeat; }
+
+.monster1_6x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -160px no-repeat; }
+.monster1_6x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -160px no-repeat; }
+.monster1_6x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -160px no-repeat; }
+.monster1_6x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -160px no-repeat; }
+.monster1_6x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -160px no-repeat; }
+.monster1_6x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -160px no-repeat; }
+
+.monster1_7x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -192px no-repeat; }
+.monster1_7x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -192px no-repeat; }
+.monster1_7x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -192px no-repeat; }
+.monster1_7x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -192px no-repeat; }
+.monster1_7x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -192px no-repeat; }
+.monster1_7x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -192px no-repeat; }
+
+.monster1_8x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -224px no-repeat; }
+.monster1_8x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -224px no-repeat; }
+.monster1_8x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -224px no-repeat; }
+.monster1_8x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -224px no-repeat; }
+.monster1_8x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -224px no-repeat; }
+.monster1_8x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -224px no-repeat; }
+
+.monster1_9x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -256px no-repeat; }
+.monster1_9x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -256px no-repeat; }
+.monster1_9x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -256px no-repeat; }
+.monster1_9x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -256px no-repeat; }
+.monster1_9x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -256px no-repeat; }
+.monster1_9x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -256px no-repeat; }
+
+.monster1_10x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -288px no-repeat; }
+.monster1_10x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -288px no-repeat; }
+.monster1_10x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -288px no-repeat; }
+.monster1_10x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -288px no-repeat; }
+.monster1_10x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -288px no-repeat; }
+.monster1_10x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -288px no-repeat; }
+
+.monster1_11x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -320px no-repeat; }
+.monster1_11x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -320px no-repeat; }
+.monster1_11x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -320px no-repeat; }
+.monster1_11x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -320px no-repeat; }
+.monster1_11x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -320px no-repeat; }
+.monster1_11x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -320px no-repeat; }
+
+.monster1_12x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -352px no-repeat; }
+.monster1_12x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -352px no-repeat; }
+.monster1_12x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -352px no-repeat; }
+.monster1_12x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -352px no-repeat; }
+.monster1_12x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -352px no-repeat; }
+.monster1_12x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -352px no-repeat; }
+
+.monster1_13x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -384px no-repeat; }
+.monster1_13x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -384px no-repeat; }
+.monster1_13x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -384px no-repeat; }
+.monster1_13x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -384px no-repeat; }
+.monster1_13x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -384px no-repeat; }
+.monster1_13x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -384px no-repeat; }
+
+.monster1_14x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -416px no-repeat; }
+.monster1_14x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -416px no-repeat; }
+.monster1_14x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -416px no-repeat; }
+.monster1_14x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -416px no-repeat; }
+.monster1_14x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -416px no-repeat; }
+.monster1_14x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -416px no-repeat; }
+
+.monster1_15x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -448px no-repeat; }
+.monster1_15x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -448px no-repeat; }
+.monster1_15x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -448px no-repeat; }
+.monster1_15x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -448px no-repeat; }
+.monster1_15x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -448px no-repeat; }
+.monster1_15x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -448px no-repeat; }
+
+.monster1_16x1 {background: transparent url(../tiles/dg_monster1_32.gif)        0 -480px no-repeat; }
+.monster1_16x2 { background: transparent url(../tiles/dg_monster1_32.gif)   -32px -480px no-repeat; }
+.monster1_16x3 { background: transparent url(../tiles/dg_monster1_32.gif)   -64px -480px no-repeat; }
+.monster1_16x4 { background: transparent url(../tiles/dg_monster1_32.gif)   -96px -480px no-repeat; }
+.monster1_16x5 { background: transparent url(../tiles/dg_monster1_32.gif)  -128px -480px no-repeat; }
+.monster1_16x6 { background: transparent url(../tiles/dg_monster1_32.gif)  -160px -480px no-repeat; }
+
+
+.monster2_1x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0    0 no-repeat; }
+.monster2_1x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px    0 no-repeat; }
+.monster2_1x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px    0 no-repeat; }
+.monster2_1x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px    0 no-repeat; }
+.monster2_1x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px    0 no-repeat; }
+.monster2_1x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px    0 no-repeat; }
+
+.monster2_2x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0  -32px no-repeat; }
+.monster2_2x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px  -32px no-repeat; }
+.monster2_2x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px  -32px no-repeat; }
+.monster2_2x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px  -32px no-repeat; }
+.monster2_2x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px  -32px no-repeat; }
+.monster2_2x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px  -32px no-repeat; }
+
+.monster2_3x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0  -64px no-repeat; }
+.monster2_3x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px  -64px no-repeat; }
+.monster2_3x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px  -64px no-repeat; }
+.monster2_3x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px  -64px no-repeat; }
+.monster2_3x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px  -64px no-repeat; }
+.monster2_3x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px  -64px no-repeat; }
+
+.monster2_4x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0  -96px no-repeat; }
+.monster2_4x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px  -96px no-repeat; }
+.monster2_4x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px  -96px no-repeat; }
+.monster2_4x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px  -96px no-repeat; }
+.monster2_4x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px  -96px no-repeat; }
+.monster2_4x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px  -96px no-repeat; }
+
+.monster2_5x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -128px no-repeat; }
+.monster2_5x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -128px no-repeat; }
+.monster2_5x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -128px no-repeat; }
+.monster2_5x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -128px no-repeat; }
+.monster2_5x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -128px no-repeat; }
+.monster2_5x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -128px no-repeat; }
+
+.monster2_6x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -160px no-repeat; }
+.monster2_6x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -160px no-repeat; }
+.monster2_6x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -160px no-repeat; }
+.monster2_6x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -160px no-repeat; }
+.monster2_6x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -160px no-repeat; }
+.monster2_6x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -160px no-repeat; }
+
+.monster2_7x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -192px no-repeat; }
+.monster2_7x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -192px no-repeat; }
+.monster2_7x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -192px no-repeat; }
+.monster2_7x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -192px no-repeat; }
+.monster2_7x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -192px no-repeat; }
+.monster2_7x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -192px no-repeat; }
+
+.monster2_8x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -224px no-repeat; }
+.monster2_8x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -224px no-repeat; }
+.monster2_8x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -224px no-repeat; }
+.monster2_8x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -224px no-repeat; }
+.monster2_8x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -224px no-repeat; }
+.monster2_8x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -224px no-repeat; }
+
+.monster2_9x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -256px no-repeat; }
+.monster2_9x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -256px no-repeat; }
+.monster2_9x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -256px no-repeat; }
+.monster2_9x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -256px no-repeat; }
+.monster2_9x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -256px no-repeat; }
+.monster2_9x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -256px no-repeat; }
+
+.monster2_10x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -288px no-repeat; }
+.monster2_10x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -288px no-repeat; }
+.monster2_10x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -288px no-repeat; }
+.monster2_10x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -288px no-repeat; }
+.monster2_10x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -288px no-repeat; }
+.monster2_10x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -288px no-repeat; }
+
+.monster2_11x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -320px no-repeat; }
+.monster2_11x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -320px no-repeat; }
+.monster2_11x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -320px no-repeat; }
+.monster2_11x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -320px no-repeat; }
+.monster2_11x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -320px no-repeat; }
+.monster2_11x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -320px no-repeat; }
+
+.monster2_12x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -352px no-repeat; }
+.monster2_12x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -352px no-repeat; }
+.monster2_12x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -352px no-repeat; }
+.monster2_12x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -352px no-repeat; }
+.monster2_12x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -352px no-repeat; }
+.monster2_12x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -352px no-repeat; }
+
+.monster2_13x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -384px no-repeat; }
+.monster2_13x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -384px no-repeat; }
+.monster2_13x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -384px no-repeat; }
+.monster2_13x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -384px no-repeat; }
+.monster2_13x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -384px no-repeat; }
+.monster2_13x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -384px no-repeat; }
+
+.monster2_14x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -416px no-repeat; }
+.monster2_14x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -416px no-repeat; }
+.monster2_14x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -416px no-repeat; }
+.monster2_14x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -416px no-repeat; }
+.monster2_14x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -416px no-repeat; }
+.monster2_14x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -416px no-repeat; }
+
+.monster2_15x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -448px no-repeat; }
+.monster2_15x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -448px no-repeat; }
+.monster2_15x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -448px no-repeat; }
+.monster2_15x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -448px no-repeat; }
+.monster2_15x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -448px no-repeat; }
+.monster2_15x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -448px no-repeat; }
+
+.monster2_16x1 {background: transparent url(../tiles/dg_monster2_32.gif)        0 -480px no-repeat; }
+.monster2_16x2 { background: transparent url(../tiles/dg_monster2_32.gif)   -32px -480px no-repeat; }
+.monster2_16x3 { background: transparent url(../tiles/dg_monster2_32.gif)   -64px -480px no-repeat; }
+.monster2_16x4 { background: transparent url(../tiles/dg_monster2_32.gif)   -96px -480px no-repeat; }
+.monster2_16x5 { background: transparent url(../tiles/dg_monster2_32.gif)  -128px -480px no-repeat; }
+.monster2_16x6 { background: transparent url(../tiles/dg_monster2_32.gif)  -160px -480px no-repeat; }
+
+
+.monster3_1x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0    0 no-repeat; }
+.monster3_1x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px    0 no-repeat; }
+.monster3_1x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px    0 no-repeat; }
+.monster3_1x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px    0 no-repeat; }
+.monster3_1x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px    0 no-repeat; }
+.monster3_1x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px    0 no-repeat; }
+
+.monster3_2x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0  -32px no-repeat; }
+.monster3_2x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px  -32px no-repeat; }
+.monster3_2x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px  -32px no-repeat; }
+.monster3_2x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px  -32px no-repeat; }
+.monster3_2x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px  -32px no-repeat; }
+.monster3_2x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px  -32px no-repeat; }
+
+.monster3_3x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0  -64px no-repeat; }
+.monster3_3x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px  -64px no-repeat; }
+.monster3_3x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px  -64px no-repeat; }
+.monster3_3x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px  -64px no-repeat; }
+.monster3_3x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px  -64px no-repeat; }
+.monster3_3x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px  -64px no-repeat; }
+
+.monster3_4x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0  -96px no-repeat; }
+.monster3_4x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px  -96px no-repeat; }
+.monster3_4x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px  -96px no-repeat; }
+.monster3_4x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px  -96px no-repeat; }
+.monster3_4x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px  -96px no-repeat; }
+.monster3_4x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px  -96px no-repeat; }
+
+.monster3_5x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -128px no-repeat; }
+.monster3_5x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -128px no-repeat; }
+.monster3_5x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -128px no-repeat; }
+.monster3_5x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -128px no-repeat; }
+.monster3_5x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -128px no-repeat; }
+.monster3_5x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -128px no-repeat; }
+
+.monster3_6x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -160px no-repeat; }
+.monster3_6x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -160px no-repeat; }
+.monster3_6x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -160px no-repeat; }
+.monster3_6x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -160px no-repeat; }
+.monster3_6x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -160px no-repeat; }
+.monster3_6x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -160px no-repeat; }
+
+.monster3_7x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -192px no-repeat; }
+.monster3_7x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -192px no-repeat; }
+.monster3_7x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -192px no-repeat; }
+.monster3_7x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -192px no-repeat; }
+.monster3_7x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -192px no-repeat; }
+.monster3_7x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -192px no-repeat; }
+
+.monster3_8x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -224px no-repeat; }
+.monster3_8x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -224px no-repeat; }
+.monster3_8x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -224px no-repeat; }
+.monster3_8x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -224px no-repeat; }
+.monster3_8x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -224px no-repeat; }
+.monster3_8x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -224px no-repeat; }
+
+.monster3_9x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -256px no-repeat; }
+.monster3_9x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -256px no-repeat; }
+.monster3_9x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -256px no-repeat; }
+.monster3_9x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -256px no-repeat; }
+.monster3_9x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -256px no-repeat; }
+.monster3_9x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -256px no-repeat; }
+
+.monster3_10x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -288px no-repeat; }
+.monster3_10x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -288px no-repeat; }
+.monster3_10x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -288px no-repeat; }
+.monster3_10x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -288px no-repeat; }
+.monster3_10x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -288px no-repeat; }
+.monster3_10x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -288px no-repeat; }
+
+.monster3_11x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -320px no-repeat; }
+.monster3_11x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -320px no-repeat; }
+.monster3_11x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -320px no-repeat; }
+.monster3_11x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -320px no-repeat; }
+.monster3_11x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -320px no-repeat; }
+.monster3_11x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -320px no-repeat; }
+
+.monster3_12x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -352px no-repeat; }
+.monster3_12x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -352px no-repeat; }
+.monster3_12x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -352px no-repeat; }
+.monster3_12x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -352px no-repeat; }
+.monster3_12x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -352px no-repeat; }
+.monster3_12x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -352px no-repeat; }
+
+.monster3_13x1 {background: transparent url(../tiles/dg_monster3_32.gif)        0 -384px no-repeat; }
+.monster3_13x2 { background: transparent url(../tiles/dg_monster3_32.gif)   -32px -384px no-repeat; }
+.monster3_13x3 { background: transparent url(../tiles/dg_monster3_32.gif)   -64px -384px no-repeat; }
+.monster3_13x4 { background: transparent url(../tiles/dg_monster3_32.gif)   -96px -384px no-repeat; }
+.monster3_13x5 { background: transparent url(../tiles/dg_monster3_32.gif)  -128px -384px no-repeat; }
+.monster3_13x6 { background: transparent url(../tiles/dg_monster3_32.gif)  -160px -384px no-repeat; }
+
+.monster4_1x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0    0 no-repeat; }
+.monster4_1x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px    0 no-repeat; }
+.monster4_1x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px    0 no-repeat; }
+.monster4_1x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px    0 no-repeat; }
+.monster4_1x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px    0 no-repeat; }
+.monster4_1x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px    0 no-repeat; }
+
+.monster4_2x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0  -32px no-repeat; }
+.monster4_2x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px  -32px no-repeat; }
+.monster4_2x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px  -32px no-repeat; }
+.monster4_2x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px  -32px no-repeat; }
+.monster4_2x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px  -32px no-repeat; }
+.monster4_2x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px  -32px no-repeat; }
+
+.monster4_3x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0  -64px no-repeat; }
+.monster4_3x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px  -64px no-repeat; }
+.monster4_3x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px  -64px no-repeat; }
+.monster4_3x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px  -64px no-repeat; }
+.monster4_3x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px  -64px no-repeat; }
+.monster4_3x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px  -64px no-repeat; }
+
+.monster4_4x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0  -96px no-repeat; }
+.monster4_4x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px  -96px no-repeat; }
+.monster4_4x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px  -96px no-repeat; }
+.monster4_4x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px  -96px no-repeat; }
+.monster4_4x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px  -96px no-repeat; }
+.monster4_4x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px  -96px no-repeat; }
+
+.monster4_5x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -128px no-repeat; }
+.monster4_5x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -128px no-repeat; }
+.monster4_5x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -128px no-repeat; }
+.monster4_5x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -128px no-repeat; }
+.monster4_5x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -128px no-repeat; }
+.monster4_5x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -128px no-repeat; }
+
+.monster4_6x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -160px no-repeat; }
+.monster4_6x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -160px no-repeat; }
+.monster4_6x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -160px no-repeat; }
+.monster4_6x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -160px no-repeat; }
+.monster4_6x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -160px no-repeat; }
+.monster4_6x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -160px no-repeat; }
+
+.monster4_7x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -192px no-repeat; }
+.monster4_7x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -192px no-repeat; }
+.monster4_7x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -192px no-repeat; }
+.monster4_7x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -192px no-repeat; }
+.monster4_7x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -192px no-repeat; }
+.monster4_7x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -192px no-repeat; }
+
+.monster4_8x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -224px no-repeat; }
+.monster4_8x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -224px no-repeat; }
+.monster4_8x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -224px no-repeat; }
+.monster4_8x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -224px no-repeat; }
+.monster4_8x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -224px no-repeat; }
+.monster4_8x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -224px no-repeat; }
+
+.monster4_9x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -256px no-repeat; }
+.monster4_9x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -256px no-repeat; }
+.monster4_9x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -256px no-repeat; }
+.monster4_9x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -256px no-repeat; }
+.monster4_9x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -256px no-repeat; }
+.monster4_9x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -256px no-repeat; }
+
+.monster4_10x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -288px no-repeat; }
+.monster4_10x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -288px no-repeat; }
+.monster4_10x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -288px no-repeat; }
+.monster4_10x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -288px no-repeat; }
+.monster4_10x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -288px no-repeat; }
+.monster4_10x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -288px no-repeat; }
+
+.monster4_11x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -320px no-repeat; }
+.monster4_11x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -320px no-repeat; }
+.monster4_11x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -320px no-repeat; }
+.monster4_11x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -320px no-repeat; }
+.monster4_11x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -320px no-repeat; }
+.monster4_11x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -320px no-repeat; }
+
+.monster4_12x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -352px no-repeat; }
+.monster4_12x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -352px no-repeat; }
+.monster4_12x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -352px no-repeat; }
+.monster4_12x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -352px no-repeat; }
+.monster4_12x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -352px no-repeat; }
+.monster4_12x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -352px no-repeat; }
+
+.monster4_13x1 {background: transparent url(../tiles/dg_monster4_32.gif)        0 -384px no-repeat; }
+.monster4_13x2 { background: transparent url(../tiles/dg_monster4_32.gif)   -32px -384px no-repeat; }
+.monster4_13x3 { background: transparent url(../tiles/dg_monster4_32.gif)   -64px -384px no-repeat; }
+.monster4_13x4 { background: transparent url(../tiles/dg_monster4_32.gif)   -96px -384px no-repeat; }
+.monster4_13x5 { background: transparent url(../tiles/dg_monster4_32.gif)  -128px -384px no-repeat; }
+.monster4_13x6 { background: transparent url(../tiles/dg_monster4_32.gif)  -160px -384px no-repeat; }
+
+
+
+.monster5_1x1 {background: transparent url(../tiles/dg_monster5_32.gif)        0    0 no-repeat; }
+.monster5_1x2 { background: transparent url(../tiles/dg_monster5_32.gif)   -32px    0 no-repeat; }
+.monster5_1x3 { background: transparent url(../tiles/dg_monster5_32.gif)   -64px    0 no-repeat; }
+.monster5_1x4 { background: transparent url(../tiles/dg_monster5_32.gif)   -96px    0 no-repeat; }
+.monster5_1x5 { background: transparent url(../tiles/dg_monster5_32.gif)  -128px    0 no-repeat; }
+.monster5_1x6 { background: transparent url(../tiles/dg_monster5_32.gif)  -160px    0 no-repeat; }
+.monster5_1x7 { background: transparent url(../tiles/dg_monster5_32.gif)  -192px    0 no-repeat; }
+.monster5_1x8 { background: transparent url(../tiles/dg_monster5_32.gif)  -224px    0 no-repeat; }
+
+.monster5_2x1 {background: transparent url(../tiles/dg_monster5_32.gif)        0  -32px no-repeat; }
+.monster5_2x2 { background: transparent url(../tiles/dg_monster5_32.gif)   -32px  -32px no-repeat; }
+.monster5_2x3 { background: transparent url(../tiles/dg_monster5_32.gif)   -64px  -32px no-repeat; }
+.monster5_2x4 { background: transparent url(../tiles/dg_monster5_32.gif)   -96px  -32px no-repeat; }
+.monster5_2x5 { background: transparent url(../tiles/dg_monster5_32.gif)  -128px  -32px no-repeat; }
+.monster5_2x6 { background: transparent url(../tiles/dg_monster5_32.gif)  -160px  -32px no-repeat; }
+.monster5_2x7 { background: transparent url(../tiles/dg_monster5_32.gif)  -192px  -32px no-repeat; }
+.monster5_2x8 { background: transparent url(../tiles/dg_monster5_32.gif)  -224px  -32px no-repeat; }
+
+.monster5_3x1 {background: transparent url(../tiles/dg_monster5_32.gif)        0  -64px no-repeat; }
+.monster5_3x2 { background: transparent url(../tiles/dg_monster5_32.gif)   -32px  -64px no-repeat; }
+.monster5_3x3 { background: transparent url(../tiles/dg_monster5_32.gif)   -64px  -64px no-repeat; }
+.monster5_3x4 { background: transparent url(../tiles/dg_monster5_32.gif)   -96px  -64px no-repeat; }
+.monster5_3x5 { background: transparent url(../tiles/dg_monster5_32.gif)  -128px  -64px no-repeat; }
+.monster5_3x6 { background: transparent url(../tiles/dg_monster5_32.gif)  -160px  -64px no-repeat; }
+.monster5_3x7 { background: transparent url(../tiles/dg_monster5_32.gif)  -192px  -64px no-repeat; }
+.monster5_3x8 { background: transparent url(../tiles/dg_monster5_32.gif)  -224px  -64px no-repeat; }
+
+.monster5_4x1 {background: transparent url(../tiles/dg_monster5_32.gif)        0  -96px no-repeat; }
+.monster5_4x2 { background: transparent url(../tiles/dg_monster5_32.gif)   -32px  -96px no-repeat; }
+.monster5_4x3 { background: transparent url(../tiles/dg_monster5_32.gif)   -64px  -96px no-repeat; }
+.monster5_4x4 { background: transparent url(../tiles/dg_monster5_32.gif)   -96px  -96px no-repeat; }
+.monster5_4x5 { background: transparent url(../tiles/dg_monster5_32.gif)  -128px  -96px no-repeat; }
+.monster5_4x6 { background: transparent url(../tiles/dg_monster5_32.gif)  -160px  -96px no-repeat; }
+.monster5_4x7 { background: transparent url(../tiles/dg_monster5_32.gif)  -192px  -96px no-repeat; }
+.monster5_4x8 { background: transparent url(../tiles/dg_monster5_32.gif)  -224px  -96px no-repeat; }
+
+.monster5_5x1 {background: transparent url(../tiles/dg_monster5_32.gif)        0 -128px no-repeat; }
+.monster5_5x2 { background: transparent url(../tiles/dg_monster5_32.gif)   -32px -128px no-repeat; }
+.monster5_5x3 { background: transparent url(../tiles/dg_monster5_32.gif)   -64px -128px no-repeat; }
+.monster5_5x4 { background: transparent url(../tiles/dg_monster5_32.gif)   -96px -128px no-repeat; }
+.monster5_5x5 { background: transparent url(../tiles/dg_monster5_32.gif)  -128px -128px no-repeat; }
+.monster5_5x6 { background: transparent url(../tiles/dg_monster5_32.gif)  -160px -128px no-repeat; }
+.monster5_5x7 { background: transparent url(../tiles/dg_monster5_32.gif)  -192px -128px no-repeat; }
+.monster5_5x8 { background: transparent url(../tiles/dg_monster5_32.gif)  -224px -128px no-repeat; }
+
+.monster5_6x1 {background: transparent url(../tiles/dg_monster5_32.gif)        0 -160px no-repeat; }
+.monster5_6x2 { background: transparent url(../tiles/dg_monster5_32.gif)   -32px -160px no-repeat; }
+.monster5_6x3 { background: transparent url(../tiles/dg_monster5_32.gif)   -64px -160px no-repeat; }
+.monster5_6x4 { background: transparent url(../tiles/dg_monster5_32.gif)   -96px -160px no-repeat; }
+.monster5_6x5 { background: transparent url(../tiles/dg_monster5_32.gif)  -128px -160px no-repeat; }
+.monster5_6x6 { background: transparent url(../tiles/dg_monster5_32.gif)  -160px -160px no-repeat; }
+.monster5_6x7 { background: transparent url(../tiles/dg_monster5_32.gif)  -192px -160px no-repeat; }
+.monster5_6x8 { background: transparent url(../tiles/dg_monster5_32.gif)  -224px -160px no-repeat; }
+
+.monster5_7x1 {background: transparent url(../tiles/dg_monster5_32.gif)        0 -192px no-repeat; }
+.monster5_7x2 { background: transparent url(../tiles/dg_monster5_32.gif)   -32px -192px no-repeat; }
+.monster5_7x3 { background: transparent url(../tiles/dg_monster5_32.gif)   -64px -192px no-repeat; }
+.monster5_7x4 { background: transparent url(../tiles/dg_monster5_32.gif)   -96px -192px no-repeat; }
+.monster5_7x5 { background: transparent url(../tiles/dg_monster5_32.gif)  -128px -192px no-repeat; }
+.monster5_7x6 { background: transparent url(../tiles/dg_monster5_32.gif)  -160px -192px no-repeat; }
+.monster5_7x7 { background: transparent url(../tiles/dg_monster5_32.gif)  -192px -192px no-repeat; }
+.monster5_7x8 { background: transparent url(../tiles/dg_monster5_32.gif)  -224px -192px no-repeat; }
+
+.monster5_8x1 {background: transparent url(../tiles/dg_monster5_32.gif)        0 -224px no-repeat; }
+.monster5_8x2 { background: transparent url(../tiles/dg_monster5_32.gif)   -32px -224px no-repeat; }
+.monster5_8x3 { background: transparent url(../tiles/dg_monster5_32.gif)   -64px -224px no-repeat; }
+.monster5_8x4 { background: transparent url(../tiles/dg_monster5_32.gif)   -96px -224px no-repeat; }
+.monster5_8x5 { background: transparent url(../tiles/dg_monster5_32.gif)  -128px -224px no-repeat; }
+.monster5_8x6 { background: transparent url(../tiles/dg_monster5_32.gif)  -160px -224px no-repeat; }
+.monster5_8x7 { background: transparent url(../tiles/dg_monster5_32.gif)  -192px -224px no-repeat; }
+.monster5_8x8 { background: transparent url(../tiles/dg_monster5_32.gif)  -224px -224px no-repeat; }
+
+
+.monster6_1x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0    0 no-repeat; }
+.monster6_1x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px    0 no-repeat; }
+.monster6_1x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px    0 no-repeat; }
+.monster6_1x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px    0 no-repeat; }
+.monster6_1x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px    0 no-repeat; }
+.monster6_1x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px    0 no-repeat; }
+
+.monster6_2x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0  -32px no-repeat; }
+.monster6_2x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px  -32px no-repeat; }
+.monster6_2x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px  -32px no-repeat; }
+.monster6_2x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px  -32px no-repeat; }
+.monster6_2x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px  -32px no-repeat; }
+.monster6_2x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px  -32px no-repeat; }
+
+.monster6_3x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0  -64px no-repeat; }
+.monster6_3x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px  -64px no-repeat; }
+.monster6_3x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px  -64px no-repeat; }
+.monster6_3x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px  -64px no-repeat; }
+.monster6_3x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px  -64px no-repeat; }
+.monster6_3x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px  -64px no-repeat; }
+
+.monster6_4x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0  -96px no-repeat; }
+.monster6_4x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px  -96px no-repeat; }
+.monster6_4x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px  -96px no-repeat; }
+.monster6_4x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px  -96px no-repeat; }
+.monster6_4x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px  -96px no-repeat; }
+.monster6_4x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px  -96px no-repeat; }
+
+.monster6_5x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -128px no-repeat; }
+.monster6_5x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -128px no-repeat; }
+.monster6_5x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -128px no-repeat; }
+.monster6_5x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -128px no-repeat; }
+.monster6_5x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -128px no-repeat; }
+.monster6_5x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -128px no-repeat; }
+
+.monster6_6x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -160px no-repeat; }
+.monster6_6x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -160px no-repeat; }
+.monster6_6x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -160px no-repeat; }
+.monster6_6x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -160px no-repeat; }
+.monster6_6x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -160px no-repeat; }
+.monster6_6x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -160px no-repeat; }
+
+.monster6_7x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -192px no-repeat; }
+.monster6_7x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -192px no-repeat; }
+.monster6_7x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -192px no-repeat; }
+.monster6_7x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -192px no-repeat; }
+.monster6_7x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -192px no-repeat; }
+.monster6_7x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -192px no-repeat; }
+
+.monster6_8x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -224px no-repeat; }
+.monster6_8x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -224px no-repeat; }
+.monster6_8x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -224px no-repeat; }
+.monster6_8x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -224px no-repeat; }
+.monster6_8x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -224px no-repeat; }
+.monster6_8x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -224px no-repeat; }
+
+.monster6_9x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -256px no-repeat; }
+.monster6_9x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -256px no-repeat; }
+.monster6_9x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -256px no-repeat; }
+.monster6_9x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -256px no-repeat; }
+.monster6_9x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -256px no-repeat; }
+.monster6_9x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -256px no-repeat; }
+
+.monster6_10x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -288px no-repeat; }
+.monster6_10x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -288px no-repeat; }
+.monster6_10x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -288px no-repeat; }
+.monster6_10x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -288px no-repeat; }
+.monster6_10x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -288px no-repeat; }
+.monster6_10x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -288px no-repeat; }
+
+.monster6_11x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -320px no-repeat; }
+.monster6_11x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -320px no-repeat; }
+.monster6_11x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -320px no-repeat; }
+.monster6_11x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -320px no-repeat; }
+.monster6_11x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -320px no-repeat; }
+.monster6_11x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -320px no-repeat; }
+
+.monster6_12x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -352px no-repeat; }
+.monster6_12x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -352px no-repeat; }
+.monster6_12x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -352px no-repeat; }
+.monster6_12x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -352px no-repeat; }
+.monster6_12x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -352px no-repeat; }
+.monster6_12x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -352px no-repeat; }
+
+.monster6_13x1 {background: transparent url(../tiles/dg_monster6_32.gif)        0 -384px no-repeat; }
+.monster6_13x2 { background: transparent url(../tiles/dg_monster6_32.gif)   -32px -384px no-repeat; }
+.monster6_13x3 { background: transparent url(../tiles/dg_monster6_32.gif)   -64px -384px no-repeat; }
+.monster6_13x4 { background: transparent url(../tiles/dg_monster6_32.gif)   -96px -384px no-repeat; }
+.monster6_13x5 { background: transparent url(../tiles/dg_monster6_32.gif)  -128px -384px no-repeat; }
+.monster6_13x6 { background: transparent url(../tiles/dg_monster6_32.gif)  -160px -384px no-repeat; }
+
+.monster7_1x1 {background: transparent url(../tiles/dg_monster7_32.gif)        0    0 no-repeat; }
+.monster7_1x2 { background: transparent url(../tiles/dg_monster7_32.gif)   -32px    0 no-repeat; }
+.monster7_1x3 { background: transparent url(../tiles/dg_monster7_32.gif)   -64px    0 no-repeat; }
+.monster7_1x4 { background: transparent url(../tiles/dg_monster7_32.gif)   -96px    0 no-repeat; }
+.monster7_1x5 { background: transparent url(../tiles/dg_monster7_32.gif)  -128px    0 no-repeat; }
+.monster7_1x6 { background: transparent url(../tiles/dg_monster7_32.gif)  -160px    0 no-repeat; }
+.monster7_1x7 { background: transparent url(../tiles/dg_monster7_32.gif)  -192px    0 no-repeat; }
+.monster7_1x8 { background: transparent url(../tiles/dg_monster7_32.gif)  -224px    0 no-repeat; }
+
+.monster7_2x1 {background: transparent url(../tiles/dg_monster7_32.gif)        0  -32px no-repeat; }
+.monster7_2x2 { background: transparent url(../tiles/dg_monster7_32.gif)   -32px  -32px no-repeat; }
+.monster7_2x3 { background: transparent url(../tiles/dg_monster7_32.gif)   -64px  -32px no-repeat; }
+.monster7_2x4 { background: transparent url(../tiles/dg_monster7_32.gif)   -96px  -32px no-repeat; }
+.monster7_2x5 { background: transparent url(../tiles/dg_monster7_32.gif)  -128px  -32px no-repeat; }
+.monster7_2x6 { background: transparent url(../tiles/dg_monster7_32.gif)  -160px  -32px no-repeat; }
+.monster7_2x7 { background: transparent url(../tiles/dg_monster7_32.gif)  -192px  -32px no-repeat; }
+.monster7_2x8 { background: transparent url(../tiles/dg_monster7_32.gif)  -224px  -32px no-repeat; }
+
+.monster7_3x1 {background: transparent url(../tiles/dg_monster7_32.gif)        0  -64px no-repeat; }
+.monster7_3x2 { background: transparent url(../tiles/dg_monster7_32.gif)   -32px  -64px no-repeat; }
+.monster7_3x3 { background: transparent url(../tiles/dg_monster7_32.gif)   -64px  -64px no-repeat; }
+.monster7_3x4 { background: transparent url(../tiles/dg_monster7_32.gif)   -96px  -64px no-repeat; }
+.monster7_3x5 { background: transparent url(../tiles/dg_monster7_32.gif)  -128px  -64px no-repeat; }
+.monster7_3x6 { background: transparent url(../tiles/dg_monster7_32.gif)  -160px  -64px no-repeat; }
+.monster7_3x7 { background: transparent url(../tiles/dg_monster7_32.gif)  -192px  -64px no-repeat; }
+.monster7_3x8 { background: transparent url(../tiles/dg_monster7_32.gif)  -224px  -64px no-repeat; }
+
+.monster7_4x1 {background: transparent url(../tiles/dg_monster7_32.gif)        0  -96px no-repeat; }
+.monster7_4x2 { background: transparent url(../tiles/dg_monster7_32.gif)   -32px  -96px no-repeat; }
+.monster7_4x3 { background: transparent url(../tiles/dg_monster7_32.gif)   -64px  -96px no-repeat; }
+.monster7_4x4 { background: transparent url(../tiles/dg_monster7_32.gif)   -96px  -96px no-repeat; }
+.monster7_4x5 { background: transparent url(../tiles/dg_monster7_32.gif)  -128px  -96px no-repeat; }
+.monster7_4x6 { background: transparent url(../tiles/dg_monster7_32.gif)  -160px  -96px no-repeat; }
+.monster7_4x7 { background: transparent url(../tiles/dg_monster7_32.gif)  -192px  -96px no-repeat; }
+.monster7_4x8 { background: transparent url(../tiles/dg_monster7_32.gif)  -224px  -96px no-repeat; }
+
+.classm1x1 {background: transparent url(../tiles/dg_classm32.gif)        0    0 no-repeat; }
+.classm1x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px    0 no-repeat; }
+.classm1x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px    0 no-repeat; }
+.classm1x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px    0 no-repeat; }
+.classm1x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px    0 no-repeat; }
+.classm1x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px    0 no-repeat; }
+.classm1x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px    0 no-repeat; }
+.classm1x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px    0 no-repeat; }
+
+.classm2x1 {background: transparent url(../tiles/dg_classm32.gif)        0  -32px no-repeat; }
+.classm2x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px  -32px no-repeat; }
+.classm2x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px  -32px no-repeat; }
+.classm2x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px  -32px no-repeat; }
+.classm2x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px  -32px no-repeat; }
+.classm2x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px  -32px no-repeat; }
+.classm2x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px  -32px no-repeat; }
+.classm2x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px  -32px no-repeat; }
+
+.classm3x1 {background: transparent url(../tiles/dg_classm32.gif)        0  -64px no-repeat; }
+.classm3x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px  -64px no-repeat; }
+.classm3x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px  -64px no-repeat; }
+.classm3x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px  -64px no-repeat; }
+.classm3x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px  -64px no-repeat; }
+.classm3x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px  -64px no-repeat; }
+.classm3x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px  -64px no-repeat; }
+.classm3x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px  -64px no-repeat; }
+
+.classm4x1 {background: transparent url(../tiles/dg_classm32.gif)        0  -96px no-repeat; }
+.classm4x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px  -96px no-repeat; }
+.classm4x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px  -96px no-repeat; }
+.classm4x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px  -96px no-repeat; }
+.classm4x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px  -96px no-repeat; }
+.classm4x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px  -96px no-repeat; }
+.classm4x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px  -96px no-repeat; }
+.classm4x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px  -96px no-repeat; }
+
+.classm5x1 {background: transparent url(../tiles/dg_classm32.gif)        0 -128px no-repeat; }
+.classm5x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px -128px no-repeat; }
+.classm5x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px -128px no-repeat; }
+.classm5x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px -128px no-repeat; }
+.classm5x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px -128px no-repeat; }
+.classm5x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px -128px no-repeat; }
+.classm5x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px -128px no-repeat; }
+.classm5x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px -128px no-repeat; }
+
+.classm6x1 {background: transparent url(../tiles/dg_classm32.gif)        0 -160px no-repeat; }
+.classm6x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px -160px no-repeat; }
+.classm6x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px -160px no-repeat; }
+.classm6x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px -160px no-repeat; }
+.classm6x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px -160px no-repeat; }
+.classm6x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px -160px no-repeat; }
+.classm6x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px -160px no-repeat; }
+.classm6x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px -160px no-repeat; }
+
+.classm7x1 {background: transparent url(../tiles/dg_classm32.gif)        0 -192px no-repeat; }
+.classm7x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px -192px no-repeat; }
+.classm7x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px -192px no-repeat; }
+.classm7x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px -192px no-repeat; }
+.classm7x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px -192px no-repeat; }
+.classm7x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px -192px no-repeat; }
+.classm7x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px -192px no-repeat; }
+.classm7x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px -192px no-repeat; }
+
+.classm8x1 {background: transparent url(../tiles/dg_classm32.gif)        0 -224px no-repeat; }
+.classm8x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px -224px no-repeat; }
+.classm8x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px -224px no-repeat; }
+.classm8x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px -224px no-repeat; }
+.classm8x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px -224px no-repeat; }
+.classm8x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px -224px no-repeat; }
+.classm8x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px -224px no-repeat; }
+.classm8x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px -224px no-repeat; }
+
+.classm9x1 {background: transparent url(../tiles/dg_classm32.gif)        0 -256px no-repeat; }
+.classm9x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px -256px no-repeat; }
+.classm9x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px -256px no-repeat; }
+.classm9x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px -256px no-repeat; }
+.classm9x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px -256px no-repeat; }
+.classm9x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px -256px no-repeat; }
+.classm9x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px -256px no-repeat; }
+.classm9x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px -256px no-repeat; }
+
+.classm10x1 {background: transparent url(../tiles/dg_classm32.gif)        0 -288px no-repeat; }
+.classm10x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px -288px no-repeat; }
+.classm10x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px -288px no-repeat; }
+.classm10x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px -288px no-repeat; }
+.classm10x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px -288px no-repeat; }
+.classm10x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px -288px no-repeat; }
+.classm10x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px -288px no-repeat; }
+.classm10x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px -288px no-repeat; }
+
+.classm11x1 {background: transparent url(../tiles/dg_classm32.gif)        0 -320px no-repeat; }
+.classm11x2 { background: transparent url(../tiles/dg_classm32.gif)   -32px -320px no-repeat; }
+.classm11x3 { background: transparent url(../tiles/dg_classm32.gif)   -64px -320px no-repeat; }
+.classm11x4 { background: transparent url(../tiles/dg_classm32.gif)   -96px -320px no-repeat; }
+.classm11x5 { background: transparent url(../tiles/dg_classm32.gif)  -128px -320px no-repeat; }
+.classm11x6 { background: transparent url(../tiles/dg_classm32.gif)  -160px -320px no-repeat; }
+.classm11x7 { background: transparent url(../tiles/dg_classm32.gif)  -192px -320px no-repeat; }
+.classm11x8 { background: transparent url(../tiles/dg_classm32.gif)  -224px -320px no-repeat; }
+
+.humans1x1 {background: transparent url(../tiles/dg_humans32.gif)        0    0 no-repeat; }
+.humans1x2 { background: transparent url(../tiles/dg_humans32.gif)   -32px    0 no-repeat; }
+.humans1x3 { background: transparent url(../tiles/dg_humans32.gif)   -64px    0 no-repeat; }
+.humans1x4 { background: transparent url(../tiles/dg_humans32.gif)   -96px    0 no-repeat; }
+.humans1x5 { background: transparent url(../tiles/dg_humans32.gif)  -128px    0 no-repeat; }
+.humans1x6 { background: transparent url(../tiles/dg_humans32.gif)  -160px    0 no-repeat; }
+.humans1x7 { background: transparent url(../tiles/dg_humans32.gif)  -192px    0 no-repeat; }
+
+.humans2x1 {background: transparent url(../tiles/dg_humans32.gif)        0  -32px no-repeat; }
+.humans2x2 { background: transparent url(../tiles/dg_humans32.gif)   -32px  -32px no-repeat; }
+.humans2x3 { background: transparent url(../tiles/dg_humans32.gif)   -64px  -32px no-repeat; }
+.humans2x4 { background: transparent url(../tiles/dg_humans32.gif)   -96px  -32px no-repeat; }
+.humans2x5 { background: transparent url(../tiles/dg_humans32.gif)  -128px  -32px no-repeat; }
+.humans2x6 { background: transparent url(../tiles/dg_humans32.gif)  -160px  -32px no-repeat; }
+.humans2x7 { background: transparent url(../tiles/dg_humans32.gif)  -192px  -32px no-repeat; }
+
+.humans3x1 {background: transparent url(../tiles/dg_humans32.gif)        0  -64px no-repeat; }
+.humans3x2 { background: transparent url(../tiles/dg_humans32.gif)   -32px  -64px no-repeat; }
+.humans3x3 { background: transparent url(../tiles/dg_humans32.gif)   -64px  -64px no-repeat; }
+.humans3x4 { background: transparent url(../tiles/dg_humans32.gif)   -96px  -64px no-repeat; }
+.humans3x5 { background: transparent url(../tiles/dg_humans32.gif)  -128px  -64px no-repeat; }
+.humans3x6 { background: transparent url(../tiles/dg_humans32.gif)  -160px  -64px no-repeat; }
+.humans3x7 { background: transparent url(../tiles/dg_humans32.gif)  -192px  -64px no-repeat; }
+
+.humans4x1 {background: transparent url(../tiles/dg_humans32.gif)        0  -96px no-repeat; }
+.humans4x2 { background: transparent url(../tiles/dg_humans32.gif)   -32px  -96px no-repeat; }
+.humans4x3 { background: transparent url(../tiles/dg_humans32.gif)   -64px  -96px no-repeat; }
+.humans4x4 { background: transparent url(../tiles/dg_humans32.gif)   -96px  -96px no-repeat; }
+.humans4x5 { background: transparent url(../tiles/dg_humans32.gif)  -128px  -96px no-repeat; }
+.humans4x6 { background: transparent url(../tiles/dg_humans32.gif)  -160px  -96px no-repeat; }
+.humans4x7 { background: transparent url(../tiles/dg_humans32.gif)  -192px  -96px no-repeat; }
+
+.humans5x1 {background: transparent url(../tiles/dg_humans32.gif)        0 -128px no-repeat; }
+.humans5x2 { background: transparent url(../tiles/dg_humans32.gif)   -32px -128px no-repeat; }
+.humans5x3 { background: transparent url(../tiles/dg_humans32.gif)   -64px -128px no-repeat; }
+.humans5x4 { background: transparent url(../tiles/dg_humans32.gif)   -96px -128px no-repeat; }
+.humans5x5 { background: transparent url(../tiles/dg_humans32.gif)  -128px -128px no-repeat; }
+.humans5x6 { background: transparent url(../tiles/dg_humans32.gif)  -160px -128px no-repeat; }
+.humans5x7 { background: transparent url(../tiles/dg_humans32.gif)  -192px -128px no-repeat; }
+
+.humans6x1 {background: transparent url(../tiles/dg_humans32.gif)        0 -160px no-repeat; }
+.humans6x2 { background: transparent url(../tiles/dg_humans32.gif)   -32px -160px no-repeat; }
+.humans6x3 { background: transparent url(../tiles/dg_humans32.gif)   -64px -160px no-repeat; }
+.humans6x4 { background: transparent url(../tiles/dg_humans32.gif)   -96px -160px no-repeat; }
+.humans6x5 { background: transparent url(../tiles/dg_humans32.gif)  -128px -160px no-repeat; }
+.humans6x6 { background: transparent url(../tiles/dg_humans32.gif)  -160px -160px no-repeat; }
+.humans6x7 { background: transparent url(../tiles/dg_humans32.gif)  -192px -160px no-repeat; }
+
+.humans7x1 {background: transparent url(../tiles/dg_humans32.gif)        0 -192px no-repeat; }
+.humans7x2 { background: transparent url(../tiles/dg_humans32.gif)   -32px -192px no-repeat; }
+.humans7x3 { background: transparent url(../tiles/dg_humans32.gif)   -64px -192px no-repeat; }
+.humans7x4 { background: transparent url(../tiles/dg_humans32.gif)   -96px -192px no-repeat; }
+.humans7x5 { background: transparent url(../tiles/dg_humans32.gif)  -128px -192px no-repeat; }
+.humans7x6 { background: transparent url(../tiles/dg_humans32.gif)  -160px -192px no-repeat; }
+.humans7x7 { background: transparent url(../tiles/dg_humans32.gif)  -192px -192px no-repeat; }
+
+.undead1x1 {background: transparent url(../tiles/dg_undead32.gif)        0    0 no-repeat; }
+.undead1x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px    0 no-repeat; }
+.undead1x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px    0 no-repeat; }
+.undead1x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px    0 no-repeat; }
+.undead1x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px    0 no-repeat; }
+.undead1x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px    0 no-repeat; }
+.undead1x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px    0 no-repeat; }
+
+.undead2x1 {background: transparent url(../tiles/dg_undead32.gif)        0  -32px no-repeat; }
+.undead2x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px  -32px no-repeat; }
+.undead2x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px  -32px no-repeat; }
+.undead2x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px  -32px no-repeat; }
+.undead2x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px  -32px no-repeat; }
+.undead2x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px  -32px no-repeat; }
+.undead2x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px  -32px no-repeat; }
+
+.undead3x1 {background: transparent url(../tiles/dg_undead32.gif)        0  -64px no-repeat; }
+.undead3x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px  -64px no-repeat; }
+.undead3x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px  -64px no-repeat; }
+.undead3x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px  -64px no-repeat; }
+.undead3x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px  -64px no-repeat; }
+.undead3x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px  -64px no-repeat; }
+.undead3x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px  -64px no-repeat; }
+
+.undead4x1 {background: transparent url(../tiles/dg_undead32.gif)        0  -96px no-repeat; }
+.undead4x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px  -96px no-repeat; }
+.undead4x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px  -96px no-repeat; }
+.undead4x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px  -96px no-repeat; }
+.undead4x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px  -96px no-repeat; }
+.undead4x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px  -96px no-repeat; }
+.undead4x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px  -96px no-repeat; }
+
+.undead5x1 {background: transparent url(../tiles/dg_undead32.gif)        0 -128px no-repeat; }
+.undead5x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px -128px no-repeat; }
+.undead5x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px -128px no-repeat; }
+.undead5x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px -128px no-repeat; }
+.undead5x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px -128px no-repeat; }
+.undead5x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px -128px no-repeat; }
+.undead5x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px -128px no-repeat; }
+
+.undead6x1 {background: transparent url(../tiles/dg_undead32.gif)        0 -160px no-repeat; }
+.undead6x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px -160px no-repeat; }
+.undead6x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px -160px no-repeat; }
+.undead6x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px -160px no-repeat; }
+.undead6x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px -160px no-repeat; }
+.undead6x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px -160px no-repeat; }
+.undead6x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px -160px no-repeat; }
+
+.undead7x1 {background: transparent url(../tiles/dg_undead32.gif)        0 -192px no-repeat; }
+.undead7x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px -192px no-repeat; }
+.undead7x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px -192px no-repeat; }
+.undead7x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px -192px no-repeat; }
+.undead7x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px -192px no-repeat; }
+.undead7x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px -192px no-repeat; }
+.undead7x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px -192px no-repeat; }
+
+.undead8x1 {background: transparent url(../tiles/dg_undead32.gif)        0 -224px no-repeat; }
+.undead8x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px -224px no-repeat; }
+.undead8x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px -224px no-repeat; }
+.undead8x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px -224px no-repeat; }
+.undead8x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px -224px no-repeat; }
+.undead8x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px -224px no-repeat; }
+.undead8x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px -224px no-repeat; }
+
+.undead9x1 {background: transparent url(../tiles/dg_undead32.gif)        0 -256px no-repeat; }
+.undead9x2 { background: transparent url(../tiles/dg_undead32.gif)   -32px -256px no-repeat; }
+.undead9x3 { background: transparent url(../tiles/dg_undead32.gif)   -64px -256px no-repeat; }
+.undead9x4 { background: transparent url(../tiles/dg_undead32.gif)   -96px -256px no-repeat; }
+.undead9x5 { background: transparent url(../tiles/dg_undead32.gif)  -128px -256px no-repeat; }
+.undead9x6 { background: transparent url(../tiles/dg_undead32.gif)  -160px -256px no-repeat; }
+.undead9x7 { background: transparent url(../tiles/dg_undead32.gif)  -192px -256px no-repeat; }
+
+.uniques1x1 {background: transparent url(../tiles/dg_uniques32.gif)        0    0 no-repeat; }
+.uniques1x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px    0 no-repeat; }
+.uniques1x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px    0 no-repeat; }
+.uniques1x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px    0 no-repeat; }
+.uniques1x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px    0 no-repeat; }
+.uniques1x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px    0 no-repeat; }
+.uniques1x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px    0 no-repeat; }
+.uniques1x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px    0 no-repeat; }
+.uniques1x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px    0 no-repeat; }
+.uniques1x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px    0 no-repeat; }
+
+.uniques2x1 {background: transparent url(../tiles/dg_uniques32.gif)        0  -32px no-repeat; }
+.uniques2x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px  -32px no-repeat; }
+.uniques2x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px  -32px no-repeat; }
+.uniques2x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px  -32px no-repeat; }
+.uniques2x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px  -32px no-repeat; }
+.uniques2x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px  -32px no-repeat; }
+.uniques2x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px  -32px no-repeat; }
+.uniques2x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px  -32px no-repeat; }
+.uniques2x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px  -32px no-repeat; }
+.uniques2x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px  -32px no-repeat; }
+
+.uniques3x1 {background: transparent url(../tiles/dg_uniques32.gif)        0  -64px no-repeat; }
+.uniques3x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px  -64px no-repeat; }
+.uniques3x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px  -64px no-repeat; }
+.uniques3x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px  -64px no-repeat; }
+.uniques3x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px  -64px no-repeat; }
+.uniques3x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px  -64px no-repeat; }
+.uniques3x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px  -64px no-repeat; }
+.uniques3x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px  -64px no-repeat; }
+.uniques3x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px  -64px no-repeat; }
+.uniques3x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px  -64px no-repeat; }
+
+.uniques4x1 {background: transparent url(../tiles/dg_uniques32.gif)        0  -96px no-repeat; }
+.uniques4x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px  -96px no-repeat; }
+.uniques4x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px  -96px no-repeat; }
+.uniques4x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px  -96px no-repeat; }
+.uniques4x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px  -96px no-repeat; }
+.uniques4x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px  -96px no-repeat; }
+.uniques4x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px  -96px no-repeat; }
+.uniques4x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px  -96px no-repeat; }
+.uniques4x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px  -96px no-repeat; }
+.uniques4x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px  -96px no-repeat; }
+
+.uniques5x1 {background: transparent url(../tiles/dg_uniques32.gif)        0 -128px no-repeat; }
+.uniques5x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px -128px no-repeat; }
+.uniques5x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px -128px no-repeat; }
+.uniques5x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px -128px no-repeat; }
+.uniques5x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px -128px no-repeat; }
+.uniques5x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px -128px no-repeat; }
+.uniques5x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px -128px no-repeat; }
+.uniques5x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px -128px no-repeat; }
+.uniques5x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px -128px no-repeat; }
+.uniques5x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px -128px no-repeat; }
+
+.uniques6x1 {background: transparent url(../tiles/dg_uniques32.gif)        0 -160px no-repeat; }
+.uniques6x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px -160px no-repeat; }
+.uniques6x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px -160px no-repeat; }
+.uniques6x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px -160px no-repeat; }
+.uniques6x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px -160px no-repeat; }
+.uniques6x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px -160px no-repeat; }
+.uniques6x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px -160px no-repeat; }
+.uniques6x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px -160px no-repeat; }
+.uniques6x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px -160px no-repeat; }
+.uniques6x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px -160px no-repeat; }
+
+.uniques7x1 {background: transparent url(../tiles/dg_uniques32.gif)        0 -192px no-repeat; }
+.uniques7x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px -192px no-repeat; }
+.uniques7x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px -192px no-repeat; }
+.uniques7x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px -192px no-repeat; }
+.uniques7x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px -192px no-repeat; }
+.uniques7x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px -192px no-repeat; }
+.uniques7x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px -192px no-repeat; }
+.uniques7x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px -192px no-repeat; }
+.uniques7x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px -192px no-repeat; }
+.uniques7x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px -192px no-repeat; }
+
+.uniques8x1 {background: transparent url(../tiles/dg_uniques32.gif)        0 -224px no-repeat; }
+.uniques8x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px -224px no-repeat; }
+.uniques8x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px -224px no-repeat; }
+.uniques8x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px -224px no-repeat; }
+.uniques8x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px -224px no-repeat; }
+.uniques8x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px -224px no-repeat; }
+.uniques8x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px -224px no-repeat; }
+.uniques8x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px -224px no-repeat; }
+.uniques8x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px -224px no-repeat; }
+.uniques8x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px -224px no-repeat; }
+
+.uniques9x1 {background: transparent url(../tiles/dg_uniques32.gif)        0 -256px no-repeat; }
+.uniques9x2 { background: transparent url(../tiles/dg_uniques32.gif)   -32px -256px no-repeat; }
+.uniques9x3 { background: transparent url(../tiles/dg_uniques32.gif)   -64px -256px no-repeat; }
+.uniques9x4 { background: transparent url(../tiles/dg_uniques32.gif)   -96px -256px no-repeat; }
+.uniques9x5 { background: transparent url(../tiles/dg_uniques32.gif)  -128px -256px no-repeat; }
+.uniques9x6 { background: transparent url(../tiles/dg_uniques32.gif)  -160px -256px no-repeat; }
+.uniques9x7 { background: transparent url(../tiles/dg_uniques32.gif)  -192px -256px no-repeat; }
+.uniques9x8 { background: transparent url(../tiles/dg_uniques32.gif)  -224px -256px no-repeat; }
+.uniques9x9 { background: transparent url(../tiles/dg_uniques32.gif)  -256px -256px no-repeat; }
+.uniques9x10 { background: transparent url(../tiles/dg_uniques32.gif) -288px -256px no-repeat; }
+
+
+.out1x1 {background: transparent url(../tiles/hhout.png)        0    0 no-repeat; }
+.out1x2 { background: transparent url(../tiles/hhout.png)   -32px    0 no-repeat; }
+.out1x3 { background: transparent url(../tiles/hhout.png)   -64px    0 no-repeat; }
+.out1x4 { background: transparent url(../tiles/hhout.png)   -96px    0 no-repeat; }
+.out1x5 { background: transparent url(../tiles/hhout.png)  -128px    0 no-repeat; }
+.out1x6 { background: transparent url(../tiles/hhout.png)  -160px    0 no-repeat; }
+.out1x7 { background: transparent url(../tiles/hhout.png)  -192px    0 no-repeat; }
+.out1x8 { background: transparent url(../tiles/hhout.png)  -224px    0 no-repeat; }
+.out1x9 { background: transparent url(../tiles/hhout.png)  -256px    0 no-repeat; }
+.out1x10 { background: transparent url(../tiles/hhout.png) -288px    0 no-repeat; }
+.out1x11 { background: transparent url(../tiles/hhout.png) -320px    0 no-repeat; }
+.out1x12 { background: transparent url(../tiles/hhout.png) -352px    0 no-repeat; }
+
+.out2x1 {background: transparent url(../tiles/hhout.png)        0  -32px no-repeat; }
+.out2x2 { background: transparent url(../tiles/hhout.png)   -32px  -32px no-repeat; }
+.out2x3 { background: transparent url(../tiles/hhout.png)   -64px  -32px no-repeat; }
+.out2x4 { background: transparent url(../tiles/hhout.png)   -96px  -32px no-repeat; }
+.out2x5 { background: transparent url(../tiles/hhout.png)  -128px  -32px no-repeat; }
+.out2x6 { background: transparent url(../tiles/hhout.png)  -160px  -32px no-repeat; }
+.out2x7 { background: transparent url(../tiles/hhout.png)  -192px  -32px no-repeat; }
+.out2x8 { background: transparent url(../tiles/hhout.png)  -224px  -32px no-repeat; }
+.out2x9 { background: transparent url(../tiles/hhout.png)  -256px  -32px no-repeat; }
+.out2x10 { background: transparent url(../tiles/hhout.png) -288px  -32px no-repeat; }
+.out2x11 { background: transparent url(../tiles/hhout.png) -320px  -32px no-repeat; }
+.out2x12 { background: transparent url(../tiles/hhout.png) -352px  -32px no-repeat; }
+
+.out3x1 {background: transparent url(../tiles/hhout.png)        0  -64px no-repeat; }
+.out3x2 { background: transparent url(../tiles/hhout.png)   -32px  -64px no-repeat; }
+.out3x3 { background: transparent url(../tiles/hhout.png)   -64px  -64px no-repeat; }
+.out3x4 { background: transparent url(../tiles/hhout.png)   -96px  -64px no-repeat; }
+.out3x5 { background: transparent url(../tiles/hhout.png)  -128px  -64px no-repeat; }
+.out3x6 { background: transparent url(../tiles/hhout.png)  -160px  -64px no-repeat; }
+.out3x7 { background: transparent url(../tiles/hhout.png)  -192px  -64px no-repeat; }
+.out3x8 { background: transparent url(../tiles/hhout.png)  -224px  -64px no-repeat; }
+.out3x9 { background: transparent url(../tiles/hhout.png)  -256px  -64px no-repeat; }
+.out3x10 { background: transparent url(../tiles/hhout.png) -288px  -64px no-repeat; }
+.out3x11 { background: transparent url(../tiles/hhout.png) -320px  -64px no-repeat; }
+.out3x12 { background: transparent url(../tiles/hhout.png) -352px  -64px no-repeat; }
+
+.out4x1 {background: transparent url(../tiles/hhout.png)        0  -96px no-repeat; }
+.out4x2 { background: transparent url(../tiles/hhout.png)   -32px  -96px no-repeat; }
+.out4x3 { background: transparent url(../tiles/hhout.png)   -64px  -96px no-repeat; }
+.out4x4 { background: transparent url(../tiles/hhout.png)   -96px  -96px no-repeat; }
+.out4x5 { background: transparent url(../tiles/hhout.png)  -128px  -96px no-repeat; }
+.out4x6 { background: transparent url(../tiles/hhout.png)  -160px  -96px no-repeat; }
+.out4x7 { background: transparent url(../tiles/hhout.png)  -192px  -96px no-repeat; }
+.out4x8 { background: transparent url(../tiles/hhout.png)  -224px  -96px no-repeat; }
+.out4x9 { background: transparent url(../tiles/hhout.png)  -256px  -96px no-repeat; }
+.out4x10 { background: transparent url(../tiles/hhout.png) -288px  -96px no-repeat; }
+.out4x11 { background: transparent url(../tiles/hhout.png) -320px  -96px no-repeat; }
+.out4x12 { background: transparent url(../tiles/hhout.png) -352px  -96px no-repeat; }
+
+.out5x1 {background: transparent url(../tiles/hhout.png)        0 -128px no-repeat; }
+.out5x2 { background: transparent url(../tiles/hhout.png)   -32px -128px no-repeat; }
+.out5x3 { background: transparent url(../tiles/hhout.png)   -64px -128px no-repeat; }
+.out5x4 { background: transparent url(../tiles/hhout.png)   -96px -128px no-repeat; }
+.out5x5 { background: transparent url(../tiles/hhout.png)  -128px -128px no-repeat; }
+.out5x6 { background: transparent url(../tiles/hhout.png)  -160px -128px no-repeat; }
+.out5x7 { background: transparent url(../tiles/hhout.png)  -192px -128px no-repeat; }
+.out5x8 { background: transparent url(../tiles/hhout.png)  -224px -128px no-repeat; }
+.out5x9 { background: transparent url(../tiles/hhout.png)  -256px -128px no-repeat; }
+.out5x10 { background: transparent url(../tiles/hhout.png) -288px -128px no-repeat; }
+.out5x11 { background: transparent url(../tiles/hhout.png) -320px -128px no-repeat; }
+.out5x12 { background: transparent url(../tiles/hhout.png) -352px -128px no-repeat; }
+
+.out6x1 {background: transparent url(../tiles/hhout.png)        0 -160px no-repeat; }
+.out6x2 { background: transparent url(../tiles/hhout.png)   -32px -160px no-repeat; }
+.out6x3 { background: transparent url(../tiles/hhout.png)   -64px -160px no-repeat; }
+.out6x4 { background: transparent url(../tiles/hhout.png)   -96px -160px no-repeat; }
+.out6x5 { background: transparent url(../tiles/hhout.png)  -128px -160px no-repeat; }
+.out6x6 { background: transparent url(../tiles/hhout.png)  -160px -160px no-repeat; }
+.out6x7 { background: transparent url(../tiles/hhout.png)  -192px -160px no-repeat; }
+.out6x8 { background: transparent url(../tiles/hhout.png)  -224px -160px no-repeat; }
+.out6x9 { background: transparent url(../tiles/hhout.png)  -256px -160px no-repeat; }
+.out6x10 { background: transparent url(../tiles/hhout.png) -288px -160px no-repeat; }
+.out6x11 { background: transparent url(../tiles/hhout.png) -320px -160px no-repeat; }
+.out6x12 { background: transparent url(../tiles/hhout.png) -352px -160px no-repeat; }
+
+.out7x1 {background: transparent url(../tiles/hhout.png)        0 -192px no-repeat; }
+.out7x2 { background: transparent url(../tiles/hhout.png)   -32px -192px no-repeat; }
+.out7x3 { background: transparent url(../tiles/hhout.png)   -64px -192px no-repeat; }
+.out7x4 { background: transparent url(../tiles/hhout.png)   -96px -192px no-repeat; }
+.out7x5 { background: transparent url(../tiles/hhout.png)  -128px -192px no-repeat; }
+.out7x6 { background: transparent url(../tiles/hhout.png)  -160px -192px no-repeat; }
+.out7x7 { background: transparent url(../tiles/hhout.png)  -192px -192px no-repeat; }
+.out7x8 { background: transparent url(../tiles/hhout.png)  -224px -192px no-repeat; }
+.out7x9 { background: transparent url(../tiles/hhout.png)  -256px -192px no-repeat; }
+.out7x10 { background: transparent url(../tiles/hhout.png) -288px -192px no-repeat; }
+.out7x11 { background: transparent url(../tiles/hhout.png) -320px -192px no-repeat; }
+.out7x12 { background: transparent url(../tiles/hhout.png) -352px -192px no-repeat; }
+
+.out8x1 {background: transparent url(../tiles/hhout.png)        0 -224px no-repeat; }
+.out8x2 { background: transparent url(../tiles/hhout.png)   -32px -224px no-repeat; }
+.out8x3 { background: transparent url(../tiles/hhout.png)   -64px -224px no-repeat; }
+.out8x4 { background: transparent url(../tiles/hhout.png)   -96px -224px no-repeat; }
+.out8x5 { background: transparent url(../tiles/hhout.png)  -128px -224px no-repeat; }
+.out8x6 { background: transparent url(../tiles/hhout.png)  -160px -224px no-repeat; }
+.out8x7 { background: transparent url(../tiles/hhout.png)  -192px -224px no-repeat; }
+.out8x8 { background: transparent url(../tiles/hhout.png)  -224px -224px no-repeat; }
+.out8x9 { background: transparent url(../tiles/hhout.png)  -256px -224px no-repeat; }
+.out8x10 { background: transparent url(../tiles/hhout.png) -288px -224px no-repeat; }
+.out8x11 { background: transparent url(../tiles/hhout.png) -320px -224px no-repeat; }
+.out8x12 { background: transparent url(../tiles/hhout.png) -352px -224px no-repeat; }
+
+.out9x1 {background: transparent url(../tiles/hhout.png)        0 -256px no-repeat; }
+.out9x2 { background: transparent url(../tiles/hhout.png)   -32px -256px no-repeat; }
+.out9x3 { background: transparent url(../tiles/hhout.png)   -64px -256px no-repeat; }
+.out9x4 { background: transparent url(../tiles/hhout.png)   -96px -256px no-repeat; }
+.out9x5 { background: transparent url(../tiles/hhout.png)  -128px -256px no-repeat; }
+.out9x6 { background: transparent url(../tiles/hhout.png)  -160px -256px no-repeat; }
+.out9x7 { background: transparent url(../tiles/hhout.png)  -192px -256px no-repeat; }
+.out9x8 { background: transparent url(../tiles/hhout.png)  -224px -256px no-repeat; }
+.out9x9 { background: transparent url(../tiles/hhout.png)  -256px -256px no-repeat; }
+.out9x10 { background: transparent url(../tiles/hhout.png) -288px -256px no-repeat; }
+.out9x11 { background: transparent url(../tiles/hhout.png) -320px -256px no-repeat; }
+.out9x12 { background: transparent url(../tiles/hhout.png) -352px -256px no-repeat; }
+
+.out10x1 {background: transparent url(../tiles/hhout.png)        0 -288px no-repeat; }
+.out10x2 { background: transparent url(../tiles/hhout.png)   -32px -288px no-repeat; }
+.out10x3 { background: transparent url(../tiles/hhout.png)   -64px -288px no-repeat; }
+.out10x4 { background: transparent url(../tiles/hhout.png)   -96px -288px no-repeat; }
+.out10x5 { background: transparent url(../tiles/hhout.png)  -128px -288px no-repeat; }
+.out10x6 { background: transparent url(../tiles/hhout.png)  -160px -288px no-repeat; }
+.out10x7 { background: transparent url(../tiles/hhout.png)  -192px -288px no-repeat; }
+.out10x8 { background: transparent url(../tiles/hhout.png)  -224px -288px no-repeat; }
+.out10x9 { background: transparent url(../tiles/hhout.png)  -256px -288px no-repeat; }
+.out10x10 { background: transparent url(../tiles/hhout.png) -288px -288px no-repeat; }
+.out10x11 { background: transparent url(../tiles/hhout.png) -320px -288px no-repeat; }
+.out10x12 { background: transparent url(../tiles/hhout.png) -352px -288px no-repeat; }
+
+.out11x1 {background: transparent url(../tiles/hhout.png)        0 -320px no-repeat; }
+.out11x2 { background: transparent url(../tiles/hhout.png)   -32px -320px no-repeat; }
+.out11x3 { background: transparent url(../tiles/hhout.png)   -64px -320px no-repeat; }
+.out11x4 { background: transparent url(../tiles/hhout.png)   -96px -320px no-repeat; }
+.out11x5 { background: transparent url(../tiles/hhout.png)  -128px -320px no-repeat; }
+.out11x6 { background: transparent url(../tiles/hhout.png)  -160px -320px no-repeat; }
+.out11x7 { background: transparent url(../tiles/hhout.png)  -192px -320px no-repeat; }
+.out11x8 { background: transparent url(../tiles/hhout.png)  -224px -320px no-repeat; }
+.out11x9 { background: transparent url(../tiles/hhout.png)  -256px -320px no-repeat; }
+.out11x10 { background: transparent url(../tiles/hhout.png) -288px -320px no-repeat; }
+.out11x11 { background: transparent url(../tiles/hhout.png) -320px -320px no-repeat; }
+.out11x12 { background: transparent url(../tiles/hhout.png) -352px -320px no-repeat; }
+
+.out12x1 {background: transparent url(../tiles/hhout.png)        0 -352px no-repeat; }
+.out12x2 { background: transparent url(../tiles/hhout.png)   -32px -352px no-repeat; }
+.out12x3 { background: transparent url(../tiles/hhout.png)   -64px -352px no-repeat; }
+.out12x4 { background: transparent url(../tiles/hhout.png)   -96px -352px no-repeat; }
+.out12x5 { background: transparent url(../tiles/hhout.png)  -128px -352px no-repeat; }
+.out12x6 { background: transparent url(../tiles/hhout.png)  -160px -352px no-repeat; }
+.out12x7 { background: transparent url(../tiles/hhout.png)  -192px -352px no-repeat; }
+.out12x8 { background: transparent url(../tiles/hhout.png)  -224px -352px no-repeat; }
+.out12x9 { background: transparent url(../tiles/hhout.png)  -256px -352px no-repeat; }
+.out12x10 { background: transparent url(../tiles/hhout.png) -288px -352px no-repeat; }
+.out12x11 { background: transparent url(../tiles/hhout.png) -320px -352px no-repeat; }
+.out12x12 { background: transparent url(../tiles/hhout.png) -352px -352px no-repeat; }
+
+.des1x1 {background: transparent url(../tiles/hhdes.png)        0    0 no-repeat; }
+.des1x2 { background: transparent url(../tiles/hhdes.png)   -32px    0 no-repeat; }
+.des1x3 { background: transparent url(../tiles/hhdes.png)   -64px    0 no-repeat; }
+.des1x4 { background: transparent url(../tiles/hhdes.png)   -96px    0 no-repeat; }
+.des1x5 { background: transparent url(../tiles/hhdes.png)  -128px    0 no-repeat; }
+.des1x6 { background: transparent url(../tiles/hhdes.png)  -160px    0 no-repeat; }
+.des1x7 { background: transparent url(../tiles/hhdes.png)  -192px    0 no-repeat; }
+.des1x8 { background: transparent url(../tiles/hhdes.png)  -224px    0 no-repeat; }
+.des1x9 { background: transparent url(../tiles/hhdes.png)  -256px    0 no-repeat; }
+.des1x10 { background: transparent url(../tiles/hhdes.png) -288px    0 no-repeat; }
+.des1x11 { background: transparent url(../tiles/hhdes.png) -320px    0 no-repeat; }
+.des1x12 { background: transparent url(../tiles/hhdes.png) -352px    0 no-repeat; }
+
+.des2x1 {background: transparent url(../tiles/hhdes.png)        0  -32px no-repeat; }
+.des2x2 { background: transparent url(../tiles/hhdes.png)   -32px  -32px no-repeat; }
+.des2x3 { background: transparent url(../tiles/hhdes.png)   -64px  -32px no-repeat; }
+.des2x4 { background: transparent url(../tiles/hhdes.png)   -96px  -32px no-repeat; }
+.des2x5 { background: transparent url(../tiles/hhdes.png)  -128px  -32px no-repeat; }
+.des2x6 { background: transparent url(../tiles/hhdes.png)  -160px  -32px no-repeat; }
+.des2x7 { background: transparent url(../tiles/hhdes.png)  -192px  -32px no-repeat; }
+.des2x8 { background: transparent url(../tiles/hhdes.png)  -224px  -32px no-repeat; }
+.des2x9 { background: transparent url(../tiles/hhdes.png)  -256px  -32px no-repeat; }
+.des2x10 { background: transparent url(../tiles/hhdes.png) -288px  -32px no-repeat; }
+.des2x11 { background: transparent url(../tiles/hhdes.png) -320px  -32px no-repeat; }
+.des2x12 { background: transparent url(../tiles/hhdes.png) -352px  -32px no-repeat; }
+
+.des3x1 {background: transparent url(../tiles/hhdes.png)        0  -64px no-repeat; }
+.des3x2 { background: transparent url(../tiles/hhdes.png)   -32px  -64px no-repeat; }
+.des3x3 { background: transparent url(../tiles/hhdes.png)   -64px  -64px no-repeat; }
+.des3x4 { background: transparent url(../tiles/hhdes.png)   -96px  -64px no-repeat; }
+.des3x5 { background: transparent url(../tiles/hhdes.png)  -128px  -64px no-repeat; }
+.des3x6 { background: transparent url(../tiles/hhdes.png)  -160px  -64px no-repeat; }
+.des3x7 { background: transparent url(../tiles/hhdes.png)  -192px  -64px no-repeat; }
+.des3x8 { background: transparent url(../tiles/hhdes.png)  -224px  -64px no-repeat; }
+.des3x9 { background: transparent url(../tiles/hhdes.png)  -256px  -64px no-repeat; }
+.des3x10 { background: transparent url(../tiles/hhdes.png) -288px  -64px no-repeat; }
+.des3x11 { background: transparent url(../tiles/hhdes.png) -320px  -64px no-repeat; }
+.des3x12 { background: transparent url(../tiles/hhdes.png) -352px  -64px no-repeat; }
+
+.des4x1 {background: transparent url(../tiles/hhdes.png)        0  -96px no-repeat; }
+.des4x2 { background: transparent url(../tiles/hhdes.png)   -32px  -96px no-repeat; }
+.des4x3 { background: transparent url(../tiles/hhdes.png)   -64px  -96px no-repeat; }
+.des4x4 { background: transparent url(../tiles/hhdes.png)   -96px  -96px no-repeat; }
+.des4x5 { background: transparent url(../tiles/hhdes.png)  -128px  -96px no-repeat; }
+.des4x6 { background: transparent url(../tiles/hhdes.png)  -160px  -96px no-repeat; }
+.des4x7 { background: transparent url(../tiles/hhdes.png)  -192px  -96px no-repeat; }
+.des4x8 { background: transparent url(../tiles/hhdes.png)  -224px  -96px no-repeat; }
+.des4x9 { background: transparent url(../tiles/hhdes.png)  -256px  -96px no-repeat; }
+.des4x10 { background: transparent url(../tiles/hhdes.png) -288px  -96px no-repeat; }
+.des4x11 { background: transparent url(../tiles/hhdes.png) -320px  -96px no-repeat; }
+.des4x12 { background: transparent url(../tiles/hhdes.png) -352px  -96px no-repeat; }
+
+.des5x1 {background: transparent url(../tiles/hhdes.png)        0 -128px no-repeat; }
+.des5x2 { background: transparent url(../tiles/hhdes.png)   -32px -128px no-repeat; }
+.des5x3 { background: transparent url(../tiles/hhdes.png)   -64px -128px no-repeat; }
+.des5x4 { background: transparent url(../tiles/hhdes.png)   -96px -128px no-repeat; }
+.des5x5 { background: transparent url(../tiles/hhdes.png)  -128px -128px no-repeat; }
+.des5x6 { background: transparent url(../tiles/hhdes.png)  -160px -128px no-repeat; }
+.des5x7 { background: transparent url(../tiles/hhdes.png)  -192px -128px no-repeat; }
+.des5x8 { background: transparent url(../tiles/hhdes.png)  -224px -128px no-repeat; }
+.des5x9 { background: transparent url(../tiles/hhdes.png)  -256px -128px no-repeat; }
+.des5x10 { background: transparent url(../tiles/hhdes.png) -288px -128px no-repeat; }
+.des5x11 { background: transparent url(../tiles/hhdes.png) -320px -128px no-repeat; }
+.des5x12 { background: transparent url(../tiles/hhdes.png) -352px -128px no-repeat; }
+
+.des6x1 {background: transparent url(../tiles/hhdes.png)        0 -160px no-repeat; }
+.des6x2 { background: transparent url(../tiles/hhdes.png)   -32px -160px no-repeat; }
+.des6x3 { background: transparent url(../tiles/hhdes.png)   -64px -160px no-repeat; }
+.des6x4 { background: transparent url(../tiles/hhdes.png)   -96px -160px no-repeat; }
+.des6x5 { background: transparent url(../tiles/hhdes.png)  -128px -160px no-repeat; }
+.des6x6 { background: transparent url(../tiles/hhdes.png)  -160px -160px no-repeat; }
+.des6x7 { background: transparent url(../tiles/hhdes.png)  -192px -160px no-repeat; }
+.des6x8 { background: transparent url(../tiles/hhdes.png)  -224px -160px no-repeat; }
+.des6x9 { background: transparent url(../tiles/hhdes.png)  -256px -160px no-repeat; }
+.des6x10 { background: transparent url(../tiles/hhdes.png) -288px -160px no-repeat; }
+.des6x11 { background: transparent url(../tiles/hhdes.png) -320px -160px no-repeat; }
+.des6x12 { background: transparent url(../tiles/hhdes.png) -352px -160px no-repeat; }
+
+.des7x1 {background: transparent url(../tiles/hhdes.png)        0 -192px no-repeat; }
+.des7x2 { background: transparent url(../tiles/hhdes.png)   -32px -192px no-repeat; }
+.des7x3 { background: transparent url(../tiles/hhdes.png)   -64px -192px no-repeat; }
+.des7x4 { background: transparent url(../tiles/hhdes.png)   -96px -192px no-repeat; }
+.des7x5 { background: transparent url(../tiles/hhdes.png)  -128px -192px no-repeat; }
+.des7x6 { background: transparent url(../tiles/hhdes.png)  -160px -192px no-repeat; }
+.des7x7 { background: transparent url(../tiles/hhdes.png)  -192px -192px no-repeat; }
+.des7x8 { background: transparent url(../tiles/hhdes.png)  -224px -192px no-repeat; }
+.des7x9 { background: transparent url(../tiles/hhdes.png)  -256px -192px no-repeat; }
+.des7x10 { background: transparent url(../tiles/hhdes.png) -288px -192px no-repeat; }
+.des7x11 { background: transparent url(../tiles/hhdes.png) -320px -192px no-repeat; }
+.des7x12 { background: transparent url(../tiles/hhdes.png) -352px -192px no-repeat; }
+
+.des8x1 {background: transparent url(../tiles/hhdes.png)        0 -224px no-repeat; }
+.des8x2 { background: transparent url(../tiles/hhdes.png)   -32px -224px no-repeat; }
+.des8x3 { background: transparent url(../tiles/hhdes.png)   -64px -224px no-repeat; }
+.des8x4 { background: transparent url(../tiles/hhdes.png)   -96px -224px no-repeat; }
+.des8x5 { background: transparent url(../tiles/hhdes.png)  -128px -224px no-repeat; }
+.des8x6 { background: transparent url(../tiles/hhdes.png)  -160px -224px no-repeat; }
+.des8x7 { background: transparent url(../tiles/hhdes.png)  -192px -224px no-repeat; }
+.des8x8 { background: transparent url(../tiles/hhdes.png)  -224px -224px no-repeat; }
+.des8x9 { background: transparent url(../tiles/hhdes.png)  -256px -224px no-repeat; }
+.des8x10 { background: transparent url(../tiles/hhdes.png) -288px -224px no-repeat; }
+.des8x11 { background: transparent url(../tiles/hhdes.png) -320px -224px no-repeat; }
+.des8x12 { background: transparent url(../tiles/hhdes.png) -352px -224px no-repeat; }
+
+.des9x1 {background: transparent url(../tiles/hhdes.png)        0 -256px no-repeat; }
+.des9x2 { background: transparent url(../tiles/hhdes.png)   -32px -256px no-repeat; }
+.des9x3 { background: transparent url(../tiles/hhdes.png)   -64px -256px no-repeat; }
+.des9x4 { background: transparent url(../tiles/hhdes.png)   -96px -256px no-repeat; }
+.des9x5 { background: transparent url(../tiles/hhdes.png)  -128px -256px no-repeat; }
+.des9x6 { background: transparent url(../tiles/hhdes.png)  -160px -256px no-repeat; }
+.des9x7 { background: transparent url(../tiles/hhdes.png)  -192px -256px no-repeat; }
+.des9x8 { background: transparent url(../tiles/hhdes.png)  -224px -256px no-repeat; }
+.des9x9 { background: transparent url(../tiles/hhdes.png)  -256px -256px no-repeat; }
+.des9x10 { background: transparent url(../tiles/hhdes.png) -288px -256px no-repeat; }
+.des9x11 { background: transparent url(../tiles/hhdes.png) -320px -256px no-repeat; }
+.des9x12 { background: transparent url(../tiles/hhdes.png) -352px -256px no-repeat; }
+
+.div11x1 {background: transparent url(../tiles/hhdiv1.png)        0    0 no-repeat; }
+.div11x2 { background: transparent url(../tiles/hhdiv1.png)   -32px    0 no-repeat; }
+.div11x3 { background: transparent url(../tiles/hhdiv1.png)   -64px    0 no-repeat; }
+.div11x4 { background: transparent url(../tiles/hhdiv1.png)   -96px    0 no-repeat; }
+.div11x5 { background: transparent url(../tiles/hhdiv1.png)  -128px    0 no-repeat; }
+.div11x6 { background: transparent url(../tiles/hhdiv1.png)  -160px    0 no-repeat; }
+.div11x7 { background: transparent url(../tiles/hhdiv1.png)  -192px    0 no-repeat; }
+.div11x8 { background: transparent url(../tiles/hhdiv1.png)  -224px    0 no-repeat; }
+
+.div12x1 {background: transparent url(../tiles/hhdiv1.png)        0  -32px no-repeat; }
+.div12x2 { background: transparent url(../tiles/hhdiv1.png)   -32px  -32px no-repeat; }
+.div12x3 { background: transparent url(../tiles/hhdiv1.png)   -64px  -32px no-repeat; }
+.div12x4 { background: transparent url(../tiles/hhdiv1.png)   -96px  -32px no-repeat; }
+.div12x5 { background: transparent url(../tiles/hhdiv1.png)  -128px  -32px no-repeat; }
+.div12x6 { background: transparent url(../tiles/hhdiv1.png)  -160px  -32px no-repeat; }
+.div12x7 { background: transparent url(../tiles/hhdiv1.png)  -192px  -32px no-repeat; }
+.div12x8 { background: transparent url(../tiles/hhdiv1.png)  -224px  -32px no-repeat; }
+
+.div13x1 {background: transparent url(../tiles/hhdiv1.png)        0  -64px no-repeat; }
+.div13x2 { background: transparent url(../tiles/hhdiv1.png)   -32px  -64px no-repeat; }
+.div13x3 { background: transparent url(../tiles/hhdiv1.png)   -64px  -64px no-repeat; }
+.div13x4 { background: transparent url(../tiles/hhdiv1.png)   -96px  -64px no-repeat; }
+.div13x5 { background: transparent url(../tiles/hhdiv1.png)  -128px  -64px no-repeat; }
+.div13x6 { background: transparent url(../tiles/hhdiv1.png)  -160px  -64px no-repeat; }
+.div13x7 { background: transparent url(../tiles/hhdiv1.png)  -192px  -64px no-repeat; }
+.div13x8 { background: transparent url(../tiles/hhdiv1.png)  -224px  -64px no-repeat; }
+
+.div14x1 {background: transparent url(../tiles/hhdiv1.png)        0  -96px no-repeat; }
+.div14x2 { background: transparent url(../tiles/hhdiv1.png)   -32px  -96px no-repeat; }
+.div14x3 { background: transparent url(../tiles/hhdiv1.png)   -64px  -96px no-repeat; }
+.div14x4 { background: transparent url(../tiles/hhdiv1.png)   -96px  -96px no-repeat; }
+.div14x5 { background: transparent url(../tiles/hhdiv1.png)  -128px  -96px no-repeat; }
+.div14x6 { background: transparent url(../tiles/hhdiv1.png)  -160px  -96px no-repeat; }
+.div14x7 { background: transparent url(../tiles/hhdiv1.png)  -192px  -96px no-repeat; }
+.div14x8 { background: transparent url(../tiles/hhdiv1.png)  -224px  -96px no-repeat; }
+
+.div15x1 {background: transparent url(../tiles/hhdiv1.png)        0 -128px no-repeat; }
+.div15x2 { background: transparent url(../tiles/hhdiv1.png)   -32px -128px no-repeat; }
+.div15x3 { background: transparent url(../tiles/hhdiv1.png)   -64px -128px no-repeat; }
+.div15x4 { background: transparent url(../tiles/hhdiv1.png)   -96px -128px no-repeat; }
+.div15x5 { background: transparent url(../tiles/hhdiv1.png)  -128px -128px no-repeat; }
+.div15x6 { background: transparent url(../tiles/hhdiv1.png)  -160px -128px no-repeat; }
+.div15x7 { background: transparent url(../tiles/hhdiv1.png)  -192px -128px no-repeat; }
+.div15x8 { background: transparent url(../tiles/hhdiv1.png)  -224px -128px no-repeat; }
+
+.div16x1 {background: transparent url(../tiles/hhdiv1.png)        0 -160px no-repeat; }
+.div16x2 { background: transparent url(../tiles/hhdiv1.png)   -32px -160px no-repeat; }
+.div16x3 { background: transparent url(../tiles/hhdiv1.png)   -64px -160px no-repeat; }
+.div16x4 { background: transparent url(../tiles/hhdiv1.png)   -96px -160px no-repeat; }
+.div16x5 { background: transparent url(../tiles/hhdiv1.png)  -128px -160px no-repeat; }
+.div16x6 { background: transparent url(../tiles/hhdiv1.png)  -160px -160px no-repeat; }
+.div16x7 { background: transparent url(../tiles/hhdiv1.png)  -192px -160px no-repeat; }
+.div16x8 { background: transparent url(../tiles/hhdiv1.png)  -224px -160px no-repeat; }
+
+.div17x1 {background: transparent url(../tiles/hhdiv1.png)        0 -192px no-repeat; }
+.div17x2 { background: transparent url(../tiles/hhdiv1.png)   -32px -192px no-repeat; }
+.div17x3 { background: transparent url(../tiles/hhdiv1.png)   -64px -192px no-repeat; }
+.div17x4 { background: transparent url(../tiles/hhdiv1.png)   -96px -192px no-repeat; }
+.div17x5 { background: transparent url(../tiles/hhdiv1.png)  -128px -192px no-repeat; }
+.div17x6 { background: transparent url(../tiles/hhdiv1.png)  -160px -192px no-repeat; }
+.div17x7 { background: transparent url(../tiles/hhdiv1.png)  -192px -192px no-repeat; }
+.div17x8 { background: transparent url(../tiles/hhdiv1.png)  -224px -192px no-repeat; }
+
+.div18x1 {background: transparent url(../tiles/hhdiv1.png)        0 -224px no-repeat; }
+.div18x2 { background: transparent url(../tiles/hhdiv1.png)   -32px -224px no-repeat; }
+.div18x3 { background: transparent url(../tiles/hhdiv1.png)   -64px -224px no-repeat; }
+.div18x4 { background: transparent url(../tiles/hhdiv1.png)   -96px -224px no-repeat; }
+.div18x5 { background: transparent url(../tiles/hhdiv1.png)  -128px -224px no-repeat; }
+.div18x6 { background: transparent url(../tiles/hhdiv1.png)  -160px -224px no-repeat; }
+.div18x7 { background: transparent url(../tiles/hhdiv1.png)  -192px -224px no-repeat; }
+.div18x8 { background: transparent url(../tiles/hhdiv1.png)  -224px -224px no-repeat; }
+
+.div21x1 {background: transparent url(../tiles/hhdiv2.png)        0    0 no-repeat; }
+.div21x2 { background: transparent url(../tiles/hhdiv2.png)   -32px    0 no-repeat; }
+.div21x3 { background: transparent url(../tiles/hhdiv2.png)   -64px    0 no-repeat; }
+.div21x4 { background: transparent url(../tiles/hhdiv2.png)   -96px    0 no-repeat; }
+.div21x5 { background: transparent url(../tiles/hhdiv2.png)  -128px    0 no-repeat; }
+.div21x6 { background: transparent url(../tiles/hhdiv2.png)  -160px    0 no-repeat; }
+.div21x7 { background: transparent url(../tiles/hhdiv2.png)  -192px    0 no-repeat; }
+.div21x8 { background: transparent url(../tiles/hhdiv2.png)  -224px    0 no-repeat; }
+
+.div22x1 {background: transparent url(../tiles/hhdiv2.png)        0  -32px no-repeat; }
+.div22x2 { background: transparent url(../tiles/hhdiv2.png)   -32px  -32px no-repeat; }
+.div22x3 { background: transparent url(../tiles/hhdiv2.png)   -64px  -32px no-repeat; }
+.div22x4 { background: transparent url(../tiles/hhdiv2.png)   -96px  -32px no-repeat; }
+.div22x5 { background: transparent url(../tiles/hhdiv2.png)  -128px  -32px no-repeat; }
+.div22x6 { background: transparent url(../tiles/hhdiv2.png)  -160px  -32px no-repeat; }
+.div22x7 { background: transparent url(../tiles/hhdiv2.png)  -192px  -32px no-repeat; }
+.div22x8 { background: transparent url(../tiles/hhdiv2.png)  -224px  -32px no-repeat; }
+
+.div23x1 {background: transparent url(../tiles/hhdiv2.png)        0  -64px no-repeat; }
+.div23x2 { background: transparent url(../tiles/hhdiv2.png)   -32px  -64px no-repeat; }
+.div23x3 { background: transparent url(../tiles/hhdiv2.png)   -64px  -64px no-repeat; }
+.div23x4 { background: transparent url(../tiles/hhdiv2.png)   -96px  -64px no-repeat; }
+.div23x5 { background: transparent url(../tiles/hhdiv2.png)  -128px  -64px no-repeat; }
+.div23x6 { background: transparent url(../tiles/hhdiv2.png)  -160px  -64px no-repeat; }
+.div23x7 { background: transparent url(../tiles/hhdiv2.png)  -192px  -64px no-repeat; }
+.div23x8 { background: transparent url(../tiles/hhdiv2.png)  -224px  -64px no-repeat; }
+
+.div24x1 {background: transparent url(../tiles/hhdiv2.png)        0  -96px no-repeat; }
+.div24x2 { background: transparent url(../tiles/hhdiv2.png)   -32px  -96px no-repeat; }
+.div24x3 { background: transparent url(../tiles/hhdiv2.png)   -64px  -96px no-repeat; }
+.div24x4 { background: transparent url(../tiles/hhdiv2.png)   -96px  -96px no-repeat; }
+.div24x5 { background: transparent url(../tiles/hhdiv2.png)  -128px  -96px no-repeat; }
+.div24x6 { background: transparent url(../tiles/hhdiv2.png)  -160px  -96px no-repeat; }
+.div24x7 { background: transparent url(../tiles/hhdiv2.png)  -192px  -96px no-repeat; }
+.div24x8 { background: transparent url(../tiles/hhdiv2.png)  -224px  -96px no-repeat; }
+
+.div25x1 {background: transparent url(../tiles/hhdiv2.png)        0 -128px no-repeat; }
+.div25x2 { background: transparent url(../tiles/hhdiv2.png)   -32px -128px no-repeat; }
+.div25x3 { background: transparent url(../tiles/hhdiv2.png)   -64px -128px no-repeat; }
+.div25x4 { background: transparent url(../tiles/hhdiv2.png)   -96px -128px no-repeat; }
+.div25x5 { background: transparent url(../tiles/hhdiv2.png)  -128px -128px no-repeat; }
+.div25x6 { background: transparent url(../tiles/hhdiv2.png)  -160px -128px no-repeat; }
+.div25x7 { background: transparent url(../tiles/hhdiv2.png)  -192px -128px no-repeat; }
+.div25x8 { background: transparent url(../tiles/hhdiv2.png)  -224px -128px no-repeat; }
+
+.div26x1 {background: transparent url(../tiles/hhdiv2.png)        0 -160px no-repeat; }
+.div26x2 { background: transparent url(../tiles/hhdiv2.png)   -32px -160px no-repeat; }
+.div26x3 { background: transparent url(../tiles/hhdiv2.png)   -64px -160px no-repeat; }
+.div26x4 { background: transparent url(../tiles/hhdiv2.png)   -96px -160px no-repeat; }
+.div26x5 { background: transparent url(../tiles/hhdiv2.png)  -128px -160px no-repeat; }
+.div26x6 { background: transparent url(../tiles/hhdiv2.png)  -160px -160px no-repeat; }
+.div26x7 { background: transparent url(../tiles/hhdiv2.png)  -192px -160px no-repeat; }
+.div26x8 { background: transparent url(../tiles/hhdiv2.png)  -224px -160px no-repeat; }
+
+.div27x1 {background: transparent url(../tiles/hhdiv2.png)        0 -192px no-repeat; }
+.div27x2 { background: transparent url(../tiles/hhdiv2.png)   -32px -192px no-repeat; }
+.div27x3 { background: transparent url(../tiles/hhdiv2.png)   -64px -192px no-repeat; }
+.div27x4 { background: transparent url(../tiles/hhdiv2.png)   -96px -192px no-repeat; }
+.div27x5 { background: transparent url(../tiles/hhdiv2.png)  -128px -192px no-repeat; }
+.div27x6 { background: transparent url(../tiles/hhdiv2.png)  -160px -192px no-repeat; }
+.div27x7 { background: transparent url(../tiles/hhdiv2.png)  -192px -192px no-repeat; }
+.div27x8 { background: transparent url(../tiles/hhdiv2.png)  -224px -192px no-repeat; }
+
+.div28x1 {background: transparent url(../tiles/hhdiv2.png)        0 -224px no-repeat; }
+.div28x2 { background: transparent url(../tiles/hhdiv2.png)   -32px -224px no-repeat; }
+.div28x3 { background: transparent url(../tiles/hhdiv2.png)   -64px -224px no-repeat; }
+.div28x4 { background: transparent url(../tiles/hhdiv2.png)   -96px -224px no-repeat; }
+.div28x5 { background: transparent url(../tiles/hhdiv2.png)  -128px -224px no-repeat; }
+.div28x6 { background: transparent url(../tiles/hhdiv2.png)  -160px -224px no-repeat; }
+.div28x7 { background: transparent url(../tiles/hhdiv2.png)  -192px -224px no-repeat; }
+.div28x8 { background: transparent url(../tiles/hhdiv2.png)  -224px -224px no-repeat; }
+

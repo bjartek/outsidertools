@@ -21,7 +21,13 @@ class Boot {
 
     // where to search snippet
     LiftRules.addToPackages("org.bjartek.outsidertools")
-    Schemifier.schemify(true, Log.infoF _, User)
+    Schemifier.schemify(true, Log.infoF _, User, Battlemap)
+
+    ResourceServer.allow { 
+      case "css" :: _ => true 
+      case "js" :: _ => true 
+      case "img" :: _ => true 
+    }  
 
     // Build SiteMap
     val entries = Menu(Loc("Home", List("index"), "Home")) :: User.sitemap

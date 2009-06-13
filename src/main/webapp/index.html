@@ -1,5 +1,52 @@
 <lift:surround with="default" at="content">
-  <h2>Welcome to your project!</h2>
-  <p><lift:helloWorld.howdy /></p>
+<lift:Util.out>Please 
+	<lift:menu.item name="Login">Log In</lift:menu.item> 
+</lift:Util.out> 
+
+<lift:Util.in> 
+	<lift:BM.add form="post"> 
+	<table> 
+		<tr> 
+			<td>Title:</td> 
+			<td><battlemap:title>Title</battlemap:title></td> 
+		</tr> 
+
+		<tr> 
+			<td>Description:</td> 
+			<td><battlemap:desc>Description</battlemap:desc></td> 
+		</tr> 
+		<tr> 
+			<td> 
+				Default Tile:
+			</td> 
+			<td><battlemap:tile>Tile</battlemap:tile></td> 
+		</tr> 
+		<tr> 
+			<td>&nbsp;</td> 
+			<td> 
+				<battlemap:submit> 
+				<button>New</button> 
+				</battlemap:submit> 
+			</td> 
+		</tr> 
+	</table> 
+	</lift:BM.add> 
+
+<lift:BM.list all_id="all_battlemaps"> 
+ <div id="all_battlamaps"> 
+   <ul> 
+    <battlemap:list> 
+      <li> 
+       <battlemap:title> Title</battlemap:title> 
+       <battlemap:desc> Description</battlemap:desc> 
+       <battlemap:tile> Tile</battlemap:tile> 
+      </li> 
+    </battlemap:list> 
+   </ul> 
+ </div> 
+</lift:BM.list>
+
+</lift:Util.in> 
+
 </lift:surround>
 
