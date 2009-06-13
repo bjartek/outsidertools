@@ -37,8 +37,8 @@ case class Power(val name: String, val url: Option[String], val usage: String, v
 case class Skill(var name:String, var score:Int, var url: Option[String]) {
   lazy val htmlName = {
     url match {
-      case Some(x) => "<a href=\"" + x + "\">" + name + "</a>: " + score
-      case None => name + ":" +score
+      case Some(x) => "<tr><td><a href=\"" + x + "\">" + name + "</a></td><td>" + score + "</td></tr>"
+      case None => "<tr><td>" + name + "</td><td>" +score + "</td></tr>"
     }
   }
 

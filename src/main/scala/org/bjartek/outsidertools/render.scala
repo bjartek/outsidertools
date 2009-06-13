@@ -36,15 +36,15 @@ class  RpolTextRenderer(val character:Character) {
     
     def generate() = {
     lines += "<html> <head> <meta content=\"text/html; charset=UTF-8\" http-equiv=\"content-type\" /> </head> <body> <pre>"
-    lines += "<b>Name:</b> "  + character.name
-     lines += "<b>Player: </b>" + character.player
-    lines += "<b>Race: </b>" + character.race
-    lines += "<b>Class and Level:</b> " + character.clazz + " " + character.level
-    lines += "<b>Alignement: </b>" + character.alignment
+    lines += "<b>Name:</b>"  + character.name 
+    lines += "<b>Player: </b>" + character.player 
+    lines += "<b>Race: </b>" + character.race 
+    lines += "<b>Class and Level: </b> " + character.clazz + " " + character.level 
+    lines += "<b>Alignement: </b>" + character.alignment 
     lines += "<b>Deity: </b>" + character.deity
     lines += "<b>XP: </b>" + character.xp
-    lines += "<b>Laug:</b>"
-    lines += "<b>Tittel:</b>"
+    lines += "<b>Laug: </b>"
+    lines += "<b>Tittel: ></b>"
     lines += "<b>Tjenestepoeng:</b>"
     lines += ""
     lines += "<b>Age:</b> " + character.age
@@ -55,8 +55,10 @@ class  RpolTextRenderer(val character:Character) {
     lines += ""
 
     
-    character.statOrder.foreach(s => lines += s + ": " + character.stat(s).score);
-    
+    lines += "<table><tr><th>STATS</th><th>#</th></tr>"
+    character.statOrder.foreach(s => lines += "<tr><td>" + s + "</td><td> " + character.stat(s).score + "</td></tr>");
+    lines += "</table>"
+
     lines += ""
 
     lines +="<b>HP: </b>" + character.hp
@@ -82,9 +84,9 @@ class  RpolTextRenderer(val character:Character) {
     renderPowers(_.name.contains("Basic"))
 
     lines += ""
-    lines += "<b>Skills</b>"
+    lines += "<table><tr><th>SKILLS</th><th>#</th></tr>"
     character.skillOrder.foreach(s => lines += character.skill(s).htmlName)
-
+    lines += "</table>"
    
     lines += ""
     lines += "<b>Languages</b>"
@@ -143,16 +145,18 @@ class  RpolTextRenderer(val character:Character) {
   }
 
   def renderPowers(f: Power => Boolean) {
+    lines += "<table><tr><th>Name</th><th>Action</th><th>Hit</th><th>Dmg</th></tr>"
     for{
       attack <- character.power if f(attack._2)
      } yield {
       if(attack._2.weapons.toList.isEmpty) {
-        lines += attack._2.htmlName + " as " + attack._2.action
+        lines += "<tr><td>" + attack._2.htmlName + "</td><td>" + attack._2.action + "</td><td colspan=\"2\"></td></tr>"
       }else {
         for(weapon <- attack._2.weapons) yield {
-         lines += attack._2.htmlName + " with " + weapon._2.name + " <blue>+" + weapon._2.hit + " vs " + weapon._2.defense + "</blue> <red>" + weapon._2.dmg + " dmg</red> as " + attack._2.action
+          lines += "<tr><td>" + attack._2.htmlName + " with " + weapon._2.name + "</td><td>" + attack._2.action + "</td><td><blue>+" + weapon._2.hit + " vs " + weapon._2.defense + "</blue></td><td><red>" + weapon._2.dmg + " dmg</red></td></tr>"
         }
       }
     }
+    lines += "</table>"
   }
 }
