@@ -5,6 +5,7 @@ import mapper._
 import http._ 
 import SHtml._ 
 import util._
+import scala.xml._
 
 class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK { 
   def getSingleton = Battlemap
@@ -14,7 +15,7 @@ class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK {
   object title extends MappedPoliteString(this, 15) 
 
   object tile extends MappedPoliteString(this, 15) {
-    override def uniqueFieldId = Full("default_tile")
+    override def fieldId = Some(Text("previewTile"))
   }
 
   object desc extends MappedPoliteString(this, 128) 

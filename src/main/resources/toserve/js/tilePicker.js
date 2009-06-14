@@ -13,6 +13,7 @@ $(document).ready(function(){
 				$("#preview").removeClass(lastClass);
 			}
 			$("#preview").addClass(id);
+			$("#previewTile").attr("value", id);
 			lastClass = id;
 			});
 
