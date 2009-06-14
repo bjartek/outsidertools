@@ -14,7 +14,6 @@ $(document).ready(function(){
 			}
 			$("#preview").addClass(id);
 			lastClass = id;
-			console.log(id);
 			});
 
 

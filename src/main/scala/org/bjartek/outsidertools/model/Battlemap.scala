@@ -13,7 +13,9 @@ class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK {
 
   object title extends MappedPoliteString(this, 15) 
 
-  object tile extends MappedPoliteString(this, 15)
+  object tile extends MappedPoliteString(this, 15) {
+    override def uniqueFieldId = Full("default_tile")
+  }
 
   object desc extends MappedPoliteString(this, 128) 
 
