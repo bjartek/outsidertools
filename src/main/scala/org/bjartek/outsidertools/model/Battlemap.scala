@@ -13,7 +13,7 @@ class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK {
 
   object title extends MappedPoliteString(this, 15) 
 
-  object tile extends MappedPoliteString(this, 15) 
+  object tile extends MappedPoliteString(this, 15)
 
   object desc extends MappedPoliteString(this, 128) 
 
