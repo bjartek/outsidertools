@@ -15,12 +15,27 @@ import scala.xml.{NodeSeq, Text}
 
 class BM { 
 
-  def add(form: NodeSeq) = { 
+  def listMaps (xhtml : NodeSeq) : NodeSeq = User.currentUser match { 
+    case Full(user) => { 
+      val maps : NodeSeq = user.allMaps match { 
+        case Nil => Text("You have no maps yet")
+        case maps => maps.flatMap({map => 
+          bind("m", chooseTemplate("map", "entry", xhtml), 
+          "title" -> <a href={"/map/" + map.id.is + "/edit"}> {map.title.is}</a>, 
+          "desc" -> Text(map.desc.toString), 
+          "tile" -> <div class= { Text(map.tile.toString) + " ot_element" } />)
+        }) 
+      } 
+      bind("map", xhtml, "entry" -> maps)
+    } 
+    case _ => <lift:embed what="welcome_msg" /> 
+  } 
 
+  def add(form: NodeSeq) = { 
     val battlemap = Battlemap.create.owner(User.currentUser)
-     def checkAndSave(): Unit = {
+      def checkAndSave(): Unit = {
       battlemap.validate match { 
-        case Nil => battlemap.save ; S.notice("Added "+battlemap.desc + " " + battlemap.title + " " + battlemap.tile) 
+        case Nil => battlemap.save; S.redirectTo("/map/" + battlemap.id.is + "/edit");
         case xs => S.error(xs) ; S.mapSnippet("BM.add", doBind) 
       } 
     }
@@ -32,52 +47,42 @@ class BM {
         "tile" -> battlemap.tile.toForm, 
         "submit" -> submit("New", checkAndSave)) 
     }
-    
     doBind(form) 
   } 
-
-  private def toShow =  Battlemap.findAll(By(Battlemap.owner, User.currentUser))
-
-  private def desc(td: Battlemap, reDraw: () => JsCmd) =  {
-    swappable(<span>{td.desc}</span>, 
-    <span>{ajaxText(td.desc, 
-      v => {td.desc(v).save; reDraw()})} 
-    </span>)
-  }
-
-  private def title(td: Battlemap, reDraw: () => JsCmd) =  {
-    swappable(<span>{td.title}</span>, 
-    <span>{ajaxText(td.title, 
-      v => {td.title(v).save; reDraw()})} 
-    </span>)
-  }
-
-  private def tile(td: Battlemap, reDraw: () => JsCmd) =  {
-    swappable(<span>{td.tile}</span>, 
-    <span>{ajaxText(td.tile, 
-      v => {td.tile(v).save; reDraw()})} 
-    </span>)
-  }
- 
   
-  private def doList(reDraw: () => JsCmd)(html: NodeSeq): NodeSeq = {
-    toShow.flatMap(td => 
-    bind("battlemap", html, 
-      "title" -> title(td, reDraw), 
-      "desc" -> desc(td, reDraw),
-      "tile" -> tile(td, reDraw) 
-   ))
+  val a = List.fromString("abcdefghijklmnopqrstuvwxyz")
+
+  val al = a.length
+
+  //this blows when 0 or above a big number, but that does not matter here.
+  private def alpha(num:Int) : String = {
+  
+    if(num <= al)  {
+       a(num-1).toString
+     } else {
+       a((num / al) - 1).toString + a(num % al - 1)
+     }
   }
 
-  def list(html: NodeSeq) = { 
-    val id = S.attr("all_id").open_! 
- 
-    def inner(): NodeSeq = { 
-      def reDraw() = SetHtml(id, inner()) 
-        bind("battlemap", html, 
-          "list" -> doList(reDraw) _) 
-    } 
-  inner() 
+   def paint(xhtml : NodeSeq) : NodeSeq = {
+     
+    S.param("map_id") match {
+      case Full(id) => Battlemap.findById(id.toInt) match {
+        case map :: Nil => {
+
+          bind("map", xhtml, 
+            "cols" -> 1.to(map.cols).map(x => <div> { alpha(x).toString } </div> ),
+            "rows" -> 1.to(map.rows).map(x => <div> { x.toString } </div> ),
+            "cells" -> map.grid.map(_.toForm))
+             
+        }
+        case _ => Text("Count not find map with id " + id)
+      }
+
+      case _ => Text("No map id provided")
+    }
   }
+  
+
 } 
 

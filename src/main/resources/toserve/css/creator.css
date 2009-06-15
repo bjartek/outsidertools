@@ -1,11 +1,12 @@
-#dungeon {  background: transparent url(../tiles/ot_dungeon.png)        0    0 no-repeat;   height: 288px; width: 320px; }
-#forrest {  background: transparent url(../tiles/ot_forrest.png)        0    0 no-repeat; height: 352px; width: 320px; }
-#desert {  background: transparent url(../tiles/ot_desert.png)        0    0 no-repeat; height: 384px; width: 320px; }
-#water {  background: transparent url(../tiles/ot_water.png)        0    0 no-repeat; height: 384px; width: 320px; }
-#out {  background: transparent url(../tiles/hhout.png)        0    0 no-repeat; height: 408px; width: 408px; }
-#des {  background: transparent url(../tiles/hhdes.png)        0    0 no-repeat; height: 408px; width: 408px; }
-#div1 {  background: transparent url(../tiles/hhdiv1.png)        0    0 no-repeat; height: 256px; width: 256px; }
-#div2 {  background: transparent url(../tiles/hhdiv2.png)        0    0 no-repeat; height: 256px; width: 256px; }
+#dungeon {  background: transparent url(/classpath/img/ot_dungeon.png)        0    0 no-repeat;   height: 288px; width: 320px; }
+#forrest {  background: transparent url(/classpath/img/ot_forrest.png)        0    0 no-repeat; height: 352px; width: 320px; }
+#desert {  background: transparent url(/classpath/img/ot_desert.png)        0    0 no-repeat; height: 384px; width: 320px; }
+#water {  background: transparent url(/classpath/img/ot_water.png)        0    0 no-repeat; height: 384px; width: 320px; }
+#out {  background: transparent url(/classpath/img/hhout.png)        0    0 no-repeat; height: 408px; width: 408px; }
+#des {  background: transparent url(/classpath/img/hhdes.png)        0    0 no-repeat; height: 408px; width: 408px; }
+#div1 {  background: transparent url(/classpath/img/hhdiv1.png)        0    0 no-repeat; height: 256px; width: 256px; }
+#div2 {  background: transparent url(/classpath/img/hhdiv2.png)        0    0 no-repeat; height: 256px; width: 256px; }
+
 
 
 #tiles {

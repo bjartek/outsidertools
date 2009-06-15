@@ -1,0 +1,90 @@
+<lift:surround with="default" at="content">
+
+<head>
+		<script type="text/javascript" src="/classpath/js/ot.creator.js"></script>
+     <link rel="stylesheet" type="text/css" href="/classpath/css/creator.css" />
+</head>
+
+<div id="menu" class="fg-toolbar ui-widget-header ui-corner-all ui-helper-clearfix">
+    <div class="fg-buttonset ui-helper-clearfix">
+        <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Remove Col"><span class="ui-icon ui-icon-arrowthick-1-w" id="rmcol"></span> Remove Col</a>
+        <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Add Row"><span class="ui-icon ui-icon-arrowthick-1-s" id="addrow"></span> Add Row</a>
+        <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Remove Row"><span class="ui-icon ui-icon-arrowthick-1-n" id="rmrow"></span> Remove Row</a>
+        <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Add  Col"><span class="ui-icon ui-icon-arrowthick-1-e" id="addcol"></span> Add Col</a>
+
+    </div>
+
+    <div class="fg-buttonset ui-helper-clearfix">
+        <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Help"><span class="ui-icon ui-icon-help" id="help"></span> Help</a>
+    </div>
+	</div>
+
+<div id="selection" class="fg-toolbar ui-widget-header ui-corner-all ui-helper-clearfix">
+        <div class="fg-buttonset ui-helper-clearfix">
+
+            <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Clear selection"><span class="ui-icon ui-icon-close" id="clear"></span> Clear selection</a>
+            <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Reset selection"><span class="ui-icon ui-icon-trash" id="reset"></span> Reset selection</a>
+            <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Set as ocupiable/not ocupiablee"><span class="ui-icon ui-icon-unlocked" id="tile_activate"></span> Status toggle</a>
+            <div class="fl edit">
+                <span>Note:</span>
+
+                <div class="eip" id="tile_note">Click to edit</div>
+            </div>
+
+            <div class="fl descr">
+                <span>Description:</span>
+                <div class="eip" id="tile_desc">Click to edit</div>
+            </div>
+        </div>
+
+  </div>
+
+	<div id="map">
+		<lift:BM.paint> 
+			<div id="ot_map_rows">
+				<div class="ot_map_firstrow"></div>
+				<map:rows />
+			</div>
+			
+			<div id="ot_map_box">
+				<div id="ot_map_cols">
+					<map:cols />
+				</div>
+				<div id="ot_map"> 
+					<map:cells />
+				</div>
+			</div>
+			</lift:BM.paint>
+	
+	</div>
+	<div id="tabs">
+    <ul>
+        <li><a href="#forrest">Forrest</a></li>
+        <li><a href="#desert">Desert</a></li>
+        <li><a href="#water">Water</a></li>
+        <li><a href="#dungeon">Dungeon</a></li>
+        <li><a href="#out">HH Out</a></li>
+        <li><a href="#des">HH Desert</a></li>
+        <li><a href="#div1">HH Div1</a></li>
+        <li><a href="#div2">HH Div2</a></li>
+    </ul>
+
+    <div class="tiles" id="forrest"></div>
+    <div class="tiles" id="desert"></div>
+    <div class="tiles" id="water"> </div>
+    <div class="tiles" id="dungeon"> </div>
+    <div class="tiles" id="out"> </div>
+    <div class="tiles" id="des"> </div>
+    <div class="tiles" id="div1"> </div>
+    <div class="tiles" id="div2"> </div>
+	</div>
+
+	<script type="text/javascript">
+         <![CDATA[ 
+				$(document).ready(function(){
+					var creator = new ot.MapCreator();
+				})
+				 ]]>
+	</script>
+</lift:surround>
+

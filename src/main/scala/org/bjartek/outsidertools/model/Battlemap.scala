@@ -29,7 +29,24 @@ class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK {
   }  
 
 
+  def grid = {
+    for{
+      r <- 1.to(rows.is)
+      c <- 1.to(cols.is)
+    } yield {
+      Cell(r,c, tile.is)
+    }
+  }
+
 } 
 
-object Battlemap extends Battlemap with LongKeyedMetaMapper[Battlemap] 
+object Battlemap extends Battlemap with LongKeyedMetaMapper[Battlemap] {
+  def findById(id: Int)  = Battlemap.findAll(By(Battlemap.id, id))
+}
 
+case class Cell(val row:Int, val col:Int, val tile:String) {
+
+  def toForm = {
+    <div id={ ( row + "_" + col) } class={ "tile drop cell " + " col" + col + " row" + row + " " + tile}></div>
+  }
+}

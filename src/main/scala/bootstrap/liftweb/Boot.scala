@@ -29,11 +29,15 @@ class Boot {
       case "img" :: _ => true 
     }  
 
-    // Build SiteMap
-    val entries = Menu(Loc("Home", List("index"), "Home")) :: User.sitemap
-    LiftRules.setSiteMap(SiteMap(entries:_*))
+    LiftRules.rewrite.append {
+      case RewriteRequest(ParsePath("map" :: map_id :: "edit" :: Nil,_, _,_), _, _) =>
+           RewriteResponse(List("map", "edit"), Map("map_id" -> map_id))
+    } 
 
-    /*
+
+    LiftRules.setSiteMap(SiteMap(MenuInfo.menu :_*))
+
+     /*
      * Show the spinny image when an Ajax call starts
      */
     LiftRules.ajaxStart =
@@ -57,6 +61,20 @@ class Boot {
     req.setCharacterEncoding("UTF-8")
   }
 
+}
+
+object MenuInfo {
+  import Loc._
+  val IfLoggedIn = If(() => User.currentUser.isDefined, "You must be logged in")
+  def menu: List[Menu] =  Menu(Loc("home", List("index"), "Home")) :: 
+    Menu(Loc("map", List("map", "index"), "Maps", IfLoggedIn)) ::  
+    Menu(Loc("editMap", List("map", "edit"), "Edit Maps", Hidden, IfLoggedIn,)) ::  
+    User.sitemap
+
+//    Menu(Loc("manageAccts", List("manage"), "Manage Accounts", IfLoggedIn)) :: 
+//    Menu(Loc("addAcct", List("editAcct"), "Add Account", Hidden, IfLoggedIn)) ::
+ //   Menu(Loc("viewAcct", List("viewAcct") -> true, "View Account", Hidden, IfLoggedIn)) ::
+  //  Menu(Loc("help", List("help", "index"), "Help")) ::
 }
 
 /**
