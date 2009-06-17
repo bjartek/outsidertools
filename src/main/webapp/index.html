@@ -1,65 +1,10 @@
 <lift:surround with="default" at="content">
 <lift:Util.out>Please 
+	<span>In order to use OutsiderTools please create and account and log in</span>
+
 	<lift:menu.item name="Login">Log In</lift:menu.item> 
 </lift:Util.out> 
-
-
 <lift:Util.in> 
-	<head>
-		<script type="text/javascript" src="/classpath/js/tilePicker.js"></script>
-     <link rel="stylesheet" type="text/css" href="/classpath/css/tilePicker.css" />
-	 </head>
-	<lift:BM.add form="post"> 
-	<table> 
-		<tr> 
-			<td>Title:</td> 
-			<td><battlemap:title>Title</battlemap:title></td> 
-		</tr> 
-
-		<tr> 
-			<td>Description:</td> 
-			<td><battlemap:desc>Description</battlemap:desc></td> 
-		</tr> 
-		<tr> 
-			<td> 
-				Default Tile:
-			</td> 
-			<td><battlemap:tile>Tile</battlemap:tile><div id="preview"></div></td>
-		</tr> 
-		<tr> 
-			<td>&nbsp;</td> 
-			<td> 
-				<battlemap:submit> 
-				<button>New</button> 
-				</battlemap:submit> 
-			</td> 
-		</tr> 
-	</table> 
-
-
-	<div id="tabs">
-    <ul>
-        <li><a href="#forrest">Forrest</a></li>
-        <li><a href="#desert">Desert</a></li>
-        <li><a href="#water">Water</a></li>
-        <li><a href="#dungeon">Dungeon</a></li>
-        <li><a href="#out">HH Out</a></li>
-        <li><a href="#des">HH Desert</a></li>
-        <li><a href="#div1">HH Div1</a></li>
-        <li><a href="#div2">HH Div2</a></li>
-    </ul>
-
-    <div class="tiles" id="forrest"></div>
-    <div class="tiles" id="desert"></div>
-    <div class="tiles" id="water"> </div>
-    <div class="tiles" id="dungeon"> </div>
-    <div class="tiles" id="out"> </div>
-    <div class="tiles" id="des"> </div>
-    <div class="tiles" id="div1"> </div>
-    <div class="tiles" id="div2"> </div>
-	</div>
-</lift:BM.add> 
+	<span>Welcome to outsider tools!</span>
 </lift:Util.in> 
-
 </lift:surround>
-

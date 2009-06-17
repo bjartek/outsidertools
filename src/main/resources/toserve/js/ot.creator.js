@@ -7,9 +7,8 @@
 window.status = 'Loading [ot.creator.js]';
 window.ot = window.ot || { VERSION: '1.0' };
 
-ot.MapCreator = function() {
-	this.map = new ot.Map({ inspector : { enable: false}});
-
+ot.MapCreator = function(options) {
+	this.map = new ot.Map(options);
 	that = this;
 
     $("#tabs").tabs();
@@ -17,23 +16,41 @@ ot.MapCreator = function() {
 		this.previewTile = "";
 
     $(".tiles").click(function(e) {
-        $(".tiles").unbind("mousemove");
+				var offset = $(this).offset();
+				var actualY = e.pageY - offset.top;
+				var actualX = e.pageX - offset.left;;
+				var x = 1 + Math.floor(actualX / 32.0);
+				var y = 1 + Math.floor(actualY / 32.0);
+				that.previewTile =  this.id + y + "x" + x;
+
 				$(".ui-selected").each(function() {
 					var element = $(this);
 					var id = element.attr("id");
-
-					var t = that.map.tile($(this).attr("id"));
-
-						if(t.tile == that.previewTile){
+					var t = that.map.grid[id];
+					if(t.tile == that.previewTile){
 								return this;
-						}
-						element.removeClass(t.tile);
-						t.tile = that.previewTile;
-						element.addClass(that.previewTile);
+					}
+					element.removeClass(t.tile);
+					t.tile = that.previewTile;
+					element.addClass(that.previewTile);
 				});
 
     });
 
+		$("#save").click(function() {
+			 $.ajax({
+                type: "POST",
+                url: "http://" + window.location.host + "/api/creator/" + that.map.options.id,
+								data: { 'grid' : JSON.stringify(that.map.grid)},
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+									console.log(textStatus)
+									console.log(errorThrown)
+                },
+                success: function(msg){
+									console.log(msg);
+                }
+       });
+		});
 
     $("#addcol").click(function(){
 
@@ -117,7 +134,7 @@ ot.MapCreator = function() {
         $(".ui-selected").each(function() {
             if(this.nodeName == "DIV") {
                 var id = $(this).attr("id");
-								that.map.tile(id).enabled = mode;
+								that.map.grid[id].enabled = mode;
             }
          });
 
@@ -128,16 +145,18 @@ ot.MapCreator = function() {
             
             $("#selection").show();
             var id = $(ui.selected).attr("id");
-            var cell = that.map.tile(id);
+            var cell = that.map.grid[id];
 
             $("#tile_desc").text(cell.desc);
             $("#tile_note").text(cell.note);
 
 						$('#tile_desc').editable(function(value, settings) { 
 							 $(".ui-selected").each(function() {
-									if(this.nodeName == "DIV") {
+
+									if(this.nodeName === "div") {
 											var id = $(this).attr("id");
-											cell = that.map.tile(id);
+
+											cell = that.map.grid[id];
 											cell.desc = value;
 									}
 							 });
@@ -150,10 +169,11 @@ ot.MapCreator = function() {
 
 						$('#tile_note').editable(function(value, settings) { 
 								$(".ui-selected").each(function() {
-										if(this.nodeName == "DIV") {
+										if(this.nodeName === "div") {
 												var id = $(this).attr("id");
-												that.map.tile(id).note = value;
-												$("#" + id).html("<span class=\"desc\">" + value + "</span>");
+												var cell = that.map.grid[id]
+												cell.note = value;
+												$("#" + id).html("<span class=\"note\">" + value + "</span>");
 										}
 								 });
 
@@ -168,15 +188,6 @@ ot.MapCreator = function() {
 				 } else {
 					$("#tile_activate").attr("value", "Disable").switchClass("ui-icon-locked", "ui-icon-unlocked");
 				 }
-				
-				 $(".tiles").mousemove(function(e) {
-							var offset = $(this).offset();
-							var actualY = e.pageY - offset.top;
-							var actualX = e.pageX - offset.left;;
-							var x = 1 + Math.floor(actualX / 32.0);
-							var y = 1 + Math.floor(actualY / 32.0);
-							that.previewTile =  this.id + y + "x" + x;
-					});
 			}
     });
 };

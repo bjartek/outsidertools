@@ -1,17 +1,37 @@
 <lift:surround with="default" at="content">
 
+<lift:BM.add form="post"> 
+	<table> 
+		<tr> 
+			<td>Title:</td> 
+			<td><battlemap:title>Title</battlemap:title></td> 
+		</tr> 
+		<tr> 
+			<td>Desc::</td> 
+			<td><battlemap:desc>Desc</battlemap:desc></td> 
+		</tr> 
+
+		<tr> 
+			<td>&nbsp;</td> 
+			<td> 
+				<battlemap:submit> 
+				<button>New</button> 
+				</battlemap:submit> 
+			</td> 
+		</tr> 
+	</table> 
+</lift:BM.add> 
+
 
 <lift:BM.listMaps> 
 	<h2>Maps</h2> 
 	<table>
 		<tr>
-			<th>Tile</th>
 			<th>Title</th>
 			<th>Description</th>
 		</tr>
 		<map:entry> 
 			<tr>
-				<td><m:tile /></td>
 				<td><m:title /></td>
 				<td><m:desc /> </td>
 			</tr>

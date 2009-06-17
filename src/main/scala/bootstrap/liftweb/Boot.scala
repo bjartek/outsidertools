@@ -29,6 +29,8 @@ class Boot {
       case "img" :: _ => true 
     }  
 
+    LiftRules.dispatch.prepend(RestAPI.dispatch)
+
     LiftRules.rewrite.append {
       case RewriteRequest(ParsePath("map" :: map_id :: "edit" :: Nil,_, _,_), _, _) =>
            RewriteResponse(List("map", "edit"), Map("map_id" -> map_id))

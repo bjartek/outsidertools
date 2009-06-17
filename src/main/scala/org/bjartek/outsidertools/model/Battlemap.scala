@@ -3,6 +3,9 @@ package org.bjartek.outsidertools.model
 import net.liftweb._ 
 import mapper._ 
 import http._ 
+import js._ 
+import JsCmds._ 
+import JE._
 import SHtml._ 
 import util._
 import scala.xml._
@@ -10,15 +13,19 @@ import scala.xml._
 class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK { 
   def getSingleton = Battlemap
 
-  object owner extends MappedLongForeignKey(this, User) 
+  object owner extends MappedLongForeignKey(this, User) {
+    override def dbIndexed_? = true
+  }
 
   object title extends MappedPoliteString(this, 15) 
 
-  object tile extends MappedPoliteString(this, 15) {
-    override def fieldId = Some(Text("previewTile"))
-  }
+   object desc extends MappedTextarea(this, 4096) {
+       override def displayName = "Description"
+       override def textareaRows  = 3 
+       override def textareaCols = 30
+   }
 
-  object desc extends MappedPoliteString(this, 128) 
+  object grid extends MappedText(this)
 
   object cols extends MappedInt(this) {
    override def defaultValue = 10
@@ -28,13 +35,36 @@ class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK {
    override def defaultValue = 10
   }  
 
+  def toJson = {
+    JsCrVar("map", 
+      JsObj(
+        ("title", title.is),
+        ("desc", desc.is),
+        ("id", id.is),
+        ("rows", rows.is),
+        ("cols", rows.is),
+        ("grid", gridOrEmpty)
+      )
+    )
+  } 
 
-  def grid = {
-    for{
-      r <- 1.to(rows.is)
-      c <- 1.to(cols.is)
-    } yield {
-      Cell(r,c, tile.is)
+  def gridOrEmpty() : JsArray = {
+   
+    JSONParser.parse(grid) match {
+      case Full(data) =>  {
+        var list:List[JsObj] = ( data.asInstanceOf[List[Map[String, AnyVal]]].map{x=>  
+          JsObj(
+            ("id", x("id").asInstanceOf[String]), 
+            ("tile", x("tile").asInstanceOf[String]), 
+            ("col", x("col").asInstanceOf[Double].toInt), 
+            ("row", x("row").asInstanceOf[Double].toInt), 
+            ("note", x("note").asInstanceOf[String]), 
+            ("desc", x("desc").asInstanceOf[String]), 
+            ("enabled", x("enabled").asInstanceOf[Boolean]))
+        }).toList
+        JsArray(list :_*);
+      }
+      case _ => JsArray();
     }
   }
 
@@ -42,11 +72,5 @@ class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK {
 
 object Battlemap extends Battlemap with LongKeyedMetaMapper[Battlemap] {
   def findById(id: Int)  = Battlemap.findAll(By(Battlemap.id, id))
-}
-
-case class Cell(val row:Int, val col:Int, val tile:String) {
-
-  def toForm = {
-    <div id={ ( row + "_" + col) } class={ "tile drop cell " + " col" + col + " row" + row + " " + tile}></div>
-  }
+  def findByIdAndOwner(id: Int, user:User) = Battlemap.find(By(Battlemap.id, id), By(Battlemap.owner, user.id))
 }

@@ -7,6 +7,7 @@ import http._
 import SHtml._ 
 import S._ 
 import js._ 
+import JE._
 import JsCmds._ 
 import mapper._ 
 import util._ 
@@ -22,8 +23,7 @@ class BM {
         case maps => maps.flatMap({map => 
           bind("m", chooseTemplate("map", "entry", xhtml), 
           "title" -> <a href={"/map/" + map.id.is + "/edit"}> {map.title.is}</a>, 
-          "desc" -> Text(map.desc.toString), 
-          "tile" -> <div class= { Text(map.tile.toString) + " ot_element" } />)
+          "desc" -> Text(map.desc.toString))
         }) 
       } 
       bind("map", xhtml, "entry" -> maps)
@@ -44,7 +44,6 @@ class BM {
       bind("battlemap", form, 
         "title" -> battlemap.title.toForm, 
         "desc" -> battlemap.desc.toForm, 
-        "tile" -> battlemap.tile.toForm, 
         "submit" -> submit("New", checkAndSave)) 
     }
     doBind(form) 
@@ -63,26 +62,16 @@ class BM {
        a((num / al) - 1).toString + a(num % al - 1)
      }
   }
-
-   def paint(xhtml : NodeSeq) : NodeSeq = {
-     
+  def paint() = {
     S.param("map_id") match {
       case Full(id) => Battlemap.findById(id.toInt) match {
         case map :: Nil => {
-
-          bind("map", xhtml, 
-            "cols" -> 1.to(map.cols).map(x => <div> { alpha(x).toString } </div> ),
-            "rows" -> 1.to(map.rows).map(x => <div> { x.toString } </div> ),
-            "cells" -> map.grid.map(_.toForm))
-             
+          Script(JsRaw(map.toJson));
         }
         case _ => Text("Count not find map with id " + id)
       }
-
       case _ => Text("No map id provided")
     }
   }
-  
-
 } 
 

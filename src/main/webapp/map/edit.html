@@ -16,6 +16,8 @@
 
     <div class="fg-buttonset ui-helper-clearfix">
         <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Help"><span class="ui-icon ui-icon-help" id="help"></span> Help</a>
+        <a href="#" class="fg-button ui-state-default fg-button-icon-solo ui-corner-all" title="Save"><span class="ui-icon ui-icon-edit"
+						id="save"></span> Save</a>
     </div>
 	</div>
 
@@ -39,24 +41,7 @@
 
   </div>
 
-	<div id="map">
-		<lift:BM.paint> 
-			<div id="ot_map_rows">
-				<div class="ot_map_firstrow"></div>
-				<map:rows />
-			</div>
-			
-			<div id="ot_map_box">
-				<div id="ot_map_cols">
-					<map:cols />
-				</div>
-				<div id="ot_map"> 
-					<map:cells />
-				</div>
-			</div>
-			</lift:BM.paint>
-	
-	</div>
+	<div id="map"></div>
 	<div id="tabs">
     <ul>
         <li><a href="#forrest">Forrest</a></li>
@@ -79,10 +64,11 @@
     <div class="tiles" id="div2"> </div>
 	</div>
 
+	<lift:BM.paint />
 	<script type="text/javascript">
          <![CDATA[ 
 				$(document).ready(function(){
-					var creator = new ot.MapCreator();
+					var creator = new ot.MapCreator(map);
 				})
 				 ]]>
 	</script>

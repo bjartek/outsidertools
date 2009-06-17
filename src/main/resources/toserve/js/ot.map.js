@@ -8,57 +8,6 @@ window.status = 'Loading [ot.map.js]';
 
 window.ot = window.ot || { VERSION: '1.0' };
 
-
-ot.MapTile = function(id,args ) {
-	this.id = id;
-	this.defaultCell = {
-			tile: "forrest1x1", 
-			desc: "",
-			note: "",
-			enabled: true
-		};
-	var empty = {};
-  this.options = $.extend(true, empty, this.defaultCell, args);
-	this.tile = this.options.tile;
-	this.desc - this.options.desc;
-	this.note = this.options.note;
-	this.enabled = this.options.enabled;
-}
-
-ot.MapTile.prototype = {
-	reset: function () {
-		this.tile = this.defaultCell.tile;
-		this.desc = this.options.desc;
-		this.note = this.options.note;
-		this.enable = this.options.enabled;
-		return this;
-	},
-	paint: function() {
-		var claz = "cell ";
-		var body = "";
-
-		if(this.tile !== false) {
-			claz += this.tile;
-		}
-
-		if(this.enabled  === true && this.tile !== false) {
-			claz += " tile drop";
-		}
-
-		if(this.id.indexOf("a") != -1) {
-			claz += " first";
-		}
-
-		if(this.note !== "") {
-			body += "<span class=\"desc\">" + this.note + "</span>";
-		}
-
-		var element = "<div id=\"" + this.id  + "\" class=\"" + claz +"\">" + body + "</div>";
-		$("#ot_map").append(element);
-		return this;
-	}
-};
-
 ot.Map = function( args ) {
 	that = this;
   this.options = {
@@ -69,15 +18,10 @@ ot.Map = function( args ) {
 			previewTile: false, 
 			previewText: false, 
 			onInspect: false, 
-			enable : true
+			enable : false
 		},
-		defaultCell : {
-			tile: "forrest1x1", 
-			desc: "",
-			note: "",
-			enabled: true
-		}, 
-	grid: {}
+		defaultCell: "forrest1x1",
+		grid: []
 	};
 	var empty = {};
   this.options = $.extend(true, empty, this.options, args);
@@ -97,38 +41,41 @@ ot.Map.prototype = {
 
 	alpha : ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
 
+	tile: function(id) {
+				return this.map.grid(id);
+	},
 	paint: function() {
 
 			$("#map").html("<div id=\"ot_map_rows\">\n <div class=\"ot_map_firstrow\"></div>\n </div>\n <div id=\"ot_map_box\">\n <div id=\"ot_map_cols\"></div>\n <div id=\"ot_map\"> </div>\n </div>");
 
-		this.createGrid();
 		this.createRows();
 		this.createCols();
+
+		if(this.grid.length === 0) {
+			this.createEmptyGrid();
+		}
 		this.paintGrid();
 
 		var newWidth =(this.options.cols * 34) + 40;
 		$(this.options.div).css("width", newWidth + "px");
 	},
 
-	createGrid: function() {
-		var g = {};
-		var props = {};
-		var empty = {};
-		for (j=1;j <= this.options.rows;j++) {
-			for (i=0;i < this.options.cols;i++) {
-				var col = this.alpha[i].toLowerCase();
-				var element = col + j;
-				if(this.grid[element]){
-					props = jQuery.extend(empty, this.options.defaultCell, this.grid[element]);
-					g[element] = new ot.MapTile(element, props);
-				} else {
-					g[element] = new ot.MapTile(element, this.options.defaultCell);
-				}
+	createEmptyGrid: function() {
+			for (i=1;i <= this.options.cols;i++) {
+				for (j=1;j <= this.options.rows;j++) {
+				this.grid.push({
+							id: i + "_" + j,
+							row: i,
+							col: j,
+							tile: this.options.defaultCell,
+							desc: "",
+							note: "",
+							enabled: true
+				})
 			}
-
 		}
-		this.grid = g;
 	},
+
 
 	createRows: function() {
 		var i=0;
@@ -150,10 +97,29 @@ ot.Map.prototype = {
 	paintGrid: function() {
 		for(var element in this.grid) {
 			if(this.grid.hasOwnProperty(element)){
-				this.grid[element].paint();
+				$("#ot_map").append(this.renderGridElement(element, this.grid[element]));
 			}
 		}
 	},
+	renderGridElement: function(id, element) {
+		var  claz = "cell " + "col" + element.col + " row" + element.row + " ";
+		var body = "";
+
+		if(element.tile !== false) {
+			claz += element.tile;
+		}
+
+		if(element.enabled  === true && element.tile !== false) {
+			claz += " tile drop";
+		}
+
+		if(element.note !== "") {
+			body += "<span class=\"note\">" + element.note + "</span>";
+		}
+
+		return  "<div id=\"" + id + "\" class=\"" + claz +"\">" + body + "</div>";
+	},
+
 	addColumn: function() {
 		this.options.cols++;
 		this.paint();
