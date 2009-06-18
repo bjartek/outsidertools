@@ -224,10 +224,7 @@ div.ui-selected {
 }
 
 .disabled {
-    opacity: 0.7;
 		border: 1px solid black;
 }
 
-div.ui-selected.disabled {
-    opacity: 0.3;
-}
+
