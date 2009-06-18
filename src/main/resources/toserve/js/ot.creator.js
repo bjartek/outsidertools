@@ -98,11 +98,10 @@ ot.MapCreator = function(options) {
 
     $("#clear").click(function(e) {
         $(".cell").removeClass("ui-selected");
-        $("#selection").hide();
     });
 
 		$("#inspector").dialog({ 
-				position: 'right',
+				position:  ['right','top'],
 				width: 330,
 				autoOpen: false
 		});
@@ -137,13 +136,13 @@ ot.MapCreator = function(options) {
 
 		$("#reset").click(function(e) {
 		   $(".ui-selected").each(function() {
-            if(this.nodeName == "DIV") {
-								this.map.reset(id);
+            if(this.nodeName == "div") {
+                var id = $(this).attr("id");
+								that.map.reset(id);
             }
 			});
-			 that.grid.paint();
+			 that.map.paint();
 			 that.selectable();
-			 $("#selection").hide();
 
 		});
 
@@ -153,27 +152,28 @@ ot.MapCreator = function(options) {
          if($("#tile_activate").attr("value") == "Enable") {
             mode = true;
             $("#tile_activate").attr("value", "Disable").switchClass("ui-icon-locked", "ui-icon-unlocked");
-						$("#activate_text").text("Unlock");
+						$("#activate_text").text("Lock");
           } else {
             mode = false;
             $("#tile_activate").attr("value", "Enable").switchClass("ui-icon-unlocked", "ui-icon-locked");
-						$("#activate_text").text("Lock");
+						$("#activate_text").text("Unlock");
           }
 
 
         $(".ui-selected").each(function() {
 						console.log(this);
-            if(this.nodeName == "DIV") {
+            if(this.nodeName == "div") {
                 var id = $(this).attr("id");
 								that.map.grid[id].enabled = mode;
 								if(mode === false) {
-									$(this).addClass("drop tile");
+									$(this).addClass("disabled");
 								}else {
-									$(this).removeClass("drop tile")
+									$(this).removeClass("disabled")
 								}
             }
          });
-
+		
+			 	 $("#save").show();
       });
 
 		that.selectable();
@@ -227,12 +227,16 @@ ot.MapCreator.prototype = {
 								height    : "22px",
 						});
 
-				if(cell.enabled == false) {
-					$("#tile_activate").attr("value", "Enable").switchClass("ui-icon-unlocked", "ui-icon-locked");
-				 } else {
-					$("#tile_activate").attr("value", "Disable").switchClass("ui-icon-locked", "ui-icon-unlocked");
-				 }
+
+						if(cell.enabled == false) {
+							  $("#tile_activate").attr("value", "Enable").switchClass("ui-icon-unlocked", "ui-icon-locked");
+								$("#activate_text").text("Unlock");
+						} else {
+						   $("#tile_activate").attr("value", "Disable").switchClass("ui-icon-locked", "ui-icon-unlocked");
+								$("#activate_text").text("Lock");
+					  }
 			}
+
     });
 
 	}

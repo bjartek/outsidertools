@@ -30,7 +30,6 @@ object RestAPI {
     try {
       val id = mid.toInt
      
-      println(request);
       User.currentUser match {
         case  Full(user) => {
           var response: Box[LiftResponse] = Full(BadResponse())
@@ -41,7 +40,6 @@ object RestAPI {
             map <- Battlemap.findByIdAndOwner(id, user)
             data <- JSONParser.parse(grid)
           } yield {
-            println("We have valid stuff");
             map.grid(grid).rows(rows.toInt).cols(cols.toInt).validate match {
              case Nil => {
                map.save

@@ -116,6 +116,10 @@ ot.Map.prototype = {
 			claz += " tile drop";
 		}
 
+		if(element.enabled !== true){
+			claz += " disabled";
+		}
+
 		if(element.note !== "") {
 			body += "<span class=\"note\">" + element.note + "</span>";
 		}
