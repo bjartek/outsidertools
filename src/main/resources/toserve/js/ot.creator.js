@@ -208,6 +208,7 @@ ot.MapCreator.prototype = {
 						}, { 
 								tooltip   : 'Click to add description...',
 								height    : "22px",
+								onblur    : "submit"
 						});
 
 						$('#tile_note').editable(function(value, settings) { 
@@ -225,6 +226,7 @@ ot.MapCreator.prototype = {
 						}, { 
 								tooltip   : 'Click to add note...',
 								height    : "22px",
+								onblur    : "submit"
 						});
 
 
