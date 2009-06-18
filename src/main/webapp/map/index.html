@@ -1,7 +1,9 @@
 <lift:surround with="default" at="content">
 
 <lift:BM.add form="post"> 
-	<table> 
+
+	<h3> Create map</h3> 
+	<table id="addmap"> 
 		<tr> 
 			<td>Title:</td> 
 			<td><battlemap:title>Title</battlemap:title></td> 
@@ -10,7 +12,6 @@
 			<td>Desc::</td> 
 			<td><battlemap:desc>Desc</battlemap:desc></td> 
 		</tr> 
-
 		<tr> 
 			<td>&nbsp;</td> 
 			<td> 
@@ -24,10 +25,10 @@
 
 
 <lift:BM.listMaps> 
-	<h2>Maps</h2> 
+	<h3>Your maps</h3> 
 	<table>
 		<tr>
-			<th>Title</th>
+			<th>Map</th>
 			<th>Description</th>
 		</tr>
 		<map:entry> 

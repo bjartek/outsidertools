@@ -35,67 +35,65 @@ ot.MapCreator = function(options) {
 					element.addClass(that.previewTile);
 				});
 
+				$("#save").show();
     });
 
 		$("#save").click(function() {
+				$("#ajax-loader").show();
 			 $.ajax({
                 type: "POST",
                 url: "http://" + window.location.host + "/api/creator/" + that.map.options.id,
-								data: { 'grid' : JSON.stringify(that.map.grid)},
+								data: { 'grid' : JSON.stringify(that.map.grid), 'rows' : that.map.options.rows, 'cols' : that.map.options.cols },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
 									console.log(textStatus)
 									console.log(errorThrown)
+									$("#ajax-loader").hide();
                 },
                 success: function(msg){
-									console.log(msg);
+									$("#save").hide();
+									$("#ajax-loader").hide();
                 }
        });
 		});
 
     $("#addcol").click(function(){
 
-				that.map.addColumn();
-        var numCols = that.map.cols();
-        if(numCols == 26) {
-            $("#addcol").attr("disabled", "true");
-        }
-
+				var numCols = that.map.addColumn();
         if(numCols == 2){
             $("#rmcol").removeAttr("disabled");
          }
-
+				that.selectable();
+				$("#save").show();
      });
 
 
     $("#addrow").click(function(){
-				that.map.addRow();
-
-				var numRows = that.map.rows();
+				var numRows = that.map.addRow();
         if(numRows == 2){
             $("#rmrow").removeAttr("disabled");
          }
-
+				that.selectable();
+				$("#save").show();
      });
+
   	$("#rmcol").click(function() {
 				
-				that.map.removeColumn();
-        var numCols = that.map.cols();
-
-        if(numCols == 25) {
-            $("#addcol").removeAttr("disabled");
-        }
+				var numCols = that.map.removeColumn();
         if(numCols == 1){
             $("#rmcol").attr("disabled", "true");
          }
+				that.selectable();
+				$("#save").show();
      });
 
 
     $("#rmrow").click(function() {
-				that.map.removeRow();
-				var numRows = that.map.rows();
+				var numRows = that.map.removeRow();
         if(numRows == 1){
             $("#rmrow").attr("disabled", "true");
          }
+				that.selectable();
+				$("#save").show();
      });
 
     $("#clear").click(function(e) {
@@ -103,47 +101,91 @@ ot.MapCreator = function(options) {
         $("#selection").hide();
     });
 
-		$("#help").click(function(e) {
-			$("#help-window").dialog({ position: 'right'});
-			});
+		$("#inspector").dialog({ 
+				position: 'right',
+				width: 330,
+				autoOpen: false
+		});
+
+		$("#inspect").click(function(e) {
+			var i = $("#inspector");
+			if(i.dialog('isOpen')){
+				i.dialog("close");
+			} else {
+				i.dialog("open");
+			}
+		})
+	
+		$(".fg-button:not(.ui-state-disabled)").hover(function(){
+					 $(this).addClass("ui-state-hover");
+					 },
+					 function(){
+					 $(this).removeClass("ui-state-hover");
+					 }
+					 )
+			 .mousedown(function(){
+					 $(this).parents('.fg-buttonset-single:first').find(".fg-button.ui-state-active").removeClass("ui-state-active");
+					 if( $(this).is('.ui-state-active.fg-button-toggleable, .fg-buttonset-multi .ui-state-active') ){ $(this).removeClass("ui-state-active"); }
+					 else { $(this).addClass("ui-state-active"); }
+					 })
+			 .mouseup(function(){
+					 if(! $(this).is('.fg-button-toggleable, .fg-buttonset-single .fg-button, .fg-buttonset-multi .fg-button') ){
+					 $(this).removeClass("ui-state-active");
+					 }
+					 });
+		
 
 		$("#reset").click(function(e) {
 		   $(".ui-selected").each(function() {
             if(this.nodeName == "DIV") {
-                var id = $(that).attr("id");
-								that.map.tile(id).reset();
+								this.map.reset(id);
             }
 			});
 			 that.grid.paint();
+			 that.selectable();
 			 $("#selection").hide();
 
 		});
 
 		//Lock/unlock all marked tiles
-    $("#tile_activate").click(function() {
+    $("#tile_activate_button").click(function() {
         var mode;
          if($("#tile_activate").attr("value") == "Enable") {
             mode = true;
             $("#tile_activate").attr("value", "Disable").switchClass("ui-icon-locked", "ui-icon-unlocked");
+						$("#activate_text").text("Unlock");
           } else {
             mode = false;
             $("#tile_activate").attr("value", "Enable").switchClass("ui-icon-unlocked", "ui-icon-locked");
+						$("#activate_text").text("Lock");
           }
 
 
         $(".ui-selected").each(function() {
+						console.log(this);
             if(this.nodeName == "DIV") {
                 var id = $(this).attr("id");
 								that.map.grid[id].enabled = mode;
+								if(mode === false) {
+									$(this).addClass("drop tile");
+								}else {
+									$(this).removeClass("drop tile")
+								}
             }
          });
 
       });
 
+		that.selectable();
+};
+
+
+ot.MapCreator.prototype = {
+	selectable: function() {
     $("#ot_map").selectable({
         selected: function(event, ui) {
             
-            $("#selection").show();
+						
             var id = $(ui.selected).attr("id");
             var cell = that.map.grid[id];
 
@@ -161,6 +203,7 @@ ot.MapCreator = function(options) {
 									}
 							 });
 
+							$("#save").show();
 							return(value);
 						}, { 
 								tooltip   : 'Click to add description...',
@@ -177,6 +220,7 @@ ot.MapCreator = function(options) {
 										}
 								 });
 
+							$("#save").show();
 								return(value);
 						}, { 
 								tooltip   : 'Click to add note...',
@@ -190,6 +234,8 @@ ot.MapCreator = function(options) {
 				 }
 			}
     });
-};
 
+	}
+
+}
 window.status = '';

@@ -24,10 +24,6 @@
 }
 
 #map {
-	width: 380px;
-	height: 350px;
-	float: left;
-	margin-right: 10px;
 	margin-bottom: 10px;
 }
 
@@ -95,21 +91,6 @@ div.hover {
 	opacity: .7;
 }
 
-h3 {
-	margin: 0px;
-	padding: 0px;
-	border-bottom: 2px solid black;
-	margin-bottom: 2px;
-}
-
-h4 {
-	margin: 0px;
-	padding: 0px;
-	border-bottom: 1px solid black;
-	margin-bottom: 1px;
-
-}
-
 div.highlight {
 	border: 1px solid red;
 }
@@ -151,7 +132,7 @@ button.fg-button { width:auto; overflow:visible; }
 .fg-buttonset-single .fg-button, 
 .fg-buttonset-multi .fg-button { margin-right: -1px;}
 
-.fg-toolbar { padding: .5em; margin: 0;  width: 400px;}
+.fg-toolbar { padding: .5em; margin: 0; }
 .fg-toolbar .fg-buttonset { margin-right:1.5em; padding-left: 1px; }
 .fg-toolbar .fg-button { font-size: 1em;  }
 
@@ -182,7 +163,62 @@ button.fg-button { width:auto; overflow:visible; }
 	height: 19px;
 }
 
-
 #ot_map {
 	float: left;
+}
+
+#dungeon {  background: transparent url(/classpath/img/ot_dungeon.png)        0    0 no-repeat;   height: 288px; width: 320px; }
+#forrest {  background: transparent url(/classpath/img/ot_forrest.png)        0    0 no-repeat; height: 352px; width: 320px; }
+#desert {  background: transparent url(/classpath/img/ot_desert.png)        0    0 no-repeat; height: 384px; width: 320px; }
+#water {  background: transparent url(/classpath/img/ot_water.png)        0    0 no-repeat; height: 384px; width: 320px; }
+#out {  background: transparent url(/classpath/img/hhout.png)        0    0 no-repeat; height: 408px; width: 408px; }
+#des {  background: transparent url(/classpath/img/hhdes.png)        0    0 no-repeat; height: 408px; width: 408px; }
+#div1 {  background: transparent url(/classpath/img/hhdiv1.png)        0    0 no-repeat; height: 256px; width: 256px; }
+#div2 {  background: transparent url(/classpath/img/hhdiv2.png)        0    0 no-repeat; height: 256px; width: 256px; }
+
+div.ui-selected {
+    opacity: 0.5;
+}
+
+
+.fl span {
+	font-weight: bold;
+}
+
+.sidebar ul {
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #ccc;
+}
+	 
+
+.sidebar ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+
+.sidebar ul li a {
+	display:block;
+	padding:3px;
+	text-indent:30px;
+	text-decoration:none;
+}
+
+.sidebar ul li span {
+	display:block;
+	padding:3px;
+	text-indent:30px;
+	text-decoration:none;
+}
+
+.sidebar ul li a:hover {
+	background-color: #eee;
+}
+
+
+#addmap textarea {
+	height: 50px;
 }

@@ -27,7 +27,7 @@ class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK {
 
   object grid extends MappedText(this) {
     override def defaultValue = ""
-   }
+  }
 
   object cols extends MappedInt(this) {
    override def defaultValue = 10
@@ -51,6 +51,7 @@ class Battlemap  extends LongKeyedMapper[Battlemap] with IdPK {
   } 
 
   def gridOrEmpty() : JsArray = {
+   
     JSONParser.parse(grid.is) match {
       case Full(data) =>  {
         var list:List[JsObj] = ( data.asInstanceOf[List[Map[String, AnyVal]]].map{x=>  

@@ -30,26 +30,28 @@ object RestAPI {
     try {
       val id = mid.toInt
      
+      println(request);
       User.currentUser match {
-        case  Full(user) => 
-          request.param("grid") match {
-            case Full(grid) => 
-              Battlemap.findByIdAndOwner(id, user) match {
-                case Full(map) => 
-                  JSONParser.parse(grid) match {
-                    case Full(data) =>  {
-                      println("FOOOOO");
-                       map.grid(grid).validate match {
-                         case Nil => map.save; println("We have saved the field"); println(map.grid.is); Full(OkResponse())
-                         case x => println("foobar"); println(x); Full(BadResponse())
-                      }
-                    }
-                    case _ => println("Could not parse Json");Full(BadResponse())
-                }
-                case _ => println("Could not find map"); Full(BadResponse()) 
-             }
-            case _ => println("grid param does not exist"); Full(BadResponse())
+        case  Full(user) => {
+          var response: Box[LiftResponse] = Full(BadResponse())
+          for {
+            grid <- request.param("grid")
+            cols <- request.param("cols")
+            rows <- request.param("rows")
+            map <- Battlemap.findByIdAndOwner(id, user)
+            data <- JSONParser.parse(grid)
+          } yield {
+            println("We have valid stuff");
+            map.grid(grid).rows(rows.toInt).cols(cols.toInt).validate match {
+             case Nil => {
+               map.save
+               response = Full(OkResponse())
+              }
+             case x => 
+           }
           }
+          response
+        }
         case _ => Full(UnauthorizedResponse("No session for your"))
       }
     } catch  {
