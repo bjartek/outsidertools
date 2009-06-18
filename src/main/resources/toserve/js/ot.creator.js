@@ -45,8 +45,7 @@ ot.MapCreator = function(options) {
                 url: "http://" + window.location.host + "/api/creator/" + that.map.options.id,
 								data: { 'grid' : JSON.stringify(that.map.grid), 'rows' : that.map.options.rows, 'cols' : that.map.options.cols },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
-									console.log(textStatus)
-									console.log(errorThrown)
+									alert(textStatus + " " + errorThrown);
 									$("#ajax-loader").hide();
                 },
                 success: function(msg){
@@ -161,7 +160,6 @@ ot.MapCreator = function(options) {
 
 
         $(".ui-selected").each(function() {
-						console.log(this);
             if(this.nodeName == "div") {
                 var id = $(this).attr("id");
 								that.map.grid[id].enabled = mode;
